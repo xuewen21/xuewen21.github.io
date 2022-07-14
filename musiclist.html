@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>XWMlayList</title>
+	<style>
+		.score-input {width: 4em;}
+		.title {max-width:calc(100vw - 10em);display:block;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;}
+		td {border-top: #777 1px solid; padding-top:5px; padding-bottom: 10px;}
+	</style>
+</head>
+<body>
+	<div id="search-box">
+		<input name="page" type="hidden" value="1">
+		<input name="source_id" placeholder="id">
+		<br>
+		<span>排序</span>
+		<input id="orderByCreatedAt" type="radio" name="order" value="createdAt" checked><label for="orderByCreatedAt">收藏时间</label>
+		<input id="orderByPublishDate" type="radio" name="order" value="publish_date"><label for="orderByPublishDate">发布时间</label>
+		<br>
+		<button onclick="findList(-1)">last page</button> <button id="search-button" onclick="findList()">search</button> <button onclick="findList(1)">next page</button>
+	</div>
+	<table id="playlist" cellspacing="0">
+		<thead>
+			<tr><th>title</th><th>score</th></tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.bdstatic.com/npm/leancloud-storage@4.11.1/dist/av-min.js"></script>
+	<script>
+		AV.init({
+			appId: "mD1rIhlKVcr1XhHksNF6dnEF-MdYXbMMI",
+			appKey: "hLhEuipzxNsu0CaJP1oeDWfr",
+		});
+		let $pageInput = $('#search-box input[name=page]');
+
+		function findList(pageChange = 0) {
+			// 更新页码
+			let page = parseInt($pageInput.val());
+			page += pageChange;
+			if (page < 1) return;
+			$pageInput.val(page);
+			// 查询
+			const query = new AV.Query('Music');
+			let sourceId = $('#search-box input[name=source_id]').val();
+			if (sourceId) query.equalTo('source_id', sourceId);
+			query.skip((page-1)*100);
+			query.limit(100);
+			query.descending($('input[name=order]:checked').val());
+			query.find().then((musics) => {
+				let $playlist = $('#playlist tbody').html('');
+				musics.forEach((music, k) => {
+					let link;
+					if (music.get('source') === 'nico') {
+						link = `https://nico.ms/${music.get('source_id')}`;
+					} else {
+						link = music.get('link');
+					}
+					$playlist.append(`<tr><td><a target="_blank" class="title" href="${link}">${music.get('name')} - ${music.get('author_name')}</a></td><td><input lcid="${music.get('objectId')}" class="score-input" type="number" value="${music.get('score')}" onkeydown="changeSocre(event, this)"></td><td><button onclick="deleteMusic('${music.get('objectId')}')">x</button></td></tr>`);
+				});
+			}, (error) => {
+				console.error(error);
+			});
+		}
+
+		function changeSocre(event, obj) {
+			// console.log(event, obj);
+			let $obj = $(obj);
+			if (event.keyCode === 13) {
+				const music = AV.Object.createWithoutData('Music', $obj.attr('lcid'));
+				music.set('score', parseFloat($obj.val()));
+				$('.update-res').remove();
+				music.save().then(() => {
+					$obj.after(` <span class="update-res">√</span>`);
+				}, () => {
+					$obj.after(` <span class="update-res">×</span>`);
+				});
+			}
+		}
+
+		function deleteMusic(id) {
+			if (confirm('确定要删除吗？')) {
+				const music = AV.Object.createWithoutData('Music', id);
+				music.destroy();
+				findList();
+			}
+		}
+
+		let currentUser = AV.User.current();
+		if (currentUser) {
+			findList();
+		} else {
+			$('body').prepend(`<div id="xw_login_box"><input id="xw_name" placeholder="name"><input id="xw_password" type="password" placeholder="password"><button id="xw_login">登录</button></div>`);
+			$('#xw_login').bind('click', function () {
+				let name = $('#xw_name').val();
+				let password = $('#xw_password').val();
+				if (!(name && password)) {
+					return;
+				}
+				AV.User.logIn(name, password).then(function (loginedUser) {
+					// 登录成功
+					currentUser = loginedUser;
+					$('#xw_login_box').remove();
+					findList();
+				}, function (error) {
+					console.error(error);
+				});
+			});
+
+		}
+	</script>
+</body>
+</html>

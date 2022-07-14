@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="xuewen">
+
+
+
+
+
+
+
+<title>古典密码 | 胡纹乱语</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/frame.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="胡纹乱语" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            首页
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">About</a>
+              </li> 
+                   
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/puzzle/">
+                            puzzle
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                古典密码
+            
+            
+        </div>
+        <span class="post-date">
+            6月 5, 2022
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <ul>
+<li><p>隐写密码  </p>
+<ul>
+<li>文字<ul>
+<li>信息可能隐藏在<ul>
+<li>乱码中的有意义文本</li>
+<li>首字母</li>
+<li>对角线（第n行取第n个字母）</li>
+<li>不一样的字体</li>
+<li>断句</li>
+<li>字数、句子数、段数</li>
+<li>拼写错误</li>
+<li>……</li>
+</ul>
+</li>
+<li>编码方式<ul>
+<li>unicode</li>
+<li>电码</li>
+<li>培根密码<br>常常利用大写&#x2F;小写代表A&#x2F;B。</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>图片<ul>
+<li>与背景颜色相似</li>
+<li>LSB</li>
+</ul>
+</li>
+<li>音频<ul>
+<li>音阶</li>
+<li>包含电码</li>
+<li>频谱</li>
+</ul>
+</li>
+<li>所有文件<ul>
+<li>文件名</li>
+<li>元数据</li>
+<li>多文件拼合</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>移位密码</p>
+<ul>
+<li>随机移位  <ul>
+<li>易序词<br>（把它写在古典密码里了，但其实这是一个十分常见的手法</li>
+<li>用其他信息暗示排序<br>比如给了一串数字、利用彩虹颜色顺序等</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://cryptowikis.com/ClassicalCipher/TranspositionCiphers/RailFenceCipher/">栅栏密码</a></li>
+<li>倒序</li>
+<li>树的遍历</li>
+</ul>
+</li>
+<li><p>替换密码</p>
+<ul>
+<li>单表替换（字母表和单表替换本质相同，故也放在这里）<ul>
+<li>英文字母表<br>这个谁都会吧……</li>
+<li>自定义字母表<br>当年阿拉伯人用词频破解，现在可以用计算机暴力破解</li>
+<li>凯撒密码<br>将每个字母按字母表顺序平移若干位。<br>变种：汉字凯撒，按unicode码表顺序平移</li>
+<li>埃特巴什密码<br>A替换为Z，B替换为Y……</li>
+<li>猪圈密码 pigpen  <img src="/2022/06/05/classical_cipher/20220628005610.png" class="">
+经常靠猪（pig）和笔（pen）来暗示</li>
+<li>仿射密码</li>
+<li>9键 T9<br>特征是偶数位不超过4</li>
+<li>五笔</li>
+<li>键盘<ul>
+<li>按键盘顺序。<br>例：QWER → ABCD</li>
+<li>字母上方的数字以及对应行号。<br>例：Q → 11，V → 43</li>
+<li>V形。<br>例，s左上和右上的数字为24，所以s加密为24，同理，b → 58，l →9-</li>
+<li>数字上的标点。! → 1、@ → 2</li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Keyboard_layout">变种键盘</a></li>
+</ul>
+</li>
+<li>Wingdings字体</li>
+<li>旗语<br>每个元素都包含两个方向，可以考虑旗语</li>
+<li>国际信号旗</li>
+<li>盲文<br>每个字由6位二进制组成，题干中暗示“看不见”时，可以考虑盲文的可能性</li>
+<li>电码<ul>
+<li><p>摩(尔)斯电码 Morse code<br>字母不超过4个符号，数字不超过5个符号。<br>时长：</p>
+<ol>
+<li>点（·）：1</li>
+<li>划（-）：111 （划的长度是点的三倍）</li>
+<li>字符内部的停顿（在点和划之间）：0</li>
+<li>字符之间的停顿：000</li>
+<li>单词之间的停顿：0000000</li>
+</ol>
+<style>.morse {font-family:monospace,monospace;letter-spacing:1px;}</style>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>代码</th>
+<th>字符</th>
+<th>代码</th>
+<th>字符</th>
+<th>代码</th>
+<th>字符</th>
+<th>代码</th>
+<th>字符</th>
+<th>代码</th>
+<th>字符</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td><font class="morse">·-</font></td>
+<td>B</td>
+<td><font class="morse">-···</font></td>
+<td>C</td>
+<td><font class="morse">-·-·</font></td>
+<td>D</td>
+<td><font class="morse">-··</font></td>
+<td>E</td>
+<td><font class="morse">·</font></td>
+<td>F</td>
+<td><font class="morse">··-·</font></td>
+</tr>
+<tr>
+<td>G</td>
+<td><font class="morse">--·</font></td>
+<td>H</td>
+<td><font class="morse">····</font></td>
+<td>I</td>
+<td><font class="morse">··</font></td>
+<td>J</td>
+<td><font class="morse">·---</font></td>
+<td>K</td>
+<td><font class="morse">-·-</font></td>
+<td>L</td>
+<td><font class="morse">·-··</font></td>
+</tr>
+<tr>
+<td>M</td>
+<td><font class="morse">--</font></td>
+<td>N</td>
+<td><font class="morse">-·</font></td>
+<td>O</td>
+<td><font class="morse">---</font></td>
+<td>P</td>
+<td><font class="morse">·--·</font></td>
+<td>Q</td>
+<td><font class="morse">--·-</font></td>
+<td>R</td>
+<td><font class="morse">·-·</font></td>
+</tr>
+<tr>
+<td>S</td>
+<td><font class="morse">···</font></td>
+<td>T</td>
+<td><font class="morse">-</font></td>
+<td>U</td>
+<td><font class="morse">··-</font></td>
+<td>V</td>
+<td><font class="morse">···-</font></td>
+<td>W</td>
+<td><font class="morse">·--</font></td>
+<td>X</td>
+<td><font class="morse">-··-</font></td>
+</tr>
+<tr>
+<td>Y</td>
+<td><font class="morse">-·--</font></td>
+<td>Z</td>
+<td><font class="morse">--··</font></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>长码</th>
+<th>短码</th>
+<th>字符</th>
+<th>长码</th>
+<th>短码</th>
+<th>字符</th>
+<th>长码</th>
+<th>短码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><font class="morse">·----</font></td>
+<td><font class="morse">·-</font></td>
+<td>2</td>
+<td><font class="morse">··---</font></td>
+<td><font class="morse">··-</font></td>
+<td>3</td>
+<td><font class="morse">···--</font></td>
+<td><font class="morse">···--</font></td>
+</tr>
+<tr>
+<td>4</td>
+<td><font class="morse">····-</font></td>
+<td><font class="morse">····-</font></td>
+<td>5</td>
+<td><font class="morse">·····</font></td>
+<td><font class="morse">·····</font></td>
+<td>6</td>
+<td><font class="morse">-····</font></td>
+<td><font class="morse">-····</font></td>
+</tr>
+<tr>
+<td>7</td>
+<td><font class="morse">--···</font></td>
+<td><font class="morse">--···</font></td>
+<td>8</td>
+<td><font class="morse">---··</font></td>
+<td><font class="morse">-··</font></td>
+<td>9</td>
+<td><font class="morse">----·</font></td>
+<td><font class="morse">-·</font></td>
+</tr>
+<tr>
+<td>0</td>
+<td><font class="morse">-----</font></td>
+<td><font class="morse">-</font></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>摩斯电码<strong>极其</strong>常见，凡是能按照“点线”或“长短”分成两类的（甚至任何能分成两类的、能看成二进制的）线索都可能是摩斯电码。</p>
+</li>
+<li><p>博多电码 Baudot code</p>
+</li>
+<li><p>北约音标字母 NATO phonetic alphabet</p>
+</li>
+<li><p>任何有序集合……</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>多表替换<ul>
+<li><p>维吉尼亚<br>说到需要密钥的加密方式，首先想到的就是维吉尼亚</p>
+</li>
+<li><p>棋盘&#x2F;方阵<br>所有利用这个方阵的密码都被放到这里了<table border="1" class="padding"><tr><td> </td><td>1&#x2F;A</td><td>2&#x2F;D</td><td>3&#x2F;F</td><td>4&#x2F;G</td><td>5&#x2F;X</td></tr><tr><td>1&#x2F;A</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td></tr><tr><td>2&#x2F;D</td><td>F</td><td>G</td><td>H</td><td>I&#x2F;J</td><td>K</td></tr> <tr><td>3&#x2F;F</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td></tr><tr><td>4&#x2F;G</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td></tr><tr><td>5&#x2F;X</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr></table></p>
+<ul>
+<li>棋盘密码 Polybius</li>
+<li>ADFGX密码</li>
+<li>四方密码</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>计算</p>
+<ul>
+<li>与、或、非、异或<br>不仅限于数字</li>
+<li>集合的交集、并集、差集</li>
+</ul>
+</li>
+</ul>
+<p>完善中<br>更多密码介绍：<br><a target="_blank" rel="noopener" href="https://cryptowikis.com/">https://cryptowikis.com</a><br><a target="_blank" rel="noopener" href="http://practicalcryptography.com/">http://practicalcryptography.com</a></p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2022/06/05/encode/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2022/06/05/logic_puzzle/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+  </body>
+</html>

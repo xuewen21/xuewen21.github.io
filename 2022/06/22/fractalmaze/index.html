@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="xuewen">
+
+
+
+
+
+
+
+<title>分形迷宫（fractal maze） | 胡纹乱语</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/frame.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="胡纹乱语" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            首页
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">About</a>
+              </li> 
+                   
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                分形迷宫（fractal maze）
+            
+            
+        </div>
+        <span class="post-date">
+            6月 22, 2022
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>分形迷宫是一种包含自身副本的迷宫。<br>这种迷宫中会包含一些房间，房间内部的构造和整个迷宫一致。</p>
+<p><a target="_blank" rel="noopener" href="http://www.matrix67.com/blog/archives/74">大开眼界：世上最无敌的迷宫当数“分形迷宫” | Matrix67: The Aha Moments</a>。<br>语言描述难以理解的话，可以看看这个视频 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Rb411k7UX">【辣鸡游戏#3】分形迷宫-有无数个”起点“和”终点“也很难通关！</a>。</p>
+<p>几个分形迷宫：  </p>
+<img src="/2022/06/22/fractalmaze/e93c2f90-f1d0-11ec-b0f0-bb639734518f.jpeg" class="" title="https:&#x2F;&#x2F;www.mathpuzzle.com&#x2F;18Nov2003.html">
+
+<br/>
+
+<img src="/2022/06/22/fractalmaze/10ec98d0-f1d2-11ec-b0f0-bb639734518f.jpeg" class="" title="http:&#x2F;&#x2F;skepticsplay.blogspot.com&#x2F;2010&#x2F;10&#x2F;fractal-maze.html">  
+<p>1和2没有实际作用，从start到finish即可。</p>
+<img src="/2022/06/22/fractalmaze/beb19ce0-f1d2-11ec-b0f0-bb639734518f.jpeg" class="" title="https:&#x2F;&#x2F;freethoughtblogs.com&#x2F;atrivialknot&#x2F;2020&#x2F;02&#x2F;19&#x2F;fractal-maze&#x2F;">
+
+<br/>
+
+<img src="/2022/06/22/fractalmaze/20b4ee30-f1d1-11ec-b0f0-bb639734518f.gif" class="" title="https:&#x2F;&#x2F;www.mathpuzzle.com&#x2F;18Nov2003.html">
+
+<p>Matrix67制作的可在线游玩的分形迷宫： <a target="_blank" rel="noopener" href="https://matrix67.itch.io/i-need-to-go-deeper">I Need To Go Deeper</a>，比较简单。</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2022/06/24/puzzlegames/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2022/06/09/cipher/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+  </body>
+</html>
