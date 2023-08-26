@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古典密码</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+</head>
+<body>
+    <h3>单表替换密码</h3>
+    <p class="detail">按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的，如下。</p>
+    <ul>
+        <li>
+            Caesar 凯撒密码
+            <p class="detail">将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。</p>
+        </li>
+        <li>
+            ROT13
+            <p class="detail">密钥为13的凯撒密码。</p>
+        </li>
+        <li>
+            Atbash
+            <p class="detail">所有 A 都替换为 Z，所有 B 都替换为 Y，依此类推。</p>
+        </li>
+        <li>
+            Affine Cipher 仿射密码
+            <p class="detail">
+                字母转编号，A=0、B=1……<br/>
+                加密：E(x) = (ax + b) mod 26<br/>
+                解谜：D(x) = (x - b)/a mod 26<br/>
+                a、b为密钥，a和26互质
+            </p>
+        </li>
+    </ul>
+
+    <h3>移位密码</h3>
+    <p class="detail">将明文中字母重新排序形成密文。</p>
+    <ul>
+        <li>
+            栅栏
+            <p class="detail">将明文分成N个一组，再将每组的第1、2、3...个字连起来，形成密文。</p>
+        </li>
+    </ul>
+</body>
+</html>

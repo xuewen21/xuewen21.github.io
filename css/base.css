@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 5vw;
+}
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+body {
+    padding: 1em;
+}
+
+h3 {
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+li {
+    list-style: none;
+    line-height: 1.4;
+    margin-block-start: .4em;
+}
+
+.detail {
+    font-size: .8em;
+    line-height: 1.2;
+    margin-block-start: .1em;
+    margin-block-end: .1em;
+    margin-inline-start: 1em;
+}
