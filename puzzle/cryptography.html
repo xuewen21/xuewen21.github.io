@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>古典密码</title>
     <link rel="stylesheet" href="../css/base.css"/>
+    <style>
+        #semaphore_table {
+            font-size: .5em;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        #semaphore_table img, #semaphore_table object {
+            width: 6em;
+            height: 5em;
+        }
+        #semaphore_table td {
+            text-align: center;
+            vertical-align: top;
+            border: 1px var(--main-color) solid;
+            padding: 3px 1px;
+        }
+    </style>
 </head>
 <body>
     <h3>单表替换密码</h3>
@@ -34,7 +51,92 @@
         <li>
             旗语
             <p class="detail">
-                <img src="../img/semaphore.png" alt="旗语" style="max-width:600px;cursor:pointer;" onclick="location.href='../img/semaphore.png'"/>
+                <table id="semaphore_table">
+                    <tr>
+                        <td><object data="../img/semaphore/Semaphore_Alpha.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Bravo.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Charlie.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Delta.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Echo.html"></object></td>
+                    </tr>
+                    <tr>
+                        <td>A / 1</td>
+                        <td>B / 2</td>
+                        <td>C / 3<br/>确认 / 正确</td>
+                        <td>D / 4</td>
+                        <td>E / 5<br/>错误(连打8次)</td>
+                    </tr>
+                    <tr>
+                        <td><object data="../img/semaphore/Semaphore_Foxtrot.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Golf.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Hotel.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_India.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Juliet.html"></object></td>
+                    </tr>
+                    <tr>
+                        <td>F / 6</td>
+                        <td>G / 7</td>
+                        <td>H / 8</td>
+                        <td>I / 9</td>
+                        <td>J<br/>字母记号</td>
+                    </tr>
+                    <tr>
+                        <td><object data="../img/semaphore/Semaphore_Kilo.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Lima.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Mike.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_November.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Oscar.html"></object></td>
+                    </tr>
+                    <tr>
+                        <td>K / 0</td>
+                        <td>L</td>
+                        <td>M</td>
+                        <td>N</td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <td><object data="../img/semaphore/Semaphore_Papa.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Quebec.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Romeo.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Sierra.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Tango.html"></object></td>
+                    </tr>
+                    <tr>
+                        <td>P</td>
+                        <td>Q</td>
+                        <td>R</td>
+                        <td>S</td>
+                        <td>T</td>
+                    </tr>
+                    <tr>
+                        <td><object data="../img/semaphore/Semaphore_Uniform.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Victor.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Whiskey.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_X-ray.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Yankee.html"></object></td>
+                    </tr>
+                    <tr>
+                        <td>U</td>
+                        <td>V</td>
+                        <td>W</td>
+                        <td>X</td>
+                        <td>Y</td>
+                    </tr>
+                    <tr>
+                        <td><object data="../img/semaphore/Semaphore_Zulu.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Ready.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Numeric.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Error.html"></object></td>
+                        <td><object data="../img/semaphore/Semaphore_Cancel.html"></object></td>
+                    </tr>
+                    <tr>
+                        <td>Z</td>
+                        <td>待机 / 空格</td>
+                        <td>数字记号(#)</td>
+                        <td>错误 / 注意</td>
+                        <td>取消 / 废除 /<br/>忽略以前的信号</td>
+                    </tr>
+                </table>
             </p>
         </li>
     </ul>
@@ -61,8 +163,7 @@
     E = aabaa    N = abbaa    W = babaa
     F = aabab    O = abbab    X = babab
     G = aabba    P = abbba    Y = babba
-    H = aabbb    Q = abbbb    Z = babbb
-    </pre>
+    H = aabbb    Q = abbbb    Z = babbb</pre>
             </p>
         </li>
     </ul>

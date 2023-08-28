@@ -1,10 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+@import "root.css";
 
 body {
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
 @media screen and (min-width: 1024px) {
     body {
@@ -14,7 +11,7 @@ body {
 
 body {
     background: white;
-    color: #202124;
+    color: var(--main-color);
 }
 a {
     color: rgb(0, 0, 238);
@@ -26,7 +23,7 @@ a:visited {
 @media (prefers-color-scheme: dark) {
     body {
         background: rgb(32, 33, 36);
-        color: #bdc1c6;
+        color: var(--main-color);
     }
     a {
         color: rgb(127, 179, 197);
