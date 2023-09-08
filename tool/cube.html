@@ -6,7 +6,7 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>魔方</title>
-	<link rel="stylesheet" href="../css/base.css"/>
+	<link rel="stylesheet" href="../static/css/base.css"/>
 	<style>
 		#cube {width: 500px; height: 500px;}
 		#control td {border: 1px solid;}
@@ -130,7 +130,7 @@
 			</tr>
 		</table>
 	</div>
-	<div>以下功能还在施工中</div>
+	<div>以下功能，目前来看还不可用</div>
 	<div id="texture-box">
 		<div id="top" class="texture"></div>
 		<div id="middle">
@@ -148,8 +148,9 @@
 	<script src="/static/js/three/jq.cube.js"></script>
 	<script src="/static/drawingboard/drawingboard.js"></script>
 	<script>
-		var cube;
-		var config = {
+		let cubeBox = $("#cube");
+		let cube;
+		let config = {
 			camera: {
 				x: 120,
 				y: 120,
@@ -158,7 +159,7 @@
 		};
 
 		function start() {
-			cube = $("#cube").html('').cube(config);
+			cube = cubeBox.html('').cube(config);
 		}
 		// 转动魔方
 		function execute(moves) {
@@ -202,12 +203,12 @@
 		var baseStrTop = canvas.toDataURL("image/png");
 
 		start();
-		var myBoardTop = new DrawingBoard.Board('top', {enlargeYourContainer:true, background: baseStrTop});
-		var myBoardLeft = new DrawingBoard.Board('left', {enlargeYourContainer:true});
-		var myBoardFront = new DrawingBoard.Board('front', {enlargeYourContainer:true});
-		var myBoardRight = new DrawingBoard.Board('right', {enlargeYourContainer:true});
-		var myBoardBack = new DrawingBoard.Board('back', {enlargeYourContainer:true});
-		var myBoardBottom = new DrawingBoard.Board('bottom', {enlargeYourContainer:true});
+		let myBoardTop = new DrawingBoard.Board('top', {enlargeYourContainer:true, background: baseStrTop});
+		let myBoardLeft = new DrawingBoard.Board('left', {enlargeYourContainer:true});
+		let myBoardFront = new DrawingBoard.Board('front', {enlargeYourContainer:true});
+		let myBoardRight = new DrawingBoard.Board('right', {enlargeYourContainer:true});
+		let myBoardBack = new DrawingBoard.Board('back', {enlargeYourContainer:true});
+		let myBoardBottom = new DrawingBoard.Board('bottom', {enlargeYourContainer:true});
 		let ml = $('#left').width();
 		$('#top,#bottom').css('margin-left', ml);
 
@@ -221,7 +222,8 @@
 				0x00ff00, //back
 				0x000000 //cube color
 			];
-			cube = $("#cube").html('').cube(config);
+			cubeBox.reset();
+			cube = cubeBox.html('').cube(config);
 		}
 	</script>
 </body>
