@@ -22,7 +22,7 @@ body {
 }
 
 body {
-    max-width: max(90vw, 1200px);
+    max-width: min(90vw, 1000px);
     padding: 1em;
     line-height: 1.4em;
 }
@@ -34,6 +34,9 @@ li {
     list-style: none;
     line-height: 1.4;
     margin-block-start: .4em;
+}
+.sparse li {
+    margin-block-end: .8em;
 }
 a {
     color: var(--main-color);
@@ -93,4 +96,9 @@ button:active {
     margin-block-start: .1em;
     margin-block-end: .1em;
     margin-inline-start: 1em;
+}
+.sparse .detail {
+    line-height: 1.4;
+    margin-block-start: .2em;
+    margin-block-end: .2em;
 }
