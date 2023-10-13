@@ -38,6 +38,10 @@ li {
 .sparse li {
     margin-block-end: .8em;
 }
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
 a {
     color: var(--main-color);
 }
@@ -80,6 +84,9 @@ button:active {
 
 .mt-5 {
     margin-top: 0.5em;
+}
+.mt-10 {
+    margin-top: 1em;
 }
 .m-5 {
     margin: 0.5em;
