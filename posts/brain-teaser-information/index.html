@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>方案 | 简陋的网站</title>
+
+      <link rel="stylesheet" href="/css/root.min.ad846eefe3bfa50136b0b9086dd81c865a443ba6b25f996b5ebecffcadecfef6.css" integrity="sha256-rYRu7&#43;O/pQE2sLkIbdgchlpEO6ayX5lrXr7P/K3s/vY=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.min.7f823e626d3b46d5690bed5e696f5d5660e2c62dbcabeb6e71966777eb71341f.css" integrity="sha256-f4I&#43;Ym07RtVpC&#43;1eaW9dVmDixi28q&#43;tucZZnd&#43;txNB8=" crossorigin="anonymous">
+
+
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>简陋的网站</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">首页</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">发布</a>
+    </li>
+    <li>
+      <a href="/tags/">标签</a>
+    </li>
+    </ul>
+  </nav>
+
+
+<div class="breadcrumb">
+    
+    
+    
+<a href="https://example.org/">首页</a>  >
+
+<a href="https://example.org/posts/">发布</a>  >
+
+<a href="https://example.org/posts/brain-teaser-information/">方案</a> 
+</div> 
+
+  </header>
+  <main>
+    
+  <h1>方案</h1>
+
+  
+  
+  <time datetime="2023-01-02T00:00:00&#43;08:00">January 2, 2023</time>
+
+  <div id="content">
+    <style>
+table{
+    border-collapse: separate;
+    border-spacing: 1em 0.5em;
+}
+</style>
+<ul>
+<li>
+<p>有1000个一模一样的瓶子，其中有999瓶是普通的水，有一瓶是毒药。任何喝下毒药的生物都会在一星期之后死亡。现在，你只有10只小白鼠和一星期的时间，如何检验出哪个瓶子里有毒药？</p>
+  <details class="detail">
+  <summary>解答</summary>
+<p>只利用10只小白鼠做实验，一个可行的想法是给每只小白鼠注射若干瓶中的液体，如果我们能巧妙的规划每个小白鼠注射哪几瓶的液体，那么就可以根据小白鼠的死亡情况推出哪瓶液体有毒。<br>
+于是这个问题变成一个数学问题。<br>
+我们先来看看这10个小白鼠一共能表达多少种不同的结果。一周后，每个小白鼠只有两种情况，生存或死亡，所以10个小白鼠一共有2<sup>10</sup>=1024种情况。而1000瓶液体中只有一瓶有毒，只有1000种情况。所以10个小白鼠足够用来表达所有情况。<br>
+我们将小白鼠的死亡情况和哪瓶是毒药的情况一一对应，就能得到一个可行的注射方案。</p>
+  <table>
+      <tr><td>死亡情况</td><td>哪瓶是毒药的情况</td><td>注射方案</td></tr>
+      <tr><td>1号小白鼠死亡</td><td>1号瓶有毒</td><td>1号瓶注射给1号小白鼠</td></tr>
+      <tr><td>2号小白鼠死亡</td><td>2号瓶有毒</td><td>2号瓶注射给2号小白鼠</td></tr>
+      <tr><td>3号小白鼠死亡</td><td>3号瓶有毒</td><td>3号瓶注射给3号小白鼠</td></tr>
+      <tr><td>4号小白鼠死亡</td><td>4号瓶有毒</td><td>4号瓶注射给4号小白鼠</td></tr>
+      <tr><td>5号小白鼠死亡</td><td>5号瓶有毒</td><td>5号瓶注射给5号小白鼠</td></tr>
+      <tr><td>6号小白鼠死亡</td><td>6号瓶有毒</td><td>6号瓶注射给6号小白鼠</td></tr>
+      <tr><td>7号小白鼠死亡</td><td>7号瓶有毒</td><td>7号瓶注射给7号小白鼠</td></tr>
+      <tr><td>8号小白鼠死亡</td><td>8号瓶有毒</td><td>8号瓶注射给8号小白鼠</td></tr>
+      <tr><td>9号小白鼠死亡</td><td>9号瓶有毒</td><td>9号瓶注射给9号小白鼠</td></tr>
+      <tr><td>10号小白鼠死亡</td><td>10号瓶有毒</td><td>10号瓶注射给10号小白鼠</td></tr>
+      <tr><td>1、2号小白鼠死亡</td><td>11号瓶有毒</td><td>11号瓶注射给1、2号小白鼠</td></tr>
+      <tr><td>1、3号小白鼠死亡</td><td>12号瓶有毒</td><td>12号瓶注射给1、3号小白鼠</td></tr>
+      <tr><td>……</td></tr>
+  </table>
+<p>虽然有些麻烦，但终究能得到一个可行方案。当然，利用二进制的一些性质，我们也有办法让它简单一些。<br>
+将每个瓶子的编号转换成二进制，在前面补0直到其拥有10位，将这10位和10个小白鼠对应，0代表不注射，1代表注射。<br>
+比如编号400，转为二进制0110010000，这表示给2、3、6号小白鼠注射第400号瓶中的液体。<br>
+一周后，根据小白鼠死亡情况写出二进制，在转回十进制便是有毒的瓶子的编号。</p>
+  </details>
+</li>
+<li>
+<p>12个外观一致的小球，其中11个质量一致，1个质量不同，用一个天平，如何只称3次找到这个小球？</p>
+</li>
+</ul>
+
+  </div>
+  
+  <div class="tags">
+    <div>标签:</div>
+    <ul>
+        <li><a href="/tags/%E8%A7%A3%E8%B0%9C/">解谜</a></li>
+        <li><a href="/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/">智力题</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2023. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

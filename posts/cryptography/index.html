@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>古典密码 | 简陋的网站</title>
+
+      <link rel="stylesheet" href="/css/root.min.ad846eefe3bfa50136b0b9086dd81c865a443ba6b25f996b5ebecffcadecfef6.css" integrity="sha256-rYRu7&#43;O/pQE2sLkIbdgchlpEO6ayX5lrXr7P/K3s/vY=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.min.4acf32c4e5d80e4c24858fb021e592840d26a04173811eeb54bdf0f1953a37b0.css" integrity="sha256-Ss8yxOXYDkwkhY&#43;wIeWShA0moEFzgR7rVL3w8ZU6N7A=" crossorigin="anonymous">
+
+
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>简陋的网站</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">首页</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">历史</a>
+    </li>
+    <li>
+      <a href="/tags/">标签</a>
+    </li>
+    </ul>
+  </nav>
+
+
+<div class="breadcrumb">
+    
+    
+    
+<a href="https://example.org/">首页</a>  >
+
+<a href="https://example.org/posts/">历史</a>  >
+
+<a href="https://example.org/posts/cryptography/">古典密码</a> 
+</div> 
+
+  </header>
+  <main>
+    
+  <h1>古典密码</h1>
+
+  
+  
+  <time datetime="2023-01-01T00:00:00&#43;08:00">January 1, 2023</time>
+
+  <div id="content">
+    <style>
+#semaphore_table {
+    font-size: .5rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#semaphore_table img, #semaphore_table object {
+    width: 6em;
+    height: 5em;
+}
+#semaphore_table td {
+    text-align: center;
+    vertical-align: top;
+    border: 1px var(--main-color) solid;
+    padding: 3px 1px;
+}
+
+.semaphore-item {
+    width: 4.8em;
+    height: 4.8em;
+    margin-bottom: 1em;
+}
+.semaphore-item object {
+    width: 4.8em;
+    height: 4em;
+}
+.semaphore-item .semaphore-text {
+    text-align: center;
+    font-size: 0.5em;
+}
+</style>
+<h3 id="单表替换密码">单表替换密码</h3>
+<p>按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的，如下。</p>
+<ul>
+<li>
+<p>Caesar 凯撒密码</p>
+<p>将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。</p>
+</li>
+<li>
+<p>ROT13</p>
+<p>密钥为13的凯撒密码。</p>
+</li>
+<li>
+<p>Atbash</p>
+<p>所有 A 都替换为 Z，所有 B 都替换为 Y，依此类推。</p>
+</li>
+<li>
+<p>Affine Cipher 仿射密码</p>
+<p>字母转编号，A=0、B=1……<br>
+加密：E(x) = (ax + b) mod 26<br>
+解谜：D(x) = (x - b)/a mod 26<br>
+a、b为密钥，a和26互质</p>
+</li>
+<li>
+<p>旗语</p>
+<div class="detail" style="display: flex; flex-flow: row wrap; max-width: 50em;">
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Alpha.html"></object>
+        <div class="semaphore-text">A / 1</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Bravo.html"></object>
+        <div class="semaphore-text">B / 2</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Charlie.html"></object>
+        <div class="semaphore-text">C / 3<br/>确认 / 正确</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Delta.html"></object>
+        <div class="semaphore-text">D / 4</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Echo.html"></object>
+        <div class="semaphore-text">E / 5<br/>错误(连打8次)</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Foxtrot.html"></object>
+        <div class="semaphore-text">F / 6</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Golf.html"></object>
+        <div class="semaphore-text">G / 7</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Hotel.html"></object>
+        <div class="semaphore-text">H / 8</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_India.html"></object>
+        <div class="semaphore-text">I / 9</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Juliet.html"></object>
+        <div class="semaphore-text">J<br/>字母记号</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Kilo.html"></object>
+        <div class="semaphore-text">K / 0</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Lima.html"></object>
+        <div class="semaphore-text">L</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Mike.html"></object>
+        <div class="semaphore-text">M</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_November.html"></object>
+        <div class="semaphore-text">N</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Oscar.html"></object>
+        <div class="semaphore-text">O</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Papa.html"></object>
+        <div class="semaphore-text">P</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Quebec.html"></object>
+        <div class="semaphore-text">Q</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Romeo.html"></object>
+        <div class="semaphore-text">R</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Sierra.html"></object>
+        <div class="semaphore-text">S</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Tango.html"></object>
+        <div class="semaphore-text">T</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Uniform.html"></object>
+        <div class="semaphore-text">U</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Victor.html"></object>
+        <div class="semaphore-text">V</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Whiskey.html"></object>
+        <div class="semaphore-text">W</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_X-ray.html"></object>
+        <div class="semaphore-text">X</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Yankee.html"></object>
+        <div class="semaphore-text">Y</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Zulu.html"></object>
+        <div class="semaphore-text">Z</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Ready.html"></object>
+        <div class="semaphore-text">待机 / 空格</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Numeric.html"></object>
+        <div class="semaphore-text">数字记号(#)</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Error.html"></object>
+        <div class="semaphore-text">错误 / 注意</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Cancel.html"></object>
+        <div class="semaphore-text">取消 / 废除 /<br/>忽略以前的信号</div>
+    </div>
+</div>
+</li>
+</ul>
+<h3 id="移位密码">移位密码</h3>
+<p>将明文中字母重新排序形成密文。</p>
+<ul>
+<li>
+<p>Rail-fence Cipher 栅栏密码</p>
+<p>将明文分成N个一组，再将每组的第1、2、3&hellip;个字连起来，形成密文。</p>
+</li>
+</ul>
+<h3 id="其他">其他</h3>
+<ul>
+<li>Baconian Cipher 培根密码
+<pre tabindex="0"><code>A = aaaaa  I/J = abaaa    R = baaaa
+B = aaaab    K = abaab    S = baaab
+C = aaaba    L = ababa    T = baaba
+D = aaabb    M = ababb  U/V = baabb
+E = aabaa    N = abbaa    W = babaa
+F = aabab    O = abbab    X = babab
+G = aabba    P = abbba    Y = babba
+H = aabbb    Q = abbbb    Z = babbb
+</code></pre></li>
+</ul>
+
+  </div>
+  
+  <div class="tags">
+    <div>标签:</div>
+    <ul>
+        <li><a href="/tags/%E8%A7%A3%E8%B0%9C/">解谜</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2023. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>真话假话 | 简陋的网站</title>
+
+      <link rel="stylesheet" href="/css/root.min.ad846eefe3bfa50136b0b9086dd81c865a443ba6b25f996b5ebecffcadecfef6.css" integrity="sha256-rYRu7&#43;O/pQE2sLkIbdgchlpEO6ayX5lrXr7P/K3s/vY=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.min.7f823e626d3b46d5690bed5e696f5d5660e2c62dbcabeb6e71966777eb71341f.css" integrity="sha256-f4I&#43;Ym07RtVpC&#43;1eaW9dVmDixi28q&#43;tucZZnd&#43;txNB8=" crossorigin="anonymous">
+
+
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>简陋的网站</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">首页</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">发布</a>
+    </li>
+    <li>
+      <a href="/tags/">标签</a>
+    </li>
+    </ul>
+  </nav>
+
+
+<div class="breadcrumb">
+    
+    
+    
+<a href="https://example.org/">首页</a>  >
+
+<a href="https://example.org/posts/">发布</a>  >
+
+<a href="https://example.org/posts/brain-teaser-true-false/">真话假话</a> 
+</div> 
+
+  </header>
+  <main>
+    
+  <h1>真话假话</h1>
+
+  
+  
+  <time datetime="2023-01-02T00:00:00&#43;08:00">January 2, 2023</time>
+
+  <div id="content">
+    <h3 id="多少人">多少人</h3>
+<ul>
+<li>
+<p>一场聚会中有100个人参加，其中有一部分人只说真话，剩下的只说假话。现在你向每个提问：“这个聚会中有几个只说假话的人？”。第1个人回答1，第2个人回答2，……，第100个人回答100。只说真话和只说假话的人各有多少？</p>
+<details class="detail">
+<summary>解答</summary>
+<p>显然，所有只说真话的人的回答应该是一致的，而题目中每个人的回答都不同，说明只说真话的人不超过1个。<br>
+尝试假设没有只说真话的人，即100个人全是只说假话的人，那么回答100的那个人说了真话，与假设矛盾。<br>
+所以有1个只说真话的人，99个只说假话的人。</p>
+</details>
+</li>
+<li>
+<p>一场聚会中有100个人参加，其中有一部分人只说真话，剩下的只说假话。一部分人相互握了手。现在你向每个人提问：“你和多少说真话的人握了手？”。第1个人回答0，第2个人回答1，……，第100个人回答99。只说真话和只说假话的人各有多少？</p>
+<details class="detail">
+<summary>解答</summary>
+<p>要注意到这道题并不是每两个人之间都握手了，这是和上一题最大的不同。<br>
+我们尝试从不同角度入手解这道题。<br>
+（一）<br>
+假设没有只说真话的人，那么所有人都不可能和只说真话的人握过手，第一个人说的真话，矛盾。<br>
+假设有1个只说真话的人，显然这个人是第一个人，我们可以构建出一种可能的情况：第一个人没有和任何一个人握过手，于是其他人说的都是假话，符合题目条件。<br>
+假设有2个只说真话的人，显然这两个人的回答应该是一样的，这和题目条件矛盾。<br>
+继续讨论下去，发现至少会有两个只说真话的人的回答应该是一样的。所以全部和题目条件矛盾。<br>
+“一些人相互握手，一定会有至少两个人握手次数相同”的证明：设总人数为n。于是每个人的握手次数只可能是0至n-1中的某个数，一共n种情况。然而握手0次和握手n-1次的人不可能同时出现，所以这n个人中每人的握手次数只有n-1个可能情况。根据鸽笼原理，必然有两个人握手次数相同。<br>
+经过上述讨论，排除掉不可能的情况，剩下的唯一的有可能的情况就是答案：有1个说真话的人，99个说假话的人。<br>
+（二）<br>
+先看第100个人，如果他说的是真话，这意味着第100个人和其他所有人都握手了，并且其他的人也都是只说真话的人。而第一个人说握手0次，这显然相互矛盾。所有第100个人说的假话。<br>
+再看第99个人，如果他说的是真话，由于已经知道第100个人说的假话，我们推出第99个人和第1个至98个人都握手了，并且第1个至98个人也都是只说真话的人。同上，和第一个人说的矛盾。<br>
+以此类推，第2个至第100个人说的都是假话。<br>
+对于第一个人，显然他说的是真话。所以最终答案是有1个说真话的人，99个说假话的人。</p>
+</details></li>
+</ul>
+
+  </div>
+  
+  <div class="tags">
+    <div>标签:</div>
+    <ul>
+        <li><a href="/tags/%E8%A7%A3%E8%B0%9C/">解谜</a></li>
+        <li><a href="/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/">智力题</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2023. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>
