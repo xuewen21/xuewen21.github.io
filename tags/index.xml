@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>标签 on 简陋的网站</title>
-    <link>https://example.org/tags/</link>
+    <link>https://xuewen21.github.io/tags/</link>
     <description>Recent content in 标签 on 简陋的网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 08:00:00 -0700</lastBuildDate><atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 08:00:00 -0700</lastBuildDate><atom:link href="https://xuewen21.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>有趣的</title>
-      <link>https://example.org/tags/%E6%9C%89%E8%B6%A3%E7%9A%84/</link>
+      <link>https://xuewen21.github.io/tags/%E6%9C%89%E8%B6%A3%E7%9A%84/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://example.org/tags/%E6%9C%89%E8%B6%A3%E7%9A%84/</guid>
+      <guid>https://xuewen21.github.io/tags/%E6%9C%89%E8%B6%A3%E7%9A%84/</guid>
       <description></description>
     </item>
     
     <item>
       <title>智力题</title>
-      <link>https://example.org/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/</link>
+      <link>https://xuewen21.github.io/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://example.org/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/</guid>
+      <guid>https://xuewen21.github.io/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>解谜</title>
-      <link>https://example.org/tags/%E8%A7%A3%E8%B0%9C/</link>
+      <link>https://xuewen21.github.io/tags/%E8%A7%A3%E8%B0%9C/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://example.org/tags/%E8%A7%A3%E8%B0%9C/</guid>
+      <guid>https://xuewen21.github.io/tags/%E8%A7%A3%E8%B0%9C/</guid>
       <description></description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>解谜基础 on 简陋的网站</title>
-    <link>https://example.org/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/</link>
+    <link>https://xuewen21.github.io/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/</link>
     <description>Recent content in 解谜基础 on 简陋的网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://example.org/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://xuewen21.github.io/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>古典密码</title>
-      <link>https://example.org/posts/puzzle-cryptography/</link>
+      <link>https://xuewen21.github.io/posts/puzzle-cryptography/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://example.org/posts/puzzle-cryptography/</guid>
+      <guid>https://xuewen21.github.io/posts/puzzle-cryptography/</guid>
       <description>单表替换密码 按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的，如下。
 Caesar 凯撒密码
 将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。
@@ -31,10 +31,10 @@ A / 1 B / 2 C / 3确认 / 正确 D / 4 E / 5错误(连打8次) F / 6 G / 7 H / 8
     
     <item>
       <title>常见谜题元素</title>
-      <link>https://example.org/posts/puzzle-classic-puzzle/</link>
+      <link>https://xuewen21.github.io/posts/puzzle-classic-puzzle/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://example.org/posts/puzzle-classic-puzzle/</guid>
+      <guid>https://xuewen21.github.io/posts/puzzle-classic-puzzle/</guid>
       <description>常见谜题元素 灯谜 灯谜一般由谜面、谜目和谜底组成。
 灯谜往往利用汉语字词多意的特点，不把谜面作原意解释。
 对于出灯谜者，需要注意：谜面成文；谜底若多于一个字，也要成文；谜底的字不能出现在谜面中等。
@@ -56,10 +56,10 @@ A / 1 B / 2 C / 3确认 / 正确 D / 4 E / 5错误(连打8次) F / 6 G / 7 H / 8
     
     <item>
       <title>编码</title>
-      <link>https://example.org/posts/puzzle-encode/</link>
+      <link>https://xuewen21.github.io/posts/puzzle-encode/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://example.org/posts/puzzle-encode/</guid>
+      <guid>https://xuewen21.github.io/posts/puzzle-encode/</guid>
       <description>二进制
 Base 家族
 特点：由“!+”构成。
@@ -70,10 +70,10 @@ BrainFuck
     
     <item>
       <title>解谜工具</title>
-      <link>https://example.org/posts/puzzle-tool/</link>
+      <link>https://xuewen21.github.io/posts/puzzle-tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://example.org/posts/puzzle-tool/</guid>
+      <guid>https://xuewen21.github.io/posts/puzzle-tool/</guid>
       <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic Qat 编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq </description>
     </item>
     
