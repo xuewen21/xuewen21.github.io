@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>发布 on 简陋的网站</title>
-    <link>https://xuewen21.github.io/posts/</link>
+    <link>https://blog.xuewen21.cc/posts/</link>
     <description>Recent content in 发布 on 简陋的网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 08:00:00 -0700</lastBuildDate><atom:link href="https://xuewen21.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 08:00:00 -0700</lastBuildDate><atom:link href="https://blog.xuewen21.cc/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vanishing puzzle</title>
-      <link>https://xuewen21.github.io/posts/creative-vanishing-puzzle/</link>
+      <link>https://blog.xuewen21.cc/posts/creative-vanishing-puzzle/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/creative-vanishing-puzzle/</guid>
+      <guid>https://blog.xuewen21.cc/posts/creative-vanishing-puzzle/</guid>
       <description>Vanishing puzzle 1880 年，Wemple &amp; Company 在纽约销售了一张名为“神奇鸡蛋拼图”的广告卡。不同的拼法会导致不同的鸡蛋个数。 1981 年，Donald E. Knuth 创作了一首诗 Disappearances。通过将右侧部分上下交换，诗的行数发生变化。 网上也流行过一个动图，重新拼接图片后，孩子的数量会变化。 这些现象看似神奇，但原理还是十分简单的，我们将画中的元素抽象成线条，可以更直观的感受到。 下图通过将上半部分向右平移，使线条数量由三个变成四个。明显，这个过程中每条线都变短了。 回到鸡蛋拼图，其实能看到，在第三张图里，每个鸡蛋都是残缺的。 数学家 Sam Loyd 也创造过一系列圆形的 Vanishing puzzle，其原理和以上的图是类似的。 </description>
     </item>
     
     <item>
       <title>歪像（Anamorphosis）</title>
-      <link>https://xuewen21.github.io/posts/creative-anamorphosis/</link>
+      <link>https://blog.xuewen21.cc/posts/creative-anamorphosis/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/creative-anamorphosis/</guid>
+      <guid>https://blog.xuewen21.cc/posts/creative-anamorphosis/</guid>
       <description>歪像（Anamorphosis） 是一种扭曲的投影，需要观看者占据特定的有利位置，使用特殊的设备，或同时满足两者才能够观看到可辨认的影像。 ——维基百科
 大使们（The Ambassadors），1533， 小荷尔拜因（Hans Holbein the Younger）。
 下载大图
@@ -45,19 +45,19 @@
     
     <item>
       <title>神奇的数列</title>
-      <link>https://xuewen21.github.io/posts/creative-nob/</link>
+      <link>https://blog.xuewen21.cc/posts/creative-nob/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/creative-nob/</guid>
+      <guid>https://blog.xuewen21.cc/posts/creative-nob/</guid>
       <description> 这个数列由芦ヶ原 伸之发现。 994539362821 ↘↘↘↘↘↘ 72→27→18→21→?→13→7 乍一看规律是两数相减，除了最后的7不符合条件。 规律：9+9+7+2=27；4+5+2+7=18…… </description>
     </item>
     
     <item>
       <title>黑白图片</title>
-      <link>https://xuewen21.github.io/posts/creative-black-white/</link>
+      <link>https://blog.xuewen21.cc/posts/creative-black-white/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/creative-black-white/</guid>
+      <guid>https://blog.xuewen21.cc/posts/creative-black-white/</guid>
       <description>网上的文章在解释格式塔心理学中的整体性（Emergence）时，经常使用这张图片。
 看图的人首先会认出一条斑点狗，而不是先认出它的各个身体部位。
 这里还有更多这类的图片，大家可以试一试能不能看出来。
@@ -67,10 +67,10 @@
     
     <item>
       <title>方案</title>
-      <link>https://xuewen21.github.io/posts/brain-teaser-information/</link>
+      <link>https://blog.xuewen21.cc/posts/brain-teaser-information/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/brain-teaser-information/</guid>
+      <guid>https://blog.xuewen21.cc/posts/brain-teaser-information/</guid>
       <description>有1000个一模一样的瓶子，其中有999瓶是普通的水，有一瓶是毒药。任何喝下毒药的生物都会在一星期之后死亡。现在，你只有10只小白鼠和一星期的时间，如何检验出哪个瓶子里有毒药？
 解答 只利用10只小白鼠做实验，一个可行的想法是给每只小白鼠注射若干瓶中的液体，如果我们能巧妙的规划每个小白鼠注射哪几瓶的液体，那么就可以根据小白鼠的死亡情况推出哪瓶液体有毒。
 于是这个问题变成一个数学问题。
@@ -85,10 +85,10 @@
     
     <item>
       <title>真话假话</title>
-      <link>https://xuewen21.github.io/posts/brain-teaser-true-false/</link>
+      <link>https://blog.xuewen21.cc/posts/brain-teaser-true-false/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/brain-teaser-true-false/</guid>
+      <guid>https://blog.xuewen21.cc/posts/brain-teaser-true-false/</guid>
       <description>多少人 一场聚会中有100个人参加，其中有一部分人只说真话，剩下的只说假话。现在你向每个提问：“这个聚会中有几个只说假话的人？”。第1个人回答1，第2个人回答2，……，第100个人回答100。只说真话和只说假话的人各有多少？
 解答 显然，所有只说真话的人的回答应该是一致的，而题目中每个人的回答都不同，说明只说真话的人不超过1个。
 尝试假设没有只说真话的人，即100个人全是只说假话的人，那么回答100的那个人说了真话，与假设矛盾。
@@ -112,10 +112,10 @@
     
     <item>
       <title>古典密码</title>
-      <link>https://xuewen21.github.io/posts/puzzle-cryptography/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle-cryptography/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/puzzle-cryptography/</guid>
+      <guid>https://blog.xuewen21.cc/posts/puzzle-cryptography/</guid>
       <description>单表替换密码 按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的，如下。
 Caesar 凯撒密码
 将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。
@@ -134,10 +134,10 @@ A / 1 B / 2 C / 3确认 / 正确 D / 4 E / 5错误(连打8次) F / 6 G / 7 H / 8
     
     <item>
       <title>常见谜题元素</title>
-      <link>https://xuewen21.github.io/posts/puzzle-classic-puzzle/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle-classic-puzzle/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/puzzle-classic-puzzle/</guid>
+      <guid>https://blog.xuewen21.cc/posts/puzzle-classic-puzzle/</guid>
       <description>常见谜题元素 灯谜 灯谜一般由谜面、谜目和谜底组成。
 灯谜往往利用汉语字词多意的特点，不把谜面作原意解释。
 对于出灯谜者，需要注意：谜面成文；谜底若多于一个字，也要成文；谜底的字不能出现在谜面中等。
@@ -159,10 +159,10 @@ A / 1 B / 2 C / 3确认 / 正确 D / 4 E / 5错误(连打8次) F / 6 G / 7 H / 8
     
     <item>
       <title>编码</title>
-      <link>https://xuewen21.github.io/posts/puzzle-encode/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle-encode/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/puzzle-encode/</guid>
+      <guid>https://blog.xuewen21.cc/posts/puzzle-encode/</guid>
       <description>二进制
 Base 家族
 特点：由“!+”构成。
@@ -173,10 +173,10 @@ BrainFuck
     
     <item>
       <title>解谜工具</title>
-      <link>https://xuewen21.github.io/posts/puzzle-tool/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle-tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://xuewen21.github.io/posts/puzzle-tool/</guid>
+      <guid>https://blog.xuewen21.cc/posts/puzzle-tool/</guid>
       <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic Qat 编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq </description>
     </item>
     
