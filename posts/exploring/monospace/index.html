@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>等宽字体 | 简陋的网站</title>
+
+  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+
+    <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>简陋的网站</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">首页</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">发布</a>
+    </li>
+    <li>
+      <a href="/tags/">标签</a>
+    </li>
+    </ul>
+  </nav>
+
+
+<div class="breadcrumb">
+    
+    
+    
+<a href="https://blog.xuewen21.cc/">首页</a>  >
+
+<a href="https://blog.xuewen21.cc/posts/">发布</a>  >
+
+<a href="https://blog.xuewen21.cc/posts/exploring/monospace/">等宽字体</a> 
+</div> 
+
+  </header>
+  <main>
+    
+  <h1>等宽字体</h1>
+
+  
+  
+  <time datetime="2023-11-25T00:00:00&#43;08:00">November 25, 2023</time>
+
+  <div id="content">
+    <p>编程时，有一款等宽字体可以让代码看起来更舒适。<br>
+英文等宽字体有不少，但是能和中文对齐的不多。<br>
+windows自带的宋体和黑体都是严格的中英文宽度2:1的字体，但没有对“0”、“O”等易混淆字形做区分，不适合编程。</p>
+<p>也有人尝试制作适合编程的中文等宽字体：</p>
+<ul>
+<li><a href="https://github.com/be5invis/Sarasa-Gothic" target="_blank" rel="noopener">Sarasa Gothic / 更纱黑体</a></li>
+<li><a href="http://wenq.org/wqy2/index.cgi?FontGuide#_4" target="_blank" rel="noopener">文泉驿等宽正黑</a></li>
+<li><a href="https://pan.baidu.com/s/1-w_i7jUMcnDDqWp5fcXcew" target="_blank" rel="noopener">XHei系列</a></li>
+<li><a href="https://github.com/milky-han/mhm" target="_blank" rel="noopener">Milky Han Mono / 星汉等宽</a></li>
+<li><a href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener">LXGW WenKai / 霞鹜文楷</a></li>
+</ul>
+<p>其中有些字体的英文是细长的或中文间隔大，看起来依旧不舒服。</p>
+<p>有些英文字体本身就是0.5的宽度，只要和合适的中文字体混合使用，也可以达到等宽效果：</p>
+<ul>
+<li>Ubuntu Mono</li>
+<li>Inconsolata</li>
+<li>Fixedsys</li>
+<li>monofur</li>
+<li>等等</li>
+</ul>
+<p>还有大量宽度为0.6的英文字体，那么如果有宽度为1.2的中文字体，就能相互配合达到等宽效果。<br>
+我们可以利用 fontCreator（付费）、fontForge 之类的软件调整中文字体的宽度。<br>
+这里用“等线”字体举例，使用 fontCreator。这个字体中中文的宽度是2048，那么只需要将它的单格宽度改为2048/1.2就可以了。只可惜这个式子不能整除。<br>
+于是，我们先在“工具”→“字形转换器”中将宽度调整为2045。<br>
+<img src="fontCreator01.png" alt="fontCreator01"><br>
+再在“字体”→“属性”中设置每格宽度为1705。<br>
+<img src="fontCreator02.png" alt="fontCreator02"><br>
+导出后得到尺寸为1.2格的字体。</p>
+<p>进一步，我们可以使用上述软件将两个字体融合。<br>
+例子待补充……</p>
+
+  </div>
+  
+  <div class="tags">
+    <div>标签:</div>
+    <ul>
+        <li><a href="/tags/%E6%8A%98%E8%85%BE/">折腾</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

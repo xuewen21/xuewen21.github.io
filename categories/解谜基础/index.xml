@@ -6,76 +6,56 @@
     <description>Recent content in 解谜基础 on 简陋的网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.xuewen21.cc/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://blog.xuewen21.cc/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>古典密码</title>
-      <link>https://blog.xuewen21.cc/posts/puzzle-cryptography/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle/cryptography/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://blog.xuewen21.cc/posts/puzzle-cryptography/</guid>
-      <description>单表替换密码 按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的，如下。
-Caesar 凯撒密码
-将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。
-ROT13
-密钥为13的凯撒密码。
-Atbash
-所有 A 都替换为 Z，所有 B 都替换为 Y，依此类推。
-Affine Cipher 仿射密码
-字母转编号，A=0、B=1……
-加密：E(x) = (ax + b) mod 26
-解谜：D(x) = (x - b)/a mod 26
-a、b为密钥，a和26互质
-旗语
-A / 1 B / 2 C / 3确认 / 正确 D / 4 E / 5错误(连打8次) F / 6 G / 7 H / 8 I / 9 J字母记号 K / 0 L M N O P Q R S T U V W X Y Z 待机 / 空格 数字记号(#) 错误 / 注意 取消 / 废除 /忽略以前的信号 移位密码 将明文中字母重新排序形成密文。</description>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/cryptography/</guid>
+      <description>单表替换密码 按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的，如下。&#xA;Caesar 凯撒密码&#xA;将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。&#xA;ROT13&#xA;密钥为13的凯撒密码。&#xA;Atbash&#xA;所有 A 都替换为 Z，所有 B 都替换为 Y，依此类推。&#xA;Affine Cipher 仿射密码&#xA;字母转编号，A=0、B=1……&#xA;加密：E(x) = (ax + b) mod 26&#xA;解谜：D(x) = (x - b)/a mod 26&#xA;a、b为密钥，a和26互质&#xA;旗语&#xA;A / 1&#xD;B / 2&#xD;C / 3确认 / 正确&#xD;D / 4&#xD;E / 5错误(连打8次)&#xD;F / 6&#xD;G / 7&#xD;H / 8&#xD;I / 9&#xD;J字母记号&#xD;K / 0&#xD;L&#xD;M&#xD;N&#xD;O&#xD;P&#xD;Q&#xD;R&#xD;S&#xD;T&#xD;U&#xD;V&#xD;W&#xD;X&#xD;Y&#xD;Z&#xD;待机 / 空格&#xD;数字记号(#)&#xD;错误 / 注意&#xD;取消 / 废除 /忽略以前的信号&#xD;移位密码 将明文中字母重新排序形成密文。</description>
     </item>
-    
     <item>
       <title>常见谜题元素</title>
-      <link>https://blog.xuewen21.cc/posts/puzzle-classic-puzzle/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle/classic-puzzle/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://blog.xuewen21.cc/posts/puzzle-classic-puzzle/</guid>
-      <description>常见谜题元素 灯谜 灯谜一般由谜面、谜目和谜底组成。
-灯谜往往利用汉语字词多意的特点，不把谜面作原意解释。
-对于出灯谜者，需要注意：谜面成文；谜底若多于一个字，也要成文；谜底的字不能出现在谜面中等。
-灯谜的构成方法大体有两种：离合和会意。
-离合：要将某些字进行拆散和拼装以形成谜底。谜面中存在作为部件的字和作为提示离合方式的字，且不能有多余的废字。例：半导体(打一字)——付。
-会意：就是按照谜面的意义猜出谜底。为了让灯谜更有意思，往往要按照不同的角度理解谜面或谜底。例：五十场婚礼（打一花卉）——百合。
-谜格丰富了灯谜的规则，也使灯谜更加复杂。由于谜格众多，这里不再赘述，请移步百度百科：谜格
-拼图 魔方 迷宫 找规律 推理题 纸笔谜题 桌游 纵横字谜 推箱子 据说推箱子最早叫“仓库番”，由今林宏行在1981年编写。推箱子规则简单却有着丰富的变化。
-至今，推箱子依旧不停的出现各种变种。3D推箱子 Stephen&amp;rsquo;s Sausage Roll。baba is you 中将编程思想融入推箱子。递归推箱子 Patrick&amp;rsquo;s Parabox 等等等。
-在线推箱子
-情景猜谜（海龟汤） 这是一种游戏，出题者先讲一个简短的故事，故意忽略掉一些重要信息而使得故事听起来十分离谱。猜题者通过不断向出题者提问（提问者只能回答：“是”、“否”、“没有关系”）尝试找出真相。
-情景猜谜又叫海龟汤，我觉得可能是因为这个非常经典的题目：一个人去餐馆点了一份海龟汤，喝完一口就哭了。
-于是，题目又叫汤面，答案又叫汤底。
-密室 记得我小时候在电脑上见过的最早的密室游戏还是用flash做出来的。当时有个叫深红房间的游戏，我玩到一半卡住了去找攻略，才知道有个旮旯非常难点到。现在我们已经能玩到很多密室类的游戏，比较有人气的有 the room 系列，绣湖系列等。
-网络迷踪（Geoguessr、图寻） 综合运用各种知识，找出照片的拍摄位置甚至时间。
-图寻
-通过这个网站给出的文档，我们知道，要想玩转网络迷踪，我们除了一些天文地理知识，最好还要掌握各国文字特征、交通情况、建筑风格，甚至镜头类型、街景车天线等知识。</description>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/classic-puzzle/</guid>
+      <description>常见谜题元素 灯谜 灯谜一般由谜面、谜目和谜底组成。&#xA;灯谜往往利用汉语字词多意的特点，不把谜面作原意解释。&#xA;对于出灯谜者，需要注意：谜面成文；谜底若多于一个字，也要成文；谜底的字不能出现在谜面中等。&#xA;灯谜的构成方法大体有两种：离合和会意。&#xA;离合：要将某些字进行拆散和拼装以形成谜底。谜面中存在作为部件的字和作为提示离合方式的字，且不能有多余的废字。例：半导体(打一字)——付。&#xA;会意：就是按照谜面的意义猜出谜底。为了让灯谜更有意思，往往要按照不同的角度理解谜面或谜底。例：五十场婚礼（打一花卉）——百合。&#xA;谜格丰富了灯谜的规则，也使灯谜更加复杂。由于谜格众多，这里不再赘述，请移步百度百科：谜格&#xA;拼图 魔方 迷宫 找规律 推理题 纸笔谜题 桌游 纵横字谜 推箱子 据说推箱子最早叫“仓库番”，由今林宏行在1981年编写。推箱子规则简单却有着丰富的变化。&#xA;至今，推箱子依旧不停的出现各种变种。3D推箱子 Stephen&amp;rsquo;s Sausage Roll。baba is you 中将编程思想融入推箱子。递归推箱子 Patrick&amp;rsquo;s Parabox 等等等。&#xA;在线推箱子&#xA;情景猜谜（海龟汤） 这是一种游戏，出题者先讲一个简短的故事，故意忽略掉一些重要信息而使得故事听起来十分离谱。猜题者通过不断向出题者提问（提问者只能回答：“是”、“否”、“没有关系”）尝试找出真相。&#xA;情景猜谜又叫海龟汤，我觉得可能是因为这个非常经典的题目：一个人去餐馆点了一份海龟汤，喝完一口就哭了。&#xA;于是，题目又叫汤面，答案又叫汤底。&#xA;密室 记得我小时候在电脑上见过的最早的密室游戏还是用flash做出来的。当时有个叫深红房间的游戏，我玩到一半卡住了去找攻略，才知道有个旮旯非常难点到。现在我们已经能玩到很多密室类的游戏，比较有人气的有 the room 系列，绣湖系列等。&#xA;网络迷踪（Geoguessr、图寻） 综合运用各种知识，找出照片的拍摄位置甚至时间。&#xA;图寻&#xA;通过这个网站给出的文档，我们知道，要想玩转网络迷踪，我们除了一些天文地理知识，最好还要掌握各国文字特征、交通情况、建筑风格，甚至镜头类型、街景车天线等知识。</description>
     </item>
-    
     <item>
       <title>编码</title>
-      <link>https://blog.xuewen21.cc/posts/puzzle-encode/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle/encode/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://blog.xuewen21.cc/posts/puzzle-encode/</guid>
-      <description>二进制
-Base 家族
-特点：由“!+”构成。
-JSFuck
-BrainFuck
-特点：由“&amp;gt;&amp;lt;+-.,[]”构成。</description>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/encode/</guid>
+      <description>二进制&#xA;25-pair color code&#xA;Base 家族&#xA;特点：由“!+”构成。&#xA;JSFuck&#xA;BrainFuck&#xA;特点：由“&amp;gt;&amp;lt;+-.,[]”构成。</description>
     </item>
-    
     <item>
       <title>解谜工具</title>
-      <link>https://blog.xuewen21.cc/posts/puzzle-tool/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle/tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://blog.xuewen21.cc/posts/puzzle-tool/</guid>
-      <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic Qat 编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq </description>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/tool/</guid>
+      <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic Qat 编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq：多种逻辑谜题求解器 </description>
     </item>
-    
+    <item>
+      <title>解谜思路</title>
+      <link>https://blog.xuewen21.cc/posts/puzzle/idea/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0900</pubDate>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/idea/</guid>
+      <description>以下内容可以作为发散思维的提示，但注意不要被它们反倒限制住了思维。&#xA;数字 除了编码，可以联想到数量、顺序、位置等。&#xA;二进制&#xA;可以向很多编码转换，比如摩斯电码、盲文。&#xA;可以当字符画看。&#xA;5位二进制足够表示26个字母。 三进制&#xA;3位三进制足够表示26个字母。 十六进制&#xA;hash函数的输出可能是16进制。&#xA;某些单词可以看成16进制。&#xA;RBG颜色可以表示为6位16进制。 颜色 RGB（三个十进制或六位十六进制） 特定事物的颜色 彩虹&#xA;色环电阻&#xA;颜色 编号 Black 0 Brown 1 Red 2 Orange 3 Yellow 4 Green 5 Blue 6 Violet 7 Grey 8 White 9 Gold -1 Silver -2 其他符合题目主题的事物&#xA;颜色的混合 物理 国际单位制（SI） 地理 经纬度，地名，首都，国旗（颜色/图案），地图上的形状。&#xA;天文 星座（名称、形状、日期），各种天体，特殊日期（满月、月食日食、历史事件等）&#xA;时间 特殊时间（历史、节日、一些有特殊含义的日子），生肖，星座，天干，钟表指针方向。&#xA;音乐 音阶，音程，调性，著名乐曲（的标题、作者、编号、调性等）</description>
+    </item>
+    <item>
+      <title>解谜知识-物理</title>
+      <link>https://blog.xuewen21.cc/posts/puzzle/physics/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0900</pubDate>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/physics/</guid>
+      <description>国际单位制（SI） 各个单位的转化经常出现在解谜中。&#xA;7个基本单位 时间 秒&#xA;定义：国际单位制中的时间单位，符号s。当铯频率ΔνCs，即铯133原子不受干扰的基态超精细跃迁频率，以单位Hz即s-1表示时，取其固定数值为9 192 631 770来定义秒。 长度 米&#xA;定义：国际单位制中的长度单位，符号m。当真空中光速c以单位m/s表示时，取其固定数值为299 792 458来定义米，其中秒用ΔνCs定义。 质量 千克&#xA;定义：国际单位制中的质量单位，符号kg。当普朗克常数h以单位J s即kg m2 s-1表示时，取其固定数值为6.626 070 15×10-34来定义千克，其中米和秒用c和ΔνCs定义。 电流 安培&#xA;定义：国际单位制中的电流单位，符号A。当基本电荷e以单位C即A s表示时，取其固定数值为1.602 176 634×10-19来定义安培，其中秒用ΔνCs定义。 热力学温度 开尔文&#xA;定义：国际单位制中的热力学温度单位，符号K。当玻尔兹曼常数k以单位J K-1即kg m2 s-2 K-1表示时，取其固定数值为1.380 649×10-23来定义开尔文，其中千克、米和秒用h，c和ΔνCs定义。 物质的量 摩尔 定义：国际单位制中的物质的量的单位，符号mol。1摩尔精确包含6.022 140 76×1023个基本单元。该数称为阿伏伽德罗数，为以单位mol-1表示的阿伏伽德罗常数NA的固定数值。&#xA;一个系统的物质的量，符号n，是该系统包含的特定基本单元数的量度。基本单元可以是原子、分子、离子、电子、其它任意粒子或粒子的特定组合。 发光强度 坎德拉&#xA;国际单位制中的沿指定方向发光强度单位，符号cd。当频率为540×1012 Hz的单色辐射的光视效能Kcd以单位lmW-1即cd sr W-1或cd sr kg-1 m-2 s3表示时，取其固定数值为683来定义坎德拉，其中千克、米、秒分别用h, c 和ΔνCs定义。 </description>
+    </item>
+    <item>
+      <title>集合</title>
+      <link>https://blog.xuewen21.cc/posts/puzzle/sets/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0901</pubDate>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/sets/</guid>
+      <description>参考：https://phenomist.wordpress.com/storage/sets/&#xA;2个一组 爻：阴(Yin)、阳(Yang) 氧化还原(Redox)：氧化(reduction)、还原(oxidation) 3个一组 三国：魏、蜀、吴 唐僧三个徒弟：孙悟空、猪八戒/悟能、沙和尚/悟净 桃园三结义：刘备、关羽、张飞 信号灯：红、黄、绿 颜料三原色：红、黄、蓝 光的三原色：红、蓝、绿 三圣父(Three Patriarchs)：亚伯拉罕(Abraham)、以撒(Isaac)、雅各布(Jacob) 美惠三女神(The Graces/Kharites/Charites)：光辉女神阿格莱亚(Aglaea)、激励女神塔利亚(Thalia)、欢乐女神欧佛洛绪涅(Euphrosyne) 命运三女神(The Fates / Moirai)：克罗托(Clotho)、拉切西斯(Lachesis)、阿特洛波斯(Atropos) 三神一体(Trimurti)：梵天(Brahma)、毗湿奴(Vishnu)、(湿婆)Shiva 角(Angles)：锐角(acute)、直角(right)、钝角(obtuse) 三个火枪手(Three Musketeers)：阿托斯(Athos)、波托斯(Porthos)和阿拉米斯(Aramis) Three B’s：巴赫(Bach)、贝多芬(Beethoven)、勃拉姆斯(Brahms) 丘吉尔演讲(Winston Churchill’s speech)：热血(blood)、汗水(sweat)、眼泪(tears) 三餐(meals)：早餐(breakfast)、午餐(lunch)、晚餐(dinner/supper) 曾经的奥林匹克格言(Olympic motto)(Latin)：更快(citius faster)、更高(altius higher)、更强(fortius stronger) 键盘快捷键：control、alt、delete 铸币金属：金(gold)、银(silver)、铜(copper) 奖牌：金(gold)、银(silver)、铜(bronze) 物质状态：固态(solid)、液态(liquid)、气态(gas) 4个一组 四季：春(spring)、夏(summer)、秋(autumn/fall)、冬(winter)&#xA;且都是6个字母 方向(directions)：东(east)、西(west)、南(south)、北(north) 四大文明古国(Four ancient civilizations)：巴比伦(Babylon)、埃及(Egypt)、印度(India)、中国(China) 四大名著：《水浒传》、《三国演义》、《西游记》、《红楼梦》 四大发明：造纸术、指南针、火药、印刷术 四大美女：西施(沉鱼)、王昭君(落雁)、貂蝉(闭月)、杨玉环(羞花) 四君子：梅、兰、竹、菊 四大神兽(Four Auspicious Beasts) / 四象(Four Symbols)：青龙(Azure Dragon)、白虎(White Tiger)、朱雀(Vermilion Bird)、玄武(Black Tortoise) 扑克牌花色(Card suits)：红心(hearts)、方片/钻石(diamonds)、梅花(clubs)、黑桃/铲子(spades) 碱基(Genetic bases): 腺嘌呤(Adenine)、胞嘧啶(Cytosine)、鸟嘌呤(Guanine)、胸腺嘧啶(Thymine)/尿嘧啶(Uracil) 天线宝宝(Teletubbies)：丁丁(Tinky Winky)(蓝、倒三角)、迪西(Dipsy)(绿、直)、拉拉(Laa-Laa)(黄、卷)、小波(Po)(红、圆) 完善中&#xA;5个一组 五行：金木水火土 7个一组 星期：Monday、Tuesday、Wednesday、Thursday、Friday、Saturday、Sunday</description>
+    </item>
   </channel>
 </rss>

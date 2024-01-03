@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.xuewen21.cc/tags/%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2023-11-25T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.xuewen21.cc/posts/exploring/monospace/</loc>
+    <lastmod>2023-11-25T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://blog.xuewen21.cc/posts/creative-vanishing-puzzle/</loc>
     <lastmod>2023-01-03T00:00:00+08:00</lastmod>
   </url><url>
@@ -41,19 +47,28 @@
     <loc>https://blog.xuewen21.cc/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>https://blog.xuewen21.cc/posts/puzzle-cryptography/</loc>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/cryptography/</loc>
     <lastmod>2023-01-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://blog.xuewen21.cc/posts/puzzle-classic-puzzle/</loc>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/classic-puzzle/</loc>
     <lastmod>2023-01-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://blog.xuewen21.cc/posts/puzzle-encode/</loc>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/encode/</loc>
     <lastmod>2023-01-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.xuewen21.cc/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-01-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://blog.xuewen21.cc/posts/puzzle-tool/</loc>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/tool/</loc>
     <lastmod>2023-01-01T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/idea/</loc>
+    <lastmod>2023-01-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/physics/</loc>
+    <lastmod>2023-01-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/sets/</loc>
+    <lastmod>2023-01-01T00:00:00+09:01</lastmod>
   </url>
 </urlset>
