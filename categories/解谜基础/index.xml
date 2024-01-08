@@ -13,7 +13,7 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/cryptography/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/cryptography/</guid>
-      <description>单表替换密码 按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的，如下。&#xA;Caesar 凯撒密码&#xA;将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。&#xA;ROT13&#xA;密钥为13的凯撒密码。&#xA;Atbash&#xA;所有 A 都替换为 Z，所有 B 都替换为 Y，依此类推。&#xA;Affine Cipher 仿射密码&#xA;字母转编号，A=0、B=1……&#xA;加密：E(x) = (ax + b) mod 26&#xA;解谜：D(x) = (x - b)/a mod 26&#xA;a、b为密钥，a和26互质&#xA;旗语&#xA;A / 1&#xD;B / 2&#xD;C / 3确认 / 正确&#xD;D / 4&#xD;E / 5错误(连打8次)&#xD;F / 6&#xD;G / 7&#xD;H / 8&#xD;I / 9&#xD;J字母记号&#xD;K / 0&#xD;L&#xD;M&#xD;N&#xD;O&#xD;P&#xD;Q&#xD;R&#xD;S&#xD;T&#xD;U&#xD;V&#xD;W&#xD;X&#xD;Y&#xD;Z&#xD;待机 / 空格&#xD;数字记号(#)&#xD;错误 / 注意&#xD;取消 / 废除 /忽略以前的信号&#xD;移位密码 将明文中字母重新排序形成密文。</description>
+      <description>单表替换密码 / 编码 按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的。&#xA;有时候编码和单表很相似，所以一部分编码也会出现在这里。&#xA;Caesar 凯撒密码&#xA;将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。&#xA;ROT13&#xA;密钥为13的凯撒密码。&#xA;Atbash&#xA;所有 A 都替换为 Z，所有 B 都替换为 Y，依此类推。&#xA;Affine Cipher 仿射密码&#xA;字母转编号，A=0、B=1……&#xA;加密：E(x) = (ax + b) mod 26&#xA;解谜：D(x) = (x - b)/a mod 26&#xA;a、b为密钥，a和26互质&#xA;旗语&#xA;A / 1&#xD;B / 2&#xD;C / 3确认 / 正确&#xD;D / 4&#xD;E / 5错误(连打8次)&#xD;F / 6&#xD;G / 7&#xD;H / 8&#xD;I / 9&#xD;J字母记号&#xD;K / 0&#xD;L&#xD;M&#xD;N&#xD;O&#xD;P&#xD;Q&#xD;R&#xD;S&#xD;T&#xD;U&#xD;V&#xD;W&#xD;X&#xD;Y&#xD;Z&#xD;待机 / 空格&#xD;数字记号(#)&#xD;错误 / 注意&#xD;取消 / 废除 /忽略以前的信号&#xD;盲文</description>
     </item>
     <item>
       <title>常见谜题元素</title>
@@ -27,14 +27,14 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/encode/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/encode/</guid>
-      <description>二进制&#xA;25-pair color code&#xA;Base 家族&#xA;特点：由“!+”构成。&#xA;JSFuck&#xA;BrainFuck&#xA;特点：由“&amp;gt;&amp;lt;+-.,[]”构成。</description>
+      <description>二进制&#xA;Base 家族&#xA;特点：由“!+”构成。&#xA;JSFuck&#xA;BrainFuck&#xA;特点：由“&amp;gt;&amp;lt;+-.,[]”构成。</description>
     </item>
     <item>
       <title>解谜工具</title>
       <link>https://blog.xuewen21.cc/posts/puzzle/tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/tool/</guid>
-      <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic Qat 编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq：多种逻辑谜题求解器 </description>
+      <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic Qat moby：同义词库 编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq：多种逻辑谜题求解器 </description>
     </item>
     <item>
       <title>解谜思路</title>

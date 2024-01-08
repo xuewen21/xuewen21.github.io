@@ -179,12 +179,21 @@ main .tags {
     display: flex;
 }
 
+main .tags ul {
+    display: flex;
+}
+
 main .tags li {
-    margin: 0 0.5em;
+    margin: 0 0.2em;
     line-height: 0.8em;
     list-style: none;
 }
 
 footer {
     font-size: small;
+}
+
+
+table {
+    border-collapse: collapse;
 }
