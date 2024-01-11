@@ -6,8 +6,15 @@
     <description>Recent content in 解谜基础 on 简陋的网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://blog.xuewen21.cc/categories/%E8%A7%A3%E8%B0%9C%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解谜工具-Qat 介绍</title>
+      <link>https://blog.xuewen21.cc/posts/puzzle/qat/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0800</pubDate>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/qat/</guid>
+      <description>Qat 是一个强大的查词工具。&#xA;Qat 词典中的单词和短语被视为去掉了所有重音、空格和标点符号，并将所有大写字母转换为小写字母。&#xA;符号 符号 匹配 字母 该字母 . 某一个字母 [abc] abc中的某个字母 [a-g] a至g中的某个字母 [!abc] abc以外的某个字母 @ 某一个元音字母 # 某一个辅音字母 * 任意个任意字母 &amp;gt; 某个单词 &amp;lt; 某个单词的倒序 数字 某个字母，且同一数字匹配同一字母 简单匹配 由上述符号组成的序列表示要查找的单词和序列按顺序匹配 例子：由t开头，e结尾，中间包含两个相邻的相同字母的单词：t*00*e&#xA;斜线/开头，之后是符号序列，表示要查找的单词和改变顺序的序列匹配 例子：angle和任意三个字母经过重新排序能组成的单词：/angle...&#xA;符号序列，接/，接符号序列，表示要查找的单词和第一段序列按顺序匹配，和改变顺序的第二段序列的一部分匹配 例子：castle中的某五个字母重新排列后得到的单词：...../castle&#xA;复合匹配 多个简单匹配表达式可以组合成复合匹配的表达式。&#xA;用p和q表示简单匹配表达式。&#xA;表达式 说明 ~p 匹配p的单词的倒序 !p 不匹配p的单词 p &amp;amp; q 同时匹配p和q的单词 p | q 匹配p或q的单词 两个以上表达式组合时注意符号的优先级：~ = ! &amp;gt; &amp;amp; &amp;gt; |&#xA;条件 条件 说明 ` 开头 某个单字符的符号不匹配（斜线之前） ?` 开头 某个单字符的符号可能不匹配（斜线之前） 数字+: 开头 指定单词的长度 数字-: 开头 指定单词最短长度 -数字: 开头 指定单词最长长度 数字-数字: 开头 指定单词长度范围 类别 根据含义和关联查询单词。</description>
+    </item>
     <item>
       <title>古典密码</title>
       <link>https://blog.xuewen21.cc/posts/puzzle/cryptography/</link>
@@ -34,7 +41,7 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/tool/</guid>
-      <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic Qat moby：同义词库 编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq：多种逻辑谜题求解器 </description>
+      <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic&#xA;Qat&#xA;用法&#xA;moby：同义词库&#xA;编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq：多种逻辑谜题求解器 </description>
     </item>
     <item>
       <title>解谜思路</title>

@@ -196,4 +196,13 @@ footer {
 
 table {
     border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+    background-color: #eaecf020;
+}
+td, th {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+    font-size: 0.8em;
 }
