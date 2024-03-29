@@ -95,7 +95,7 @@ main h3:not(:first-child) {
 }
 main li {
     list-style: circle;
-    line-height: 1.3;
+    line-height: 1.1;
     margin-block-start: .4em;
     margin-inline-start: 1.2em;
 }

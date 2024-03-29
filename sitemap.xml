@@ -41,6 +41,9 @@
     <loc>https://blog.xuewen21.cc/posts/brain-teaser-true-false/</loc>
     <lastmod>2023-01-02T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://blog.xuewen21.cc/posts/brain-teaser-self-reference/</loc>
+    <lastmod>2023-01-02T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://blog.xuewen21.cc/categories/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
@@ -56,7 +59,7 @@
     <loc>https://blog.xuewen21.cc/posts/puzzle/cryptography/</loc>
     <lastmod>2023-01-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://blog.xuewen21.cc/posts/puzzle/classic-puzzle/</loc>
+    <loc>https://blog.xuewen21.cc/posts/puzzle/classic-element/</loc>
     <lastmod>2023-01-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.xuewen21.cc/posts/puzzle/encode/</loc>
@@ -73,5 +76,8 @@
   </url><url>
     <loc>https://blog.xuewen21.cc/posts/puzzle/sets/</loc>
     <lastmod>2023-01-01T00:00:00+09:01</lastmod>
+  </url><url>
+    <loc>https://blog.xuewen21.cc/posts/exploring/meme/</loc>
+    <lastmod>2020-01-01T00:00:00+08:00</lastmod>
   </url>
 </urlset>
