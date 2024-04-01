@@ -6,11 +6,13 @@
     --main-color: #202124;
     --second-color: #7c7f85;
     --back-color: white;
+    --second-back-color: #eee;
 }
 @media (prefers-color-scheme: dark) {
     :root {
         --main-color: #bdc1c6;
         --second-color: #7c8083;
         --back-color: rgb(32, 33, 36);
+        --second-back-color: rgb(53, 54, 56);
     }
 }

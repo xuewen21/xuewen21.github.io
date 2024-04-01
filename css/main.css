@@ -85,6 +85,9 @@ main h2 {
     font-size: 1.4em;
     margin-block-end: .5em;
 }
+main #content h2 {
+    margin-block-start: 0.5em;
+}
 main h3 {
     font-size: 1.1em;
     margin-block-end: 0.5em;
@@ -95,7 +98,7 @@ main h3:not(:first-child) {
 }
 main li {
     list-style: circle;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-block-start: .4em;
     margin-inline-start: 1.2em;
 }
@@ -117,6 +120,12 @@ main img {
 }
 main pre {
     font-size: .8em;
+}
+main code {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    padding: 0.1em;
+    background-color: var(--second-back-color);
 }
 main input {
     font-size: 0.8em;
