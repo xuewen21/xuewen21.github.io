@@ -49,7 +49,7 @@ nav a.active {
 }
 
 main {
-    padding: 1em 0;
+    padding: 0.5em 0 2em;
 }
 .list-tags {
     display: inline;
@@ -84,8 +84,6 @@ main h1 {
 main h2 {
     font-size: 1.4em;
     margin-block-end: .5em;
-}
-main #content h2 {
     margin-block-start: 0.5em;
 }
 main h3 {

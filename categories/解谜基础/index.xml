@@ -34,14 +34,14 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/encode/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/encode/</guid>
-      <description>二进制&#xA;Base 家族&#xA;特点：由“!+”构成。&#xA;JSFuck&#xA;BrainFuck&#xA;特点：由“&amp;gt;&amp;lt;+-.,[]”构成。</description>
+      <description>二进制&#xA;五位二进制足够表示26个字母。&#xA;Base 家族&#xA;Base 16&#xA;特点：包含0-9和A-F Base 32&#xA;特点：包含A-Z和2-7，结尾可能有“=” Base 64&#xA;特点：包含A-Z、a-z、0-9、“+”、“/”，结尾可能有“=” JSFuck&#xA;特点：由“[]()!+”构成。&#xA;BrainFuck&#xA;特点：由“&amp;gt;&amp;lt;+-.,[]”构成。</description>
     </item>
     <item>
       <title>解谜工具</title>
       <link>https://blog.xuewen21.cc/posts/puzzle/tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/tool/</guid>
-      <description>综合 不暴力不成活 焖肉面 dCode 查词 Nutrimatic&#xA;Qat&#xA;用法&#xA;编码解码 CyberChef 中文 千篇国学：查成语 字統网：部首查字 中文词库 中文诗歌古典文集数据库 逻辑谜题 Noq：多种逻辑谜题求解器 </description>
+      <description>综合 不暴力不成活 焖肉面 dCode tools.qhex.org 英文查词 Nutrimatic&#xA;Qat&#xA;用法&#xA;编码解码 CyberChef 中文 字統网：部首查字 千篇国学：查成语 中文诗歌古典文集数据库 手写中文输入 漢語拆字字典 逻辑谜题 Noq：多种逻辑谜题求解器 图片处理 Photopea | Online Photo Editor 数学图形 GeoGebra 几何作图 SVG在线编辑器 </description>
     </item>
     <item>
       <title>解谜思路</title>
