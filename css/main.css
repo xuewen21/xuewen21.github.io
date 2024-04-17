@@ -85,14 +85,36 @@ main h2 {
     font-size: 1.4em;
     margin-block-end: .5em;
     margin-block-start: 0.5em;
+    margin-left: 0.1em;
 }
 main h3 {
     font-size: 1.1em;
     margin-block-end: 0.5em;
     margin-block-start: 0.5em;
+    margin-left: 0.2em;
 }
 main h3:not(:first-child) {
     margin-block-start: 1.2em;
+}
+main h2:before {
+    content: "## ";
+    color: #007BFF;
+}
+main h3:before {
+    content: "### ";
+    color: #28A745;
+}
+main h4:before {
+    content: "#### ";
+    color: #FFC107;
+}
+main h5:before {
+    content: "##### ";
+    color: #F28500;
+}
+main h6:before {
+    content: "###### ";
+    color: #DC3545;
 }
 main li {
     list-style: circle;
@@ -113,7 +135,7 @@ main a {
 main a:visited {
     color: var(--second-color);
 }
-main img {
+main img, video {
     max-width: 100%;
 }
 main pre {
