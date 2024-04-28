@@ -152,7 +152,7 @@ $\left\lfloor a \right\rfloor$表示对$a$向下取整。<br>
 <ul>
 <li>分析$17m+\mathrm{mod}\left(n, 17\right)$，其中左半部分结果为$0$或$17$的倍数，右半部分结果为$[0,16]$内的整数。考虑到$m$和$n$的定义域，表达式的值域为$[0,1801]$内的所有整数。</li>
 <li>分析$\left\lfloor {n \over 17} \right\rfloor$，通过$n$的范围知，其值是固定的$k \over 17$。</li>
-<li>分析$a·2^{-b}$，这个表达式的作用为将$a$的二进制的小数点左移$b$位。举例：$9×2^{-2}=2.25$，$9$的二进制为$1001$，小数点左移两位得$10.01$，即$2.25$。所以$\left\lfloor {n \over 17} \right\rfloor 2^{-17 m - \mathrm{mod}(n, 17)}$的值域为${x|x为将{k \over 17} 的二进制形式的小数点左移i位，i是整数，i∈[1,1802])}$。</li>
+<li>分析$a·2^{-b}$，这个表达式的作用为将$a$的二进制形式的小数点左移$b$位。举例：$9×2^{-2}=2.25$，$9$的二进制形式为$1001$，小数点左移两位得$10.01$，即$2.25$。所以$\left\lfloor {n \over 17} \right\rfloor 2^{-17 m - \mathrm{mod}(n, 17)}$的值域为${x|x为将{k \over 17} 的二进制形式的小数点左移i位，i是整数，i∈[1,1802])}$。</li>
 <li>分析$\left\lfloor \mathrm{mod}\left(a,2\right) \right\rfloor$，知道根据$a$整数部分的奇偶性，表达式的值分别为1或0，所以${1\over 2} &lt; \left\lfloor \mathrm{mod}\left(a,2\right) \right\rfloor$的作用是判断$a$整数部分是奇数还是偶数，亦即$a$的二进制形式的个位是1还是0。所以整个Tupper自指公式其实是在判断$k \over 17$的二进制形式的每一位是1还是0。</li>
 </ul>
 <p>$k \over 17$的二进制形式为：</p>
@@ -266,6 +266,22 @@ $\left\lfloor a \right\rfloor$表示对$a$向下取整。<br>
 <p>知道了它的原理，我们也能自己计算k的值，以构成我们想要的图形。或者直接利用这个网站：<a href="https://tuppers-formula.ovh/" target="_blank" rel="noopener">https://tuppers-formula.ovh/</a></p>
 <h3 id="生命游戏">生命游戏</h3>
 <p>待补充</p>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
 
   </div>
   

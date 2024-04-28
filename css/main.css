@@ -17,6 +17,12 @@ body {
         background: var(--back-color);
         color: var(--main-color);
     }
+    img, video {
+        filter: brightness(0.8) contrast(1.2);
+    }
+    .dark-invert {
+        filter: invert(100%) brightness(0.8);
+    }
 }
 
 body {
@@ -135,7 +141,7 @@ main a {
 main a:visited {
     color: var(--second-color);
 }
-main img, video {
+main img, main video {
     max-width: 100%;
 }
 main pre {
@@ -146,6 +152,8 @@ main code {
     margin-right: 0.1em;
     padding: 0.1em;
     background-color: var(--second-back-color);
+    display: inline-block;
+    line-height: 1.2em;
 }
 main input {
     font-size: 0.8em;
