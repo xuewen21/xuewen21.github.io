@@ -76,7 +76,7 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/tool/</guid>
-      <description>综合 不暴力不成活 焖肉面 dCode tools.qhex.org 英文查词 Nutrimatic&#xA;Qat&#xA;用法&#xA;编码解码 CyberChef 中文 字統网：部首查字 千篇国学：查成语 中文诗歌古典文集数据库 手写中文输入 漢語拆字字典 逻辑谜题 通用编辑器 Noq：逻辑谜题求解器 逻辑谜题求解器 图片处理 Photopea | Online Photo Editor 数学图形 GeoGebra 几何作图 SVG在线编辑器 </description>
+      <description>综合 不暴力不成活 焖肉面 dCode tools.qhex.org 英文查词 Nutrimatic&#xA;Qat&#xA;用法&#xA;编码解码 CyberChef 中文 字統网：部首查字 千篇国学：查成语 中文诗歌古典文集数据库 手写中文输入 漢語拆字字典 逻辑谜题 通用编辑器 Noq：逻辑谜题求解器 逻辑谜题求解器 图片处理 Photopea | Online Photo Editor SVG在线编辑器 数学图形 GeoGebra 几何作图 </description>
     </item>
     <item>
       <title>解谜思路</title>
@@ -112,6 +112,13 @@
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/paper-and-pencil_game/</guid>
       <description>翻译自&#xA;https://puzz.link/list.html&#xA;https://www.cross-plus-a.com/puzzles.htm&#xA;填数 数独（Sudoku） 根据9×9盘面上的已知数字，推理出所有剩余空格的数字，并满足每一行、每一列、每一个粗线宫（3*3）内的数字均含1-9，不重复。&#xA;一些技巧&#xA;变种 对角线数独&#xA;锯齿数独&#xA;杀手数独&#xA;不等号数独&#xA;算数数独&#xA;等等&#xA;数和（Kakuro） 带有数字的格子为线索，将1到9的数字填入每个空格中。使得：&#xA;线索格的底部数字表示从该格子下方直至下一线索格之间数字总和。 线索格的右侧数字表示从该格子右侧直至下一线索格之间数字总和。 同行或同列的连续格子内的数字不能重复。 摩天楼（Skyscrapers） 在每个格子中填一个数字，要求：&#xA;数字必须介于 1 和 N 之间，其中 N 是表格的宽度。 每行和每列恰好包含每个数字。 网格内的每个数字代表一座建筑物，其高度等于该数字。网格外的数字表示从该方向在相应的行或列中可以看到多少建筑物，其中较高的建筑物将所有较低的建筑物隐藏在其后面。 涂色 数墙（Nurikabe） 将一些格子涂色使未涂色部分形成若干区域：&#xA;每个区域只包含一个数字。 数字表示包含该数字的区域的格子数。 有数字的格子不能涂色。 涂色部分不能形成2x2的正方形。 所有涂色格子连通。 数织（Nonogram） 将网格中的某些格子涂色，使其满足数字的描述：每行（列）前的每个数字，表示该行（列）中每组连续的涂色格子的数量。每行（列）中的每组之间至少有一个未涂色格子。&#xA;数壹（Hitori） 将一些格子涂色，使得：&#xA;涂色格子不能水平或垂直相邻。 行或列内的未涂色格子中的数字不能重复。 所有未涂色格子形成一个连通的区域。 摇啊摇（Shakashaka） 在某些空格中涂出一个占格子一半面积的直角三角形。&#xA;每个非涂色区域的形状必须是矩形。 格中的数字表示与该格正交相邻的格中包含三角形的数量。 连接 数桥（Hashiwokakero） 用桥将岛屿连接成一张网络，使得：&#xA;桥梁必须是两个岛屿之间的水平或垂直线，并且不能转弯。 桥梁不能相交。 每对岛屿之间最多有两座桥梁。 岛屿上数字表示连接到该岛的桥梁总数。 回路 数回（Slitherlink） 每道谜题都由一个矩形点阵组成，而该矩形框内还在不同位置包含了一些提示数字。游戏的目的是连接每个提示数字周围的点:&#xA;使得数字四周的线段的数目与该数字相等。 在没有数字的地方，线段的数目没有限制。 所有线段可以形成一条连续的回路并且不能交叉和分叉。 分区 数邻（Dominosa） 将网格分成若干区域，使得：&#xA;每个区域内有两个正交相邻的数字形成数对。 每两个数对不重复。 数方（Shikaku） 在网格分成若干矩形。使得：&#xA;每个矩形恰好包含一个数字。 数字表示矩形的格数。 放置 战舰（Battleship） 将舰队中的所有船放入网格中。每只船可以旋转或镜像。</description>
+    </item>
+    <item>
+      <title>数灯（Light Up）基本技巧</title>
+      <link>https://blog.xuewen21.cc/posts/puzzle/light-up/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0800</pubDate>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/light-up/</guid>
+      <description>&#xD;→&#xD;4&#xD;4&#xD;→&#xD;0&#xD;0&#xD;→&#xD;→&#xD;→&#xD;→&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;→&#xD;→&#xD;1&#xD;1&#xD;3&#xD;3&#xD;→&#xD;1&#xD;1&#xD;2&#xD;2&#xD;→&#xD;2&#xD;2&#xD;2&#xD;2&#xD;→&#xD;2&#xD;2&#xD;1&#xD;1&#xD;→&#xD;2&#xD;2&#xD;1&#xD;1&#xD;→&#xD;1&#xD;1&#xD;1&#xD;1&#xD;→&#xD;1&#xD;1&#xD;→&#xD;1&#xD;1&#xD;1&#xD;1&#xD;</description>
     </item>
   </channel>
 </rss>
