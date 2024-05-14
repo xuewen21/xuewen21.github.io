@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>标准数独技巧 | 简陋的网站</title>
+
+  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+
+    <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>简陋的网站</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">首页</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">发布</a>
+    </li>
+    <li>
+      <a href="/tags/">标签</a>
+    </li>
+    </ul>
+  </nav>
+
+
+<div class="breadcrumb">
+    
+    
+    
+<a href="https://blog.xuewen21.cc/">首页</a>  >
+
+<a href="https://blog.xuewen21.cc/posts/">发布</a>  >
+
+<a href="https://blog.xuewen21.cc/posts/research/sudoku-skill/">标准数独技巧</a> 
+</div> 
+
+  </header>
+  <main>
+    
+  <h1>标准数独技巧</h1>
+
+  
+  
+  <time datetime="2023-05-01T00:00:00&#43;08:00">May 1, 2023</time>
+
+  <div id="content">
+    <p>这里不会讲到所有的技巧（我也不会那么多），只讲解本人实战中用到的比较多的技巧，可应付一般难度数独。<br>
+（和小向的教程统一命名）<br>
+注：以下用 r 表示行，用 c 表示列，用 b 表示宫。</p>
+<h2 id="基本技巧">基本技巧</h2>
+<p>基本技巧十分简单，即便不教大部分人也会。虽然下面的例子用图都使用的全标策略（标注全部候选数），但这些技巧在直观策略（不标候选数）下也很容易使用。</p>
+<h3 id="唯一余数--naked-single">唯一余数 | Naked Single</h3>
+<p>利用排除法，某一格可能且仅可能填某一个数字。<br>
+<img loading="lazy" src="20230223120406.png" alt=""><br>
+根据橙色格子进行排除，r9c8处只能填6。</p>
+<h3 id="排除法--hidden-single">排除法 | Hidden Single</h3>
+<p>某个数字在某一个区（行/列/宫）里仅有一处可以填。<br>
+<img loading="lazy" src="20230223120049.png" alt=""><br>
+对于b6，r4c2和r6c5中的2导致r4c89和r6c789不能填2，所以b6内只有r5c8可以填2。<br>
+<img loading="lazy" src="20230223121109.png" alt=""><br>
+同理，r3中只有c8能填1。<br>
+但是这个例子是在之前用高级技巧删除了r3c2中的候选数1后才出现的。</p>
+<h3 id="区块--locked-candidates">区块 | Locked Candidates</h3>
+<ol>
+<li>
+<p>宫区块<br>
+当某宫中某候选数只存在于某行（列）时，可删除在其他宫中此行（列）的候选数。<br>
+<img loading="lazy" src="20230223121915.png" alt=""><br>
+对于b4，8只出现在r6，这两格中必有一个是8，r6其余格不可能再出现8，则r6c6排除8的可能。</p>
+</li>
+<li>
+<p>行列区块<br>
+当某行（列）中某候选数只存在于某宫中，可删除此宫中其他行（列）的该候选数。<br>
+<img loading="lazy" src="20230223165127.png" alt=""><br>
+对于c1，8只出现在b3，这两格中必有一个是8，b3中其它位置排除8的可能。</p>
+</li>
+<li>
+<p>级联区块<br>
+（待补充）</p>
+</li>
+</ol>
+<h3 id="基础鱼链列--base-fish">基础鱼（链列） | Base Fish</h3>
+<p>在某n个行（列）内，某个数字x只能出现在固定的某n个列（行）内，则该n个列（行）内其他格子不会再出现数字x。</p>
+<ol>
+<li>n=2，矩形对角线法 | X-Wing<br>
+<img loading="lazy" src="20230223181605.png" alt=""><br>
+对于8，在r59中只出现在c15，所以c15其他行中可以排除8的可能。</li>
+<li>n=3，剑鱼 | Swordfish<br>
+<img loading="lazy" src="20230228114452.png" alt=""><br>
+对于6，在r259中只出现在c178，所以c178其他行中可以排除6的可能。<br>
+对于这个例子，看到并不是r259c178九个格子中都有6的候选数，这种情况叫做<strong>残缺（Incompleted）</strong>。</li>
+<li>n=4，水母 | Jellyfish<br>
+<img loading="lazy" src="20230228180855.png" alt=""><br>
+对于2，在r1358中只出现在c2568，所以c2568其他行中可以排除6的可能。</li>
+<li>n=5，海星 | Starfish 或 Squirmbag</li>
+<li>n=6，鲸鱼 | Whale</li>
+<li>n=7，海怪 | Leviathan</li>
+</ol>
+<h3 id="数组--subset-pairtriplequadruple">数组 | Subset （Pair/Triple/Quadruple）</h3>
+<ol>
+<li>
+<p>显式 | Naked：在一个区中，如果有n个格都包含且只包含相同的n个候选数，则这n个候选数不能再出现在该区其他的格中。<br>
+<img loading="lazy" src="20230223122947.png" alt=""><br>
+对于c5，r378三个格子中只包含678三个数字，则678只可能出现在这三个格子中，该列其他格子可以排除678的可能性。</p>
+</li>
+<li>
+<p>隐式 | Hidden：在一个区中，如果有n个格的候选数中包含相同的n个候选数，且在该区的其他宫格中不再含有这n个候选数，则这n个候选数所在宫格的除该n个候选数之外的其他候选数将被删除。<br>
+<img loading="lazy" src="20230223165908.png" alt=""><br>
+对于b1，只有r1c13中包含26，则这两个格子一个为2一个为6，不可能出现1。<br>
+其实对于b1，r1c13以外的三格，还可以看到148的显式集合，显式集合和隐式集合是成对出现的。</p>
+</li>
+</ol>
+<p>一般来说，显式集合使用全标策略更容易看出，隐式集合使用直观策略更容易看出。</p>
+<h2 id="进阶技巧">进阶技巧</h2>
+<h3 id="简单带鳍鱼退化鱼刺身孪生鱼--finned-fish--sashimi-fish--siamese-fish">简单带鳍鱼、退化鱼（刺身）、孪生鱼 | Finned Fish &amp; Sashimi Fish &amp; Siamese Fish</h3>
+<ol>
+<li>带鳍X-Wing | Finned X-Wing<br>
+<img loading="lazy" src="20230228114252.png" alt=""><br>
+相比与正常的X-Wing，多了r6c9。按照r6c9填7和不填7（形成标准鱼形）两种情况讨论，我们都能排除与r6c9同宫的r5c8中的7。</li>
+<li>带鳍剑鱼 | Finned Swordfish<br>
+<img loading="lazy" src="20230228155143.png" alt=""></li>
+<li>带鳍水母/海星/鲸鱼/海怪<br>
+略</li>
+<li>退化X-Wing | Sashimi X-Wing<br>
+<img loading="lazy" src="20230228120045.png" alt=""><br>
+所谓“退化”就是带鳍的格子缺失。对于这个盘面，r9c8(6)的缺失使它更难被发现。<br>
+r9c7(6)为鳍，可以排除r78c8(6)。</li>
+<li>退化剑鱼 | Sashimi Swordfish<br>
+<img loading="lazy" src="20230228154543.png" alt=""><br>
+本例有两个鳍，但处于同一宫，所以依旧可以使用该方法。</li>
+<li>退化水母/海星/鲸鱼/海怪<br>
+略</li>
+<li>孪生鱼<br>
+就是两条退化鱼重叠在一起。</li>
+</ol>
+<h3 id="简单链">简单链</h3>
+<p>学习一下技巧之前，需要了解链的原理。<br>
+强链接：若A为假，则B为真。即A、B至少一个为真。<br>
+弱链接：若A为真，则B为假。即A、B至少一个为假。</p>
+<p>利用强弱链解题：<br>
+<img loading="lazy" src="20230223134057.png" alt=""><br>
+这里可以看到一条从r1c8中的候选数8到r2c1中的候选数8的强弱链：r1c8(8) = r1c8(1) - r3c8(1) = r3c2(1) - r2c1(1) = r2c1(8)（=表示强链接，-表示弱连接）。<br>
+这条链由强链接和弱链接交替构成，起点和终点都是都是强链接。<br>
+讨论两种情况：</p>
+<ol>
+<li>r1c8填8。</li>
+<li>r1c8不填8 → r1c8填1 ⇢ r3c8不填1 → r3c2填1 ⇢ r2c1不填1 → r2c1填8。</li>
+</ol>
+<p>我们发现其实r1c8中的候选数8到r2c1中的候选数8直接相当于形成一条强链接，这两个格子里至少有一个填8。而无论哪种情况，与这两格共同<strong>具有弱链接</strong>（也叫<strong>看到</strong>，See）的r1c1都不能填8。<br>
+对于上述强弱链，将其顺序颠倒过来（即从r2c1(8)开始，到r1c8(8)结束）也同样行得通，因为其中涉及的链都是双向链，但不是所有的链都是双向的！</p>
+<p>虽然强弱链经常成为解难题的强力手段，想直接利用这种方法解题并不容易，找到一条强弱链花掉的时间或许不如试数来的快。接下来将总结几种容易使用的技巧，以提高找强弱链的效率。<br>
+以下是几种简单的典型情况。</p>
+<ol>
+<li>
+<p>摩天楼 | Skyscraper<br>
+呈直角梯形形状。<br>
+<img loading="lazy" src="20230223145547.png" alt=""></p>
+</li>
+<li>
+<p>双线风筝 | 2-String Kite<br>
+两条强链接各有一端落在同一个宫格中。<br>
+<img loading="lazy" src="20230223153855.png" alt=""></p>
+</li>
+<li>
+<p>多宝鱼（普通双强链） | Turbot Fish<br>
+一个行/列内的强链接，一个宫内的强链接。<br>
+<img loading="lazy" src="20230228232659.png" alt=""></p>
+</li>
+<li>
+<p>空矩形 | Empty Rectangle<br>
+<img loading="lazy" src="20230223140833.png" alt="">
+形状类似于多宝鱼，但r7c89中的7看成了一个整体。<br>
+再如：<br>
+<img loading="lazy" src="20230223150605.png" alt=""></p>
+</li>
+</ol>
+<p>上述例子都是两个强链接和一个弱链接的组合，叫做双强链，实战时大多先尝试找到两个强链接。</p>
+<h3 id="简单分支结构--wing">简单分支结构 | Wing</h3>
+<ol>
+<li>
+<p>XY-Wing / XYZ-Wing / WXYZ-Wing<br>
+一个格子中的全部数字或除去一个以外的其余数字均与另几个互不相同的双值格中的一个数形成弱链接，除此之外，这些格子还包含一个共有的数。</p>
+<p>XY-Wing：<br>
+<img loading="lazy" src="20230223134619.png" alt=""><br>
+r4c3双值格中的全部数字分别与r2c3和r4c9形成弱链接。且r2c3和r4c9共有数字7，无论r4c3填什么，这两个格子中都会出现一个7，所以它们共同看到的格子排除7的可能。</p>
+<p>XYZ-Wing：<br>
+<img loading="lazy" src="20230223144459.png" alt=""><br>
+r7c9三值格中的5和7分别与r7c6和r9c7形成弱链接。且它们共有6，无论r7c9填什么，这三个格子中都会出现一个6，所以它们共同看到的格子排除6的可能。</p>
+</li>
+<li>
+<p>W-Wing（Y-Wing）<br>
+两个候选数相同的双值格，通过其中一个候选数进行强连接。<br>
+<img loading="lazy" src="20230223154240.png" alt=""><br>
+这里两个（79）的格子通过9进行连接。<br>
+讲解链用到的第一个例子也是W-Wing。</p>
+</li>
+<li>
+<p>M-Wing<br>
+（待补充）</p>
+</li>
+</ol>
+<h3 id="简单致命结构">简单致命结构</h3>
+<h4 id="唯一矩形--unique-rectangle">唯一矩形 | Unique Rectangle</h4>
+<p><img loading="lazy" src="2023-02-17-12-45-45.png" alt=""><br>
+很明显当出现这种情况时，会出现两个解。而标准的数独是有唯一解的，所以出现这种情况时往往意味着做错了。或者，当即将出现类似这种情况时，要将其破坏掉。<br>
+上图就是唯一矩形的基本结构。注意这个结构一定是涉及到<strong>两个</strong>宫的。<br>
+（解释：类似于上图的结构，可以发现r1c1无论怎么填，都不会影响矩形外的格子的候选数，因为根据显式数组的理论，r1、r4、c1、c2、b1、b4都不会再有12的候选数了。但如果矩形顶点分散到4个宫，不能保证宫内其它格子不包含12的候选数。）</p>
+<ol>
+<li>三个双值格<br>
+<img loading="lazy" src="20230228120820.png" alt=""><br>
+已经有三个格都只能填56，剩下的格子则不能再填5或6。</li>
+<li>区块：一边双值格，对边多出同一个数<br>
+<img loading="lazy" src="2023-02-17-15-17-18.png" alt=""><br>
+r13c2为25的双值格。对边两格多出1这个候选数，这两个1必有一个为真。</li>
+<li>待定数组：一边双值格，对边待定数组<br>
+<img loading="lazy" src="20230228121108.png" alt=""><br>
+r1c79为双值格，对边所在行r8c3679四格为23568的不完全子集。为避免出现多解，r7c79中28不能同时为真，只能有一个2或一个8，r7c79中的356必有一个为真，两种情况下，r7c3679这四格为2356或3568的完全子集。无论哪种情况，r7其他位置不可能再出现356。</li>
+<li>共轭：一边双值格，对边共轭对<br>
+<img loading="lazy" src="20230223141601.png" alt=""><br>
+r1c13为双值格，其对边的2之间为强链。r1c13一定是一个2一个6，r8c13必有一个2，如果r8c13再出现一个6将不满足唯一解的要求。</li>
+<li>对角双值格（或一个双值格），其余格多出同一个数<br>
+其实我觉得这个和2原理一样。</li>
+<li>对角双值格，两组共轭对<br>
+<img loading="lazy" src="20230223103930.png" alt=""><br>
+某个对角为双值格，且四个9之间均是共轭关系，另一个对角的9应排除。</li>
+<li>隐式矩形 | Hidden Rectangle
+<ol>
+<li>有一个双值格
+<ol>
+<li>同一个数字的强链接<br>
+<img loading="lazy" src="20230223104622.png" alt=""><br>
+四个1之间均为强链接，双值格对角的7应排除。因为一旦r2c6(7)为真，由强链接的性质r2c8和r3c6填1，r3c8填7，形成多解的情况。<br>
+这个方法经常用到，矩形的强链接是十分容易发现的。<br>
+其实只需要双值格r3c8的对角r2c6中的1形成两条强链接，条件就已经充足。正如下例：<br>
+<img loading="lazy" src="20230223165550.png" alt=""><br>
+甚至是不完整的矩形：<br>
+<img loading="lazy" src="20230302105134.png" alt=""><br>
+r6c2没有7的候选数，但上述推导过程依旧成立。</li>
+<li>不同数字的强链接<br>
+<img loading="lazy" src="20230306140317.png" alt=""><br>
+r7(7)和r8(2)成强链，双值格同列的未成强链的2可排除。因为一旦r7c1(2)为真，矩形其它三个顶点的数也被确定，形成多解情况。</li>
+</ol>
+</li>
+<li>两个双值格
+<ol>
+<li>处于对角<br>
+<img loading="lazy" src="20230319000000.png" alt="">
+<img loading="lazy" src="20230319200000.png" alt="">
+（待补充）</li>
+<li>同行/列<br>
+（待补充）</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>从上述例子看到，适用唯一矩形的情况往往会出现<strong>格子相邻的数对</strong>。</p>
+<h4 id="唯一环--unique-loop">唯一环 | Unique Loop</h4>
+<h4 id="拓展矩形--extended-rectangle">拓展矩形 | Extended Rectangle</h4>
+<h4 id="可避免矩形--avoidable-rectangle">可避免矩形 | Avoidable Rectangle</h4>
+<ol>
+<li>三个已填数<br>
+<img loading="lazy" src="20230228174819.png" alt=""><br>
+r7c37、r9c37中三个格子已填（注意是“已填”，不是原给定数）。如果r7c3填5，这个矩形只包含45，发现将45对换之后完全不影响盘面其他位置，显然不满足唯一解要求。</li>
+<li>区块：一边已填，对边多同一个数<br>
+<img loading="lazy" src="20230228190141.png" alt=""><br>
+r5c23已填，r1c23中的48如果全为真则不满足唯一解要求，故r1c23(7)中必有一个为真。</li>
+<li>待定数组：一边已填，对边出现待定数组<br>
+（待补充）</li>
+<li>对角：一个已填，相邻两角多出同一个数</li>
+<li>隐性：一个已填，对角有两组共轭对<br>
+（待补充）</li>
+</ol>
+<h4 id="全双值坟墓--bivalue-universal-grave--1">全双值坟墓 | Bivalue Universal Grave + 1</h4>
+<p>简称BUG + 1。<br>
+BUG指的是一个盘势中所有剩余宫格的候选数均为双值，且每个候选数对于每行、列、宫来说出现且只出现两次。这样的情况将导致题目多解或无解。<br>
+<img loading="lazy" src="2023-02-17-14-26-39.png" alt=""><br>
+此局距BUG只差一步，这样的盘面称为BUG + 1。标红的2或5都是在行、列、宫内只出现两次，如果为真，将形成BUG。</p>
+<details>
+<summary>扩展</summary>
+<ol>
+<li>待定数</li>
+<li>待定数组</li>
+<li>共轭</li>
+</ol>
+</details>
+<h2 id="高级技巧">高级技巧</h2>
+<h3 id="待定数组--almost-locked-set">待定数组 | Almost Locked Set</h3>
+<p><strong>待定数组定义</strong>：“n+m个格的候选数中包含相同的n个候选数”的情况，即这n+m个格子中会有n个格子构成这n个数的数组，但目前还未确定到底是哪n个格子。</p>
+<h4 id="欠一数组--almost-locked-candidates">欠一数组 | Almost Locked Candidates</h4>
+<p>定义中m=1的情况。<br>
+（例子待补充）</p>
+<h4 id="融合待定数组--sue-de-coq">融合待定数组 | Sue de Coq</h4>
+<p>（例子待补充）</p>
+<h4 id="跨区数组--extended-subset">跨区数组 | Extended Subset</h4>
+<h4 id="均衡数组--aligned-subset-exclusion">均衡数组 | Aligned Subset Exclusion</h4>
+<p>一种比较暴力的解法</p>
+<details>
+<summary>扩展</summary>
+<p>两个待定数组共有的候选数为它们的<strong>共享候选数</strong>。其中有强链接或弱链接关系的为<strong>完全共享候选数</strong>（Restricted Common Candidate，简称RCC），否则为<strong>不完全共享候选数</strong>。</p>
+<ol>
+<li>
+<p>Almost Locked Set XZ-Rule<br>
+<img loading="lazy" src="20230223140249.png" alt="">
+图中，绿色格子是关于（1269）的不完全子集，红色格子是关于（4679）的不完全子集，9之间有强链接，为完全共享候选数，6为不完全共享候选数，那么所有6共同看到的r1c9和r3c2排除6的可能。<br>
+假设r1c9填6，我们发现绿色和红色的格子将都不能填6。此时，绿色格子是关于（129）的完全子集，红色格子是关于（479）的完全子集，而两个能填9的格子间有链接关系，最终会导致其中一个格子无法填9，产生矛盾。</p>
+<p>再一例：<br>
+<img loading="lazy" src="20230223121455.png" alt=""><br>
+同理。</p>
+</li>
+<li>
+<p>Almost Locked XY-Wing<br>
+难度较高，实战难操作。</p>
+</li>
+<li>
+<p>Almost Locked Set Chain<br>
+难度极高，实战难操作。</p>
+</li>
+</ol>
+</details>
+<h3 id="复杂链">复杂链</h3>
+<h4 id="标准链">标准链</h4>
+<ol>
+<li>
+<p>同数链 | X-Chain</p>
+</li>
+<li>
+<p>双值格链 | XY-Chain<br>
+找到弱链接将多个双值格串联到一起即可形成强弱链。<br>
+<img loading="lazy" src="20230228114826.png" alt=""><br>
+该强弱链首尾的1可帮助排除掉r3c2中的1。<br>
+三个双值格组成的链形式上等同于XY-Wing，多于三个双值格组成的链称为XY Chain。</p>
+<ol>
+<li>特殊情况：远程（遥控）数对 | Remote Pair<br>
+<img loading="lazy" src="20230228175453.png" alt=""></li>
+</ol>
+</li>
+<li>
+<p>首尾异数链 | XY-X-Chain</p>
+</li>
+<li>
+<p>不连续环 | Discontinuous (Nice) Loop</p>
+</li>
+<li>
+<p>自噬链 | Cannibalistic AIC</p>
+</li>
+</ol>
+<h4 id="待定数组链">待定数组（链）</h4>
+<p><strong>技巧</strong></p>
+<ol>
+<li>2+3直观法</li>
+<li>带小弟直观法</li>
+</ol>
+<h4 id="待定唯一矩形">待定唯一矩形</h4>
+<h4 id="强制链">强制链</h4>
+<h4 id="环">环</h4>
+<h4 id="动态链">动态链</h4>
+<h4 id="构造链">构造链</h4>
+<h4 id="涂色法">涂色法</h4>
+<p>如果发现某个数字存在很多共轭对，可以尝试涂色法。涂色发本质上是一种暴力找单数链的方法。</p>
+<ol>
+<li>
+<p>单色 | Simple Colors</p>
+<ol>
+<li>Color Trap<br>
+<img loading="lazy" src="20230228150740.png" alt=""><br>
+可以看到盘面中存在关于4的多组共轭对，将共轭的4涂上不同的颜色。（例如从r1c1开始，r1c1涂深橙色，则r1c7涂浅橙色，则r3c9、r8c7涂深橙色……。）<br>
+根据双向强链接的性质，深色和浅色中有且仅有一种为真。而未涂色的r2c1(4)同时被深色和浅色看到，必为假。</li>
+<li>Color Wrap<br>
+<img loading="lazy" src="20230228152739.png" alt=""><br>
+按照上述方法对5涂色，红色和橙色中有且仅有一种为真。而r9出现两个红色，说明红色不可能为真。</li>
+</ol>
+</li>
+<li>
+<p>双色 | Multi Colors</p>
+<ol>
+<li>
+<p>情况1<br>
+<img loading="lazy" src="20230228153239.png" alt=""><br>
+对于本盘面，4的强链接分成左右两组，不互通。但由于r2c3和r2c6之间存在弱链接，这使得两组涂色的候选数之间依旧有某种联系。我们可以尝试用多种颜色涂色，这里用了深浅橙色和深浅紫色两组颜色。注意这里r2c3和r2c6之间的弱链接两端均为深色，这便于之后的推理。<br>
+这时出现四种情况：<br>
+1. 深橙色和深紫色为真。（从r2c3和r2c6之间的弱链接可知这是不可能的）<br>
+2. 深橙色和浅紫色为真。<br>
+3. 浅橙色和深紫色为真。<br>
+4. 浅橙色和浅紫色为真。</p>
+<p>可能为真的三种情况都至少有一种浅色为真，回到盘面，可知r6c4(4)和r7c6(4)中至少一个为真，它们共同看见的r8c4(4)被排除。</p>
+</li>
+<li>
+<p>情况2<br>
+<img loading="lazy" src="20230228163947.png" alt=""><br>
+按照上述方法对4涂色后发现r4c5(4)同时看到浅橙色和浅紫色，说明所有的深橙色为假。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="袋鼠">袋鼠</h4>
+<h2 id="神圣技巧">神圣技巧</h2>
+<h3 id="复杂致命结构">复杂致命结构</h3>
+<h3 id="变异鱼">变异鱼</h3>
+<ol>
+<li>宫内鱼 | Franken Fish</li>
+<li>内鳍</li>
+<li>自噬鳍</li>
+<li>交叉鱼</li>
+<li>复杂鱼转换</li>
+</ol>
+<h3 id="鱼雷">鱼雷</h3>
+<h3 id="网">网</h3>
+<h2 id="后续">后续</h2>
+<h3 id="软件">软件</h3>
+<ul>
+<li><a href="http://sourceforge.net/projects/hodoku/files" target="_blank" rel="noopener">Hodoku</a></li>
+<li><a href="http://jcbonsai.free.fr/sudoku/" target="_blank" rel="noopener">JSudoku</a></li>
+<li><a href="https://github.com/SudokuMonster/SukakuExplainer/releases" target="_blank" rel="noopener">Sudoku Explainer</a></li>
+<li><a href="https://drive.google.com/drive/folders/1uk4CCzW2fabLCawCwpwsQga2LtniXLQo" target="_blank" rel="noopener"><strong>YZF-sudoku</strong></a></li>
+<li>全民数独</li>
+<li>弈数独</li>
+<li>sudoku10000+</li>
+<li>数独玩家</li>
+</ul>
+<h3 id="题库">题库</h3>
+<ul>
+<li><a href="https://coconir.wixsite.com/sudoku" target="_blank" rel="noopener">coconir 标准数独题集</a></li>
+</ul>
+<h3 id="工具">工具</h3>
+<ul>
+<li><a href="https://store.steampowered.com/app/1706870/Svens_SudokuPad/" target="_blank" rel="noopener">Svens_SudokuPad</a></li>
+<li><a href="https://www.f-puzzles.com/" target="_blank" rel="noopener">f-puzzles</a></li>
+<li><a href="https://sudokulab.net/" target="_blank" rel="noopener">sudokulab</a></li>
+</ul>
+<h3 id="数独大佬">数独大佬</h3>
+<p>小向： <a href="https://zhuanlan.zhihu.com/SunnieSudoku" target="_blank" rel="noopener">知乎</a> <a href="https://space.bilibili.com/23736703" target="_blank" rel="noopener">B站</a><br>
+解素商： <a href="https://space.bilibili.com/97520051" target="_blank" rel="noopener">B站</a><br>
+探长： <a href="https://space.bilibili.com/51726630" target="_blank" rel="noopener">B站</a><br>
+宋田夫： <a href="https://space.bilibili.com/5054638" target="_blank" rel="noopener">B站</a></p>
+<p>数独吧和数毒吧上有更多技巧。</p>
+
+  </div>
+  
+  <div class="tags">
+    <div>标签:</div>
+    <ul>
+        <li><a href="/tags/%E7%A0%94%E7%A9%B6/">研究</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

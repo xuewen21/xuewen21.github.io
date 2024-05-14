@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 简陋的网站</title>
+    <link>https://blog.xuewen21.cc/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 简陋的网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 May 2022 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://blog.xuewen21.cc/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图片压缩</title>
+      <link>https://blog.xuewen21.cc/posts/tool/ya/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0800</pubDate>
+      <guid>https://blog.xuewen21.cc/posts/tool/ya/</guid>
+      <description>&#xD;不会改变宽高比&#xD;压缩&#xD;</description>
+    </item>
+  </channel>
+</rss>
