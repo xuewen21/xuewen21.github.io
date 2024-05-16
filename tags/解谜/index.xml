@@ -118,7 +118,7 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/light-up/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/light-up/</guid>
-      <description>&#xD;放满&#xD;→&#xD;4&#xD;4&#xD;→&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;→&#xD;0&#xD;0&#xD;差一&#xD;→&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;点亮这个格子&#xD;→&#xD;A&#xD;→&#xD;A&#xD;→&#xD;A&#xD;二选一&#xD;→&#xD;A&#xD;A&#xD;→&#xD;A&#xD;1A&#xD;1&#xD;→&#xD;A1&#xD;1&#xD;A&#xD;同行列&#xD;→&#xD;22&#xD;22&#xD;→&#xD;33&#xD;33&#xD;→&#xD;2&#xD;2&#xD;2&#xD;2&#xD;→&#xD;2&#xD;2&#xD;1&#xD;1&#xD;→&#xD;1&#xD;1&#xD;1&#xD;1&#xD;→&#xD;23&#xD;23&#xD;→&#xD;12&#xD;12&#xD;→&#xD;12&#xD;12&#xD;对角&#xD;→&#xD;1&#xD;1&#xD;3&#xD;3&#xD;→&#xD;1&#xD;1&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;1&#xD;1&#xD;→&#xD;3&#xD;3&#xD;3&#xD;3&#xD;邻行&#xD;→&#xD;3&#xD;3&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;3&#xD;3&#xD;两个二选一&#xD;→&#xD;AB1&#xD;1&#xD;1B&#xD;1&#xD;A&#xD;→&#xD;1AA&#xD;1&#xD;BB&#xD;</description>
+      <description>放满&#xD;→&#xD;4&#xD;4&#xD;→&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;→&#xD;0&#xD;0&#xD;差一&#xD;→&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;补位&#xD;为了点亮A格，就必须在某个内放灯。&#xA;→&#xD;A&#xD;→&#xD;A&#xD;→&#xD;A&#xD;同行列&#xD;→&#xD;22&#xD;22&#xD;→&#xD;12&#xD;12&#xD;→&#xD;33&#xD;33&#xD;→&#xD;2&#xD;2&#xD;2&#xD;2&#xD;→&#xD;2&#xD;2&#xD;1&#xD;1&#xD;→&#xD;1&#xD;1&#xD;1&#xD;1&#xD;→&#xD;23&#xD;23&#xD;→&#xD;12&#xD;12&#xD;→&#xD;12&#xD;12&#xD;对角&#xD;对角线方向的两个线索可能会相互影响，可以尝试研究。一下列出的例子只涉及两个线索，更多线索时会更复杂。</description>
     </item>
   </channel>
 </rss>

@@ -117,18 +117,18 @@
 <h3>放满</h3>
 
     <table>
-    <tr>
-        <td></td><td></td><td></td>
-        <td class="interval" rowspan="3">→</td>
-        <td class="y"></td><td class="l"></td><td class="y"></td>
-    </tr>
-    <tr>
-        <td></td><td class="b">4</td><td></td>
-        <td class="l"></td><td class="b">4</td><td class="l"></td></tr>
-    <tr>
-        <td></td><td></td><td></td>
-        <td class="y"></td><td class="l"></td><td class="y"></td>
-    </tr>
+        <tr>
+            <td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="y"></td><td class="l"></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">4</td><td></td>
+            <td class="l"></td><td class="b">4</td><td class="l"></td></tr>
+        <tr>
+            <td></td><td></td><td></td>
+            <td class="y"></td><td class="l"></td><td class="y"></td>
+        </tr>
     </table>
 
     <table>
@@ -240,7 +240,9 @@
         </tr>
     </table>
 
-<h3>点亮这个格子</h3>
+<h3>补位</h3>
+
+    <p>为了点亮A格，就必须在某个内放灯。</p>
 
     <table>
         <tr>
@@ -302,68 +304,6 @@
         </tr>
     </table>
 
-<h3>二选一</h3>
-
-    <table>
-        <tr>
-            <td></td><td></td><td class="b"></td><td></td>
-            <td class="interval" rowspan="4">→</td>
-            <td></td><td></td><td class="b"></td><td></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td>A</td><td></td>
-            <td></td><td class="n"></td><td></td><td></td>
-        </tr>
-        <tr>
-            <td class="b"></td><td>A</td><td class="n"></td><td class="b"></td>
-            <td class="b"></td><td></td><td class="n"></td><td class="b"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td class="b"></td><td></td>
-            <td></td><td></td><td class="b"></td><td></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td><td class="b"></td><td></td>
-            <td class="interval" rowspan="4">→</td>
-            <td></td><td></td><td></td><td class="b"></td><td></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td><td>A</td><td></td>
-            <td></td><td class="n"></td><td class="n"></td><td></td><td></td>
-        </tr>
-        <tr>
-            <td class="b"></td><td class="b">1</td><td>A</td><td class="n"></td><td class="b"></td>
-            <td class="b"></td><td class="b">1</td><td></td><td class="n"></td><td class="b"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td class="b"></td><td class="b"></td><td></td>
-            <td></td><td></td><td class="b"></td><td class="b"></td><td></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td class="b"></td><td></td>
-            <td class="interval" rowspan="4">→</td>
-            <td></td><td class="b"></td><td></td>
-        </tr>
-        <tr>
-            <td class="b"></td><td>A</td><td class="b">1</td>
-            <td class="b"></td><td></td><td class="b">1</td>
-        </tr>
-        <tr>
-            <td></td><td>A</td><td></td>
-            <td></td><td></td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td class="b"></td><td></td>
-            <td></td><td class="b"></td><td></td>
-        </tr>
-    </table>
-
 <h3>同行列</h3>
 
     <table>
@@ -382,7 +322,21 @@
         </tr>
     </table>
 
-    <!-- 12 -->
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="n"></td><td></td><td></td><td class="n y"></td>
+        </tr>
+        <tr>
+            <td class="n"></td><td class="b">1</td><td class="b">2</td><td></td>
+            <td class="n"></td><td class="b">1</td><td class="b">2</td><td class="l"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+            <td class="n"></td><td></td><td></td><td class="n y"></td>
+        </tr>
+    </table>
 
     <table>
         <tr>
@@ -521,6 +475,7 @@
     </table>
 
 <h3>对角</h3>
+    <p>对角线方向的两个线索可能会相互影响，可以尝试研究。一下列出的例子只涉及两个线索，更多线索时会更复杂。</p>
 
     <table>
         <tr>
@@ -614,7 +569,6 @@
         </tr>
     </table>
 
-
 <h3>邻行</h3>
 
     <table>
@@ -657,47 +611,165 @@
         </tr>
     </table>
 
-<h3>两个二选一</h3>
+<h3>鱼形</h3>
 
-<table>
-    <tr>
-        <td></td><td></td><td></td><td class="b"></td><td></td>
-        <td class="interval" rowspan="4">→</td>
-        <td></td><td></td><td></td><td class="b"></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td>A</td><td>B</td><td class="b">1</td><td class="b"></td>
-        <td></td><td></td><td></td><td class="b">1</td><td class="b"></td>
-    </tr>
-    <tr>
-        <td class="b"></td><td class="b">1</td><td class="b"></td><td>B</td><td></td>
-        <td class="b"></td><td class="b">1</td><td class="b"></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td>A</td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td class="n"></td><td></td>
-    </tr>
-</table>
+    <p>所有A格内至少有一个要放灯，所有B格内至少有一个要放灯。无论哪种情况，某些行或列的其他格子不能再放灯。</p>
 
-<table>
-    <tr>
-        <td></td><td></td><td class="b"></td><td></td><td class="b"></td>
-        <td class="interval" rowspan="4">→</td>
-        <td></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
-    </tr>
-    <tr>
-        <td></td><td class="b">1</td><td>A</td><td>A</td><td class="b"></td>
-        <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b"></td>
-    </tr>
-    <tr>
-        <td class="b"></td><td>B</td><td class="n"></td><td>B</td><td class="b"></td>
-        <td class="b"></td><td></td><td class="n"></td><td></td><td class="b"></td>
-    </tr>
-    <tr>
-        <td></td><td class="b"></td><td class="b"></td><td></td><td class="b"></td>
-        <td></td><td class="b"></td><td class="b"></td><td class="n"></td><td class="b"></td>
-    </tr>
-</table>
+    <table>
+        <tr>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+            <td class="interval" rowspan="5">→</td>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+            <td class="b"></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td>A</td><td></td><td>B</td><td></td>
+            <td class="n"></td><td>A</td><td class="n"></td><td>B</td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td>A</td><td></td><td>B</td><td></td>
+            <td class="n"></td><td>A</td><td class="n"></td><td>B</td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+        </tr>
+    </table>
+
+<h3>强关系</h3>
+
+    <p>两个A格内至少有一个要放灯（强关系），无论哪种情况都会导致某些格子不能放灯。</p>
+
+    <table>
+        <tr>
+            <td></td><td></td><td class="b"></td><td></td>
+            <td class="interval" rowspan="4">→</td>
+            <td></td><td></td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>A</td><td></td>
+            <td></td><td class="n"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td>A</td><td class="n"></td><td class="b"></td>
+            <td class="b"></td><td></td><td class="n"></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td class="b"></td><td></td>
+            <td></td><td></td><td class="b"></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td class="b"></td><td></td>
+            <td class="interval" rowspan="4">→</td>
+            <td></td><td></td><td></td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td>A</td><td></td>
+            <td></td><td class="n"></td><td class="n"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="b">1</td><td>A</td><td class="n"></td><td class="b"></td>
+            <td class="b"></td><td class="b">1</td><td></td><td class="n"></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td class="b"></td><td class="b"></td><td></td>
+            <td></td><td></td><td class="b"></td><td class="b"></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td class="b"></td><td></td>
+            <td class="interval" rowspan="4">→</td>
+            <td></td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td>A</td><td class="b">1</td>
+            <td class="b"></td><td></td><td class="b">1</td>
+        </tr>
+        <tr>
+            <td></td><td>A</td><td></td>
+            <td></td><td></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td></td>
+            <td></td><td class="b"></td><td></td>
+        </tr>
+    </table>
+
+<h3>强弱链</h3>
+
+    <p>A'和A中至少有一个放灯（强关系），A和B不能同时放灯（弱关系），B和B'中至少有一个放灯（强关系），形成了一条A'A→AB→BB'的强弱相间的链。可以推出A'B'中至少有一个放灯（强关系）</p>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td class="b"></td><td></td>
+            <td class="interval" rowspan="4">→</td>
+            <td></td><td></td><td></td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td>A</td><td>B</td><td class="b">1</td><td class="b"></td>
+            <td></td><td></td><td></td><td class="b">1</td><td class="b"></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="b">1</td><td class="b"></td><td>B'</td><td></td>
+            <td class="b"></td><td class="b">1</td><td class="b"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td>A'</td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td class="n"></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td></td><td class="b"></td><td></td><td class="b"></td>
+            <td class="interval" rowspan="4">→</td>
+            <td></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">1</td><td>A</td><td>A'</td><td class="b"></td>
+            <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td>B</td><td class="n"></td><td>B'</td><td class="b"></td>
+            <td class="b"></td><td></td><td class="n"></td><td></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td class="b"></td><td></td><td class="b"></td>
+            <td></td><td class="b"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td class="b"></td><td></td><td></td>
+            <td class="interval" rowspan="5">→</td>
+            <td></td><td class="b"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="n"></td><td>A</td><td class="b"></td>
+            <td class="b"></td><td class="n y"></td><td></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="n"></td><td>B</td><td class="b"></td>
+            <td class="b"></td><td class="n y"></td><td></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td style="font-size:0.5em;">A'/B'</td><td></td><td></td>
+            <td class="y"></td><td class="l"></td><td class="y"></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td></td><td></td>
+            <td></td><td class="b"></td><td></td><td></td>
+        </tr>
+    </table>
 
   </div>
   
