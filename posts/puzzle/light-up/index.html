@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>数灯（Light Up）基本技巧 | 简陋的网站</title>
+<title>美术馆（Akari / Light Up）基本技巧 | 简陋的网站</title>
 
   <link rel="stylesheet" href="/css/root.css">
   <link rel="stylesheet" href="/css/main.css">
@@ -40,17 +40,17 @@
 
 <a href="https://blog.xuewen21.cc/posts/">发布</a>  >
 
-<a href="https://blog.xuewen21.cc/posts/puzzle/light-up/">数灯（Light Up）基本技巧</a> 
+<a href="https://blog.xuewen21.cc/posts/puzzle/light-up/">美术馆（Akari / Light Up）基本技巧</a> 
 </div> 
 
   </header>
   <main>
     
-  <h1>数灯（Light Up）基本技巧</h1>
+  <h1>美术馆（Akari / Light Up）基本技巧</h1>
 
   
   
-  <time datetime="2022-01-01T00:00:00&#43;08:00">January 1, 2022</time>
+  <time datetime="2023-01-01T00:00:00&#43;08:00">January 1, 2023</time>
 
   <div id="content">
     
@@ -58,7 +58,6 @@
     table {
         display: inline-block;
         margin-right: 2em;
-        margin-bottom: 2em;
     }
     td {
         width: 1.5em;
@@ -191,58 +190,9 @@
     </tr>
     </table>
 
-<h3>差一</h3>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td>
-            <td class="interval" rowspan="3">→</td>
-            <td class="n"></td><td></td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td class="b">3</td><td></td>
-            <td></td><td class="b">3</td><td></td></tr>
-        <tr>
-            <td></td><td></td><td></td>
-            <td class="n"></td><td></td><td class="n"></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td>
-            <td class="interval" rowspan="3">→</td>
-            <td class="n"></td><td></td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td class="b">2</td><td></td>
-            <td></td><td class="b">2</td><td></td>
-        </tr>
-        <tr>
-            <td></td><td class="n"></td><td></td>
-            <td></td><td class="n"></td><td></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td>
-            <td class="interval" rowspan="3">→</td>
-            <td></td><td></td><td class="n"></td>
-        </tr>
-        <tr>
-            <td class="n"></td><td class="b">1</td><td></td>
-            <td class="n"></td><td class="b">1</td><td></td>
-        </tr>
-        <tr>
-            <td></td><td class="n"></td><td></td>
-            <td></td><td class="n"></td><td></td>
-        </tr>
-    </table>
-
 <h3>补位</h3>
 
-    <p>为了点亮A格，就必须在某个内放灯。</p>
+    <p>为了点亮A格，就必须在某格内放灯。</p>
 
     <table>
         <tr>
@@ -304,178 +254,64 @@
         </tr>
     </table>
 
-<h3>同行列</h3>
+<h3>至多和至少</h3>
 
+    <h4>差一</h4>
+
+    <p>AB中至少有一个灯，BC中至少有一个灯，CD中至少有一个灯，DA中至少有一个灯。</p>
     <table>
         <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td>A</td><td></td>
             <td class="interval" rowspan="3">→</td>
-            <td class="n"></td><td class="y"></td><td></td><td></td><td class="y"></td><td class="n"></td>
+            <td class="n"></td><td></td><td class="n"></td>
         </tr>
         <tr>
-            <td></td><td></td><td class="b">2</td><td class="b">2</td><td></td><td></td>
-            <td class="y"></td><td class="l"></td><td class="b">2</td><td class="b">2</td><td class="l"></td><td class="y"></td>
+            <td>D</td><td class="b">3</td><td>B</td>
+            <td></td><td class="b">3</td><td></td>
         </tr>
         <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="n"></td><td class="y"></td><td></td><td></td><td class="y"></td><td class="n"></td>
+            <td></td><td>C</td><td></td>
+            <td class="n"></td><td></td><td class="n"></td>
         </tr>
     </table>
 
+    <div>变种：</div>
+
     <table>
         <tr>
-            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td>
             <td class="interval" rowspan="3">→</td>
-            <td class="n"></td><td></td><td></td><td class="n y"></td>
+            <td class="n"></td><td></td><td class="n"></td>
         </tr>
         <tr>
-            <td class="n"></td><td class="b">1</td><td class="b">2</td><td></td>
-            <td class="n"></td><td class="b">1</td><td class="b">2</td><td class="l"></td>
+            <td></td><td class="b">2</td><td></td>
+            <td></td><td class="b">2</td><td></td>
         </tr>
-        <tr>
-            <td></td><td></td><td></td><td></td>
-            <td class="n"></td><td></td><td></td><td class="n y"></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="interval" rowspan="3">→</td>
-            <td class="n"></td><td class="y"></td><td></td><td class="y"></td><td></td><td class="y"></td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td class="b">3</td><td></td><td class="b">3</td><td></td><td></td>
-            <td class="y"></td><td class="l"></td><td class="b">3</td><td class="l"></td><td class="b">3</td><td class="l"></td><td class="y"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="n"></td><td class="y"></td><td></td><td class="y"></td><td></td><td class="y"></td><td class="n"></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td>
-            <td class="interval" rowspan="5">→</td>
-            <td></td><td></td><td></td>
-        </tr>
-        <tr>
-            <td class="n"></td><td class="b">2</td><td></td>
-            <td class="n"></td><td class="b">2</td><td></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td>
-            <td class="y"></td><td class="l"></td><td class="y"></td>
-        </tr>
-        <tr>
-            <td class="n"></td><td class="b">2</td><td></td>
-            <td class="n"></td><td class="b">2</td><td></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td>
-            <td></td><td></td><td></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td>
-            <td class="interval" rowspan="5">→</td>
-            <td></td><td></td><td></td>
-        </tr>
-        <tr>
-            <td class="n"></td><td class="b">2</td><td></td>
-            <td class="n"></td><td class="b">2</td><td></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td>
-            <td></td><td></td><td></td>
-        </tr>
-        <tr>
-            <td></td><td class="b">1</td><td></td>
-            <td></td><td class="b">1</td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td>
-            <td></td><td></td><td></td>
-        </tr>
-    </table>
-
-    <table>
         <tr>
             <td></td><td class="n"></td><td></td>
-            <td class="interval" rowspan="5">→</td>
             <td></td><td class="n"></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td></td><td></td><td class="n"></td>
         </tr>
         <tr>
             <td class="n"></td><td class="b">1</td><td></td>
             <td class="n"></td><td class="b">1</td><td></td>
         </tr>
         <tr>
-            <td></td><td></td><td></td>
-            <td></td><td></td><td></td>
-        </tr>
-        <tr>
-            <td></td><td class="b">1</td><td></td>
-            <td></td><td class="b">1</td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td>
-            <td></td><td></td><td></td>
+            <td></td><td class="n"></td><td></td>
+            <td></td><td class="n"></td><td></td>
         </tr>
     </table>
 
-    <table>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="interval" rowspan="3">→</td>
-            <td class="y"></td><td></td><td class="n"></td><td class="n"></td><td></td><td class="y"></td>
-        </tr>
-        <tr>
-            <td></td><td class="b">2</td><td></td><td></td><td class="b">3</td><td></td>
-            <td class="l"></td><td class="b">2</td><td></td><td></td><td class="b">3</td><td class="l"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="y"></td><td></td><td class="n"></td><td class="n"></td><td></td><td class="y"></td>
-        </tr>
-    </table>
+    <h4>对角</h4>
 
-    <table>
-        <tr>
-            <td></td><td class="n"></td><td></td><td></td><td class="n"></td><td></td>
-            <td class="interval" rowspan="3">→</td>
-            <td></td><td class="n"></td><td></td><td></td><td class="n"></td><td class="y"></td>
-        </tr>
-        <tr>
-            <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b">2</td><td></td>
-            <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b">2</td><td class="l"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="n"></td><td></td><td class="n"></td><td class="n"></td><td></td><td class="y"></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="interval" rowspan="3">→</td>
-            <td></td><td></td><td></td><td></td><td></td><td class="y"></td>
-        </tr>
-        <tr>
-            <td class="n"></td><td class="b">1</td><td class="n"></td><td class="n"></td><td class="b">2</td><td></td>
-            <td class="n"></td><td class="b">1</td><td class="n"></td><td class="n"></td><td class="b">2</td><td class="l"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td>
-            <td></td><td></td><td></td><td></td><td></td><td class="y"></td>
-        </tr>
-    </table>
-
-<h3>对角</h3>
-    <p>对角线方向的两个线索可能会相互影响，可以尝试研究。一下列出的例子只涉及两个线索，更多线索时会更复杂。</p>
+    <p>由“1”知AB中至多一个灯，由“3”知AB中至少一个灯。</p>
 
     <table>
         <tr>
@@ -484,11 +320,11 @@
             <td></td><td class="n"></td><td></td><td class="y"></td>
         </tr>
         <tr>
-            <td></td><td class="b">1</td><td></td><td></td>
+            <td></td><td class="b">1</td><td>A</td><td></td>
             <td class="n"></td><td class="b">1</td><td></td><td class="y"></td>
         </tr>
         <tr>
-            <td></td><td></td><td class="b">3</td><td></td>
+            <td></td><td>B</td><td class="b">3</td><td></td>
             <td></td><td></td><td class="b">3</td><td class="l"></td>
         </tr>
         <tr>
@@ -496,6 +332,8 @@
             <td class="y"></td><td class="y"></td><td class="l"></td><td class="y"></td>
         </tr>
     </table>
+
+    <div>变种：</div>
 
     <table>
         <tr>
@@ -537,39 +375,67 @@
         </tr>
     </table>
 
+    <h4>至多至少的传递</h4>
+
+    <p>两个A中至少有一个灯，于是两个B中至多有一个灯，于是两个C中至少有一个灯。</p>
+
     <table>
         <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="interval" rowspan="7">→</td>
-            <td></td><td class="y"></td><td class="y"></td><td class="n"></td><td></td><td></td><td></td>
+            <td></td><td class="n"></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="6">→</td>
+            <td></td><td class="n"></td><td></td><td></td><td></td><td class="y"></td>
         </tr>
         <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="y"></td><td class="y"></td><td class="l"></td><td class="y"></td><td class="y"></td><td class="y"></td><td class="y"></td>
+            <td class="n"></td><td class="b">1</td><td>A</td><td></td><td></td><td></td>
+            <td class="n"></td><td class="b">1</td><td>A</td><td></td><td></td><td class="y"></td>
         </tr>
         <tr>
-            <td></td><td></td><td class="b">3</td><td></td><td></td><td></td><td></td>
-            <td class="y"></td><td class="l"></td><td class="b">3</td><td></td><td></td><td class="y"></td><td></td>
+            <td></td><td>A</td><td class="b">2</td><td>B</td><td></td><td></td>
+            <td></td><td>A</td><td class="b">2</td><td>B</td><td></td><td class="y"></td>
         </tr>
         <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="n"></td><td class="y"></td><td></td><td class="n"></td><td></td><td class="y"></td><td class="n"></td>
+            <td></td><td></td><td>B</td><td class="b">2</td><td>C</td><td></td>
+            <td></td><td></td><td>B</td><td class="b">2</td><td>C</td><td class="y"></td>
         </tr>
         <tr>
-            <td></td><td></td><td></td><td></td><td class="b">3</td><td></td><td></td>
-            <td></td><td class="y"></td><td></td><td></td><td class="b">3</td><td class="l"></td><td class="y"></td>
+            <td></td><td></td><td></td><td>C</td><td class="b">3</td><td></td>
+            <td></td><td></td><td></td><td>C</td><td class="b">3</td><td class="l"></td>
         </tr>
         <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td class="y"></td><td class="y"></td><td class="y"></td><td class="y"></td><td class="l"></td><td class="y"></td><td class="y"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            <td></td><td class="y"></td><td></td><td class="n"></td><td class="y"></td><td class="y"></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="y"></td><td class="y"></td><td class="y"></td><td class="y"></td><td class="l"></td><td class="y"></td>
         </tr>
     </table>
 
-<h3>邻行</h3>
+    <table>
+        <tr>
+            <td></td><td class="n"></td><td></td><td></td>
+            <td class="interval" rowspan="6">→</td>
+            <td></td><td class="n"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="n"></td><td class="b">1</td><td>A</td><td></td>
+            <td class="n"></td><td class="b">1</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td>A</td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>B</td><td></td>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td>B</td><td class="b">2</td><td>C</td>
+            <td></td><td></td><td class="b">2</td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>C</td><td></td>
+            <td></td><td></td><td></td><td class="n"></td>
+        </tr>
+    </table>
+
+    <div>变种：</div>
 
     <table>
         <tr>
@@ -611,35 +477,183 @@
         </tr>
     </table>
 
-<h3>鱼形</h3>
-
-    <p>所有A格内至少有一个要放灯，所有B格内至少有一个要放灯。无论哪种情况，某些行或列的其他格子不能再放灯。</p>
+<h3>同行列的一些情况</h3>
 
     <table>
         <tr>
-            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
-            <td class="interval" rowspan="5">→</td>
-            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="n"></td><td class="y"></td><td></td><td></td><td class="y"></td><td class="n"></td>
         </tr>
         <tr>
-            <td class="b"></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
-            <td class="b"></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+            <td></td><td></td><td class="b">2</td><td class="b">2</td><td></td><td></td>
+            <td class="y"></td><td class="l"></td><td class="b">2</td><td class="b">2</td><td class="l"></td><td class="y"></td>
         </tr>
         <tr>
-            <td></td><td>A</td><td></td><td>B</td><td></td>
-            <td class="n"></td><td>A</td><td class="n"></td><td>B</td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td>A</td><td></td><td>B</td><td></td>
-            <td class="n"></td><td>A</td><td class="n"></td><td>B</td><td class="n"></td>
-        </tr>
-        <tr>
-            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
-            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="n"></td><td class="y"></td><td></td><td></td><td class="y"></td><td class="n"></td>
         </tr>
     </table>
 
-<h3>强关系</h3>
+    <div>变种：</div>
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="n"></td><td></td><td></td><td class="y"></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td class="n"></td><td class="b">1</td><td class="b">2</td><td></td><td></td>
+            <td class="n"></td><td class="b">1</td><td class="b">2</td><td class="l"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td class="n"></td><td></td><td></td><td class="y"></td><td class="n"></td>
+        </tr>
+    </table>
+
+    <br/><br/>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="n"></td><td class="y"></td><td></td><td class="y"></td><td></td><td class="y"></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td class="b">3</td><td></td><td class="b">3</td><td></td><td></td>
+            <td class="y"></td><td class="l"></td><td class="b">3</td><td class="l"></td><td class="b">3</td><td class="l"></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="n"></td><td class="y"></td><td></td><td class="y"></td><td></td><td class="y"></td><td class="n"></td>
+        </tr>
+    </table>
+
+    <div>变种：</div>
+    <table>
+        <tr>
+            <td></td><td class="n"></td><td></td><td class="n"></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td></td><td class="n"></td><td class="y"></td><td class="n"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">2</td><td></td><td class="b">2</td><td></td>
+            <td></td><td class="b">2</td><td class="l"><td class="b">2</td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td class="y"></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <br/><br/>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td>
+            <td class="interval" rowspan="5">→</td>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="n"></td><td class="b">2</td><td></td>
+            <td class="n"></td><td class="b">2</td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">1</td><td></td>
+            <td></td><td class="b">1</td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td class="n"></td><td></td>
+            <td class="interval" rowspan="5">→</td>
+            <td></td><td class="n"></td><td></td>
+        </tr>
+        <tr>
+            <td class="n"></td><td class="b">1</td><td></td>
+            <td class="n"></td><td class="b">1</td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">1</td><td></td>
+            <td></td><td class="b">1</td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <br/><br/>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="y"></td><td></td><td class="n"></td><td class="n"></td><td></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">2</td><td></td><td></td><td class="b">3</td><td></td>
+            <td class="l"></td><td class="b">2</td><td></td><td></td><td class="b">3</td><td class="l"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="y"></td><td></td><td class="n"></td><td class="n"></td><td></td><td class="y"></td>
+        </tr>
+    </table>
+
+    <div>变种：</div>
+
+    <table>
+        <tr>
+            <td></td><td class="n"></td><td></td><td></td><td class="n"></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td></td><td class="n"></td><td></td><td></td><td class="n"></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b">2</td><td></td>
+            <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b">2</td><td class="l"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="n"></td><td></td><td class="n"></td><td class="n"></td><td></td><td class="y"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td></td><td></td><td></td><td></td><td></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td class="n"></td><td class="b">1</td><td class="n"></td><td class="n"></td><td class="b">2</td><td></td>
+            <td class="n"></td><td class="b">1</td><td class="n"></td><td class="n"></td><td class="b">2</td><td class="l"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td class="y"></td>
+        </tr>
+    </table>
+
+<h3>强弱关系</h3>
+
+    <p>强关系：两者之中至少一个为真；弱关系：两者之中至少一个为假（即至多一个为真）。</p>
+
+    <h4>强关系</h4>
 
     <p>两个A格内至少有一个要放灯（强关系），无论哪种情况都会导致某些格子不能放灯。</p>
 
@@ -703,9 +717,9 @@
         </tr>
     </table>
 
-<h3>强弱链</h3>
+    <h4>强弱链</h4>
 
-    <p>A'和A中至少有一个放灯（强关系），A和B不能同时放灯（弱关系），B和B'中至少有一个放灯（强关系），形成了一条A'A→AB→BB'的强弱相间的链。可以推出A'B'中至少有一个放灯（强关系）</p>
+    <p>A'和A中至少有一个放灯（强关系），A和B不能同时放灯（弱关系），B和B'中至少有一个放灯（强关系），形成了一条A'═A─B═B'的强弱相间的链。可以推出A'B'中至少有一个放灯（强关系）</p>
 
     <table>
         <tr>
@@ -724,26 +738,6 @@
         <tr>
             <td></td><td>A'</td><td></td><td></td><td></td>
             <td></td><td></td><td></td><td class="n"></td><td></td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td></td><td></td><td class="b"></td><td></td><td class="b"></td>
-            <td class="interval" rowspan="4">→</td>
-            <td></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
-        </tr>
-        <tr>
-            <td></td><td class="b">1</td><td>A</td><td>A'</td><td class="b"></td>
-            <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b"></td>
-        </tr>
-        <tr>
-            <td class="b"></td><td>B</td><td class="n"></td><td>B'</td><td class="b"></td>
-            <td class="b"></td><td></td><td class="n"></td><td></td><td class="b"></td>
-        </tr>
-        <tr>
-            <td></td><td class="b"></td><td class="b"></td><td></td><td class="b"></td>
-            <td></td><td class="b"></td><td class="b"></td><td class="n"></td><td class="b"></td>
         </tr>
     </table>
 
@@ -771,6 +765,196 @@
         </tr>
     </table>
 
+    <h4>两对强关系</h4>
+
+    <p>
+        <pre>
+            A ─ B'
+            ║   ║
+            A'─ B
+        </pre>
+        只有两种填法：AB或A'B'。而且无论哪种填法，某些格子都不能再放灯。
+    </p>
+
+    <table>
+        <tr>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+            <td class="interval" rowspan="5">→</td>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+            <td class="b"></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td>A</td><td></td><td>B'</td><td></td>
+            <td class="n"></td><td></td><td class="n"></td><td></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td>A'</td><td></td><td>B</td><td></td>
+            <td class="n"></td><td></td><td class="n"></td><td></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+            <td></td><td class="b"></td><td></td><td class="b"></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td>A</td><td>B'</td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="n"></td><td></td><td></td><td  class="n"></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="b">1</td><td class="b">1</td><td  class="b"></td>
+            <td class="b"></td><td class="b">1</td><td class="b">1</td><td  class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td>A'</td><td>B</td><td></td>
+            <td  class="n"></td><td></td><td></td><td  class="n"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td>A</td><td></td><td></td><td></td><td>B'</td><td></td>
+            <td class="interval" rowspan="3">→</td>
+            <td class="n"></td><td></td><td class="n"></td><td class="n"></td><td class="n"></td><td></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="b">1</td><td>A'</td><td></td><td>B</td><td class="b">1</td><td class="b"></td>
+            <td class="b"></td><td class="b">1</td><td></td><td class="n"></td><td></td><td class="b">1</td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td></td><td></td><td></td><td class="b"></td><td></td>
+            <td></td><td class="b"></td><td></td><td></td><td></td><td class="b"></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td></td><td class="b"></td><td></td><td class="b"></td>
+            <td class="interval" rowspan="4">→</td>
+            <td></td><td class="n"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">1</td><td>A</td><td>A'</td><td class="b"></td>
+            <td class="n"></td><td class="b">1</td><td></td><td></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td>B'</td><td class="n"></td><td>B</td><td class="b"></td>
+            <td class="b"></td><td></td><td class="n"></td><td></td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td class="b"></td><td></td><td class="b"></td>
+            <td></td><td class="b"></td><td class="b"></td><td class="n"></td><td class="b"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="7">→</td>
+            <td></td><td class="y"></td><td class="y"></td><td class="n"></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="y"></td><td class="y"></td><td class="l"></td><td class="n y"></td><td class="y"></td><td class="y"></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td class="b">3</td><td>A</td><td></td><td></td><td></td>
+            <td class="y"></td><td class="l"></td><td class="b">3</td><td></td><td></td><td class="y"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>A'</td><td></td><td>B</td><td></td><td></td>
+            <td class="n"></td><td class="n y"></td><td></td><td class="n"></td><td></td><td class="n y"></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td>B'</td><td class="b">3</td><td></td><td></td>
+            <td></td><td class="y"></td><td></td><td></td><td class="b">3</td><td class="l"></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="y"></td><td class="y"></td><td class="y"></td><td class="n y"></td><td class="l"></td><td class="y"></td><td class="y"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td class="y"></td><td></td><td class="n"></td><td class="y"></td><td class="y"></td><td></td>
+        </tr>
+    </table>
+
+    <h4>环</h4>
+
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="interval" rowspan="9">→</td>
+            <td></td><td></td><td></td><td class="n"></td><td></td><td class="n"></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td class="b"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td class="b"></td><td class="n"></td><td></td><td class="n"></td><td class="l"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td class="b">1</td><td>A</td><td></td><td>B'</td><td class="b">2</td><td class="b"></td><td></td>
+            <td></td><td class="b"></td><td class="b">1</td><td></td><td class="n"></td><td></td><td class="b">2</td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>A'</td><td></td><td></td><td></td><td>B</td><td></td><td></td>
+            <td class="n"></td><td class="n"></td><td></td><td class="n"></td><td class="n"></td><td class="n"></td><td></td><td class="n"></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td class="n"></td><td class="n"></td><td></td><td class="n"></td><td class="n"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>D</td><td></td><td></td><td></td><td>C'</td><td></td><td></td>
+            <td class="n"></td><td class="n"></td><td></td><td class="n"></td><td class="n"></td><td class="n"></td><td></td><td class="n"></td><td class="n"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td class="b">2</td><td>D'</td><td></td><td>C</td><td class="b">3</td><td></td><td></td>
+            <td></td><td></td><td class="b">2</td><td></td><td class="n"></td><td></td><td class="b">3</td><td class="l"></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td class="b">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td class="n"></td><td class="b">1</td><td></td><td class="n"></td><td></td><td class="n"></td><td class="l"></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td class="n"></td><td></td><td class="n"></td><td></td><td class="n"></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td></td><td class="b"></td><td></td><td></td><td class="b"></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="b">1</td><td>A</td><td>B'</td><td class="b">1</td><td class="b"></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td>A'</td><td></td><td></td><td>B</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td>D</td><td></td><td></td><td>C'</td><td></td><td></td><td class="b"></td><td></td>
+        </tr>
+        <tr>
+            <td class="b"></td><td class="b">1</td><td>D'</td><td>C</td><td class="b">2</td><td>E</td><td>F'</td><td class="b">1</td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td class="b"></td><td></td><td></td><td>E'</td><td></td><td></td><td>F</td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td>H</td><td></td><td></td><td>G'</td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td class="b"></td><td class="b">1</td><td>H'</td><td>G</td><td class="b">1</td><td class="b"></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td class="b"></td><td></td><td></td><td class="b"></td><td></td>
+        </tr>
+    </table>
   </div>
   
   <div class="tags">
