@@ -146,7 +146,7 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/light-up/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/light-up/</guid>
-      <description>简单技巧&#xD;放满&#xD;→&#xD;4&#xD;4&#xD;→&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;→&#xD;0&#xD;0&#xD;补位&#xD;为了点亮A格，就必须在某格内放灯。&#xA;→&#xD;A&#xD;→&#xD;A&#xD;→&#xD;A&#xD;差一&#xD;A&#xD;→&#xD;D3B&#xD;3&#xD;C&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;一些固定情况&#xD;→&#xD;33&#xD;33&#xD;→&#xD;22&#xD;22&#xD;→&#xD;23&#xD;23&#xD;练习&#xD;综合运用以上方法可以完成这个练习中大部分区域，左下角可以通过假设法得到答案，或者继续学习下面的强弱关系。&#xD;强弱关系&#xD;强关系：两者之中至少一个为真；弱关系：两者之中至少一个为假（即至多一个为真）。&#xA;找到强关系&#xD;以下的A格之间都有强关系:&#xA;A&#xD;A3A&#xD;A&#xD;A&#xD;A2A&#xD;A&#xD;1A&#xD;A&#xD;A&#xD;AA&#xD;AA&#xD;简单利用强弱关系&#xD;两个有强关系的格子共同影响的格子不能放灯。&#xA;→&#xD;A&#xD;1A&#xD;1&#xD;→&#xD;A1&#xD;1&#xD;A&#xD;A&#xD;→&#xD;1A3&#xD;13&#xD;→&#xD;1A2&#xD;12&#xD;A&#xD;→&#xD;1A1&#xD;11&#xD;对角的情况&#xD;由“1”知AB中至多一个灯，由“3”知AB中至少一个灯。</description>
+      <description>简单技巧&#xD;放满&#xD;→&#xD;4&#xD;4&#xD;→&#xD;3&#xD;3&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;→&#xD;0&#xD;0&#xD;补位&#xD;为了点亮A格，就必须在某格内放灯。&#xA;→&#xD;A&#xD;→&#xD;A&#xD;→&#xD;A&#xD;差一&#xD;A&#xD;→&#xD;D3B&#xD;3&#xD;C&#xD;→&#xD;2&#xD;2&#xD;→&#xD;1&#xD;1&#xD;强弱关系&#xD;强关系：两者之中至少一个为真；弱关系：两者之中至少一个为假（即至多一个为真）。&#xA;找到强关系&#xD;以下的A格之间都有强关系:&#xA;A&#xD;A3A&#xD;A&#xD;A&#xD;A2A&#xD;A&#xD;1A&#xD;A&#xD;A&#xD;AA&#xD;AA&#xD;简单利用强弱关系&#xD;两个有强关系的格子共同看到（具有弱连接关系）的格子不能放灯。&#xA;→&#xD;A&#xD;1A&#xD;1&#xD;→&#xD;A1&#xD;1&#xD;A&#xD;A&#xD;→&#xD;1A3&#xD;13&#xD;A&#xD;→&#xD;1A2&#xD;12&#xD;能发现前面提到的“差一”也是这种原理。</description>
     </item>
     <item>
       <title>解谜工具</title>
