@@ -177,6 +177,15 @@ main input {
     border: var(--main-color) 1px solid;
     border-radius: none;
 }
+main textarea {
+    font-size: 0.8em;
+    padding: 0.1em;
+    background-color: var(--back-color);
+    color: var(--main-color);
+    outline: none;
+    border: var(--main-color) 1px solid;
+    border-radius: none;
+}
 main button {
     font-size: 0.8em;
     padding: 0.1em 1em;

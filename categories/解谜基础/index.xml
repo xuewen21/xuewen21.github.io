@@ -34,21 +34,21 @@
       <link>https://blog.xuewen21.cc/posts/puzzle/encode/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/encode/</guid>
-      <description>二进制&#xA;五位二进制足够表示26个字母。&#xA;Base 家族&#xA;Base 16&#xA;特点：包含0-9和A-F Base 32&#xA;特点：包含A-Z和2-7，结尾可能有“=” Base 64&#xA;特点：包含A-Z、a-z、0-9、“+”、“/”，结尾可能有“=” JSFuck&#xA;特点：由“[]()!+”构成。&#xA;BrainFuck&#xA;特点：由“&amp;gt;&amp;lt;+-.,[]”构成。</description>
+      <description>二进制&#xA;五位二进制足够表示26个字母。&#xA;Base 家族&#xA;Base 16&#xA;特点：包含0-9和A-F Base 32&#xA;特点：包含A-Z和2-7，结尾可能有“=” Base 64&#xA;特点：包含A-Z、a-z、0-9、“+”、“/”，结尾可能有“=” JSFuck&#xA;特点：由“[]()!+”构成。&#xA;BrainFuck&#xA;特点：由“&amp;gt;&amp;lt;+-.,[]”构成。&#xA;unicode&#xA;最新版本&#xA;码表&#xA;码表&#xA;GBK&#xA;GB2312码表&#xA;GBK码表&#xA;GB18030-2022&#xA;五笔</description>
     </item>
     <item>
       <title>解谜工具</title>
       <link>https://blog.xuewen21.cc/posts/puzzle/tool/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/tool/</guid>
-      <description>综合 不暴力不成活 焖肉面 dCode tools.qhex.org 英文查词 Nutrimatic&#xA;Qat&#xA;用法&#xA;编码解码 CyberChef 中文 字統网：字音字形 千篇国学：查成语 中文诗歌古典文集数据库 手写中文输入 漢語拆字字典 逻辑谜题 通用编辑器 Noq：逻辑谜题求解器 逻辑谜题求解器 图片处理 Photopea | Online Photo Editor SVG在线编辑器 数学图形 GeoGebra 几何作图 </description>
+      <description>综合 不暴力不成活 焖肉面 dCode tools.qhex.org 英文查词 Nutrimatic&#xA;Qat&#xA;用法&#xA;编码解码 CyberChef quipqiup（暴力解单表） 中文 字統网：字音字形 千篇国学：查成语 中文诗歌古典文集数据库 手写中文输入 漢語拆字字典 逻辑谜题 通用编辑器 Noq：逻辑谜题求解器 逻辑谜题求解器 图片处理 Photopea | Online Photo Editor SVG在线编辑器 数学图形 GeoGebra 几何作图 </description>
     </item>
     <item>
       <title>解谜思路</title>
       <link>https://blog.xuewen21.cc/posts/puzzle/idea/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0900</pubDate>
       <guid>https://blog.xuewen21.cc/posts/puzzle/idea/</guid>
-      <description>基本思路 仔细读题，题目中可能有暗示。不要错过任何内容，因为优秀的出题者往往追求更“优雅”的题目，题目中不会出现毫无意义的元素，甚至会出现一个元素通过不同角度理解而使用多次的情况。 识别题目中的常见谜题元素。 尝试理解题目的意图。 利用各种手段攻克谜题。常常不用解出所有部分，一部分中间结果可能足够猜出最终答案。 提取，从中间结果得到最终答案，包括提取字母、重新排序、一些基础的转换等。 思路扩展 以下内容可以作为发散思维的提示，但注意不要被它们反倒限制住了思维。&#xA;数字 除了编码，可以联想到：&#xA;二进制&#xA;可以向很多编码转换，比如摩斯电码、盲文。&#xA;可以当字符画看。&#xA;5位二进制足够表示26个字母。 三进制&#xA;3位三进制足够表示26个字母。 十六进制&#xA;hash函数的输出可能是16进制。&#xA;某些单词可以看成16进制。&#xA;RBG颜色可以表示为6位16进制。 用括号包围的往往提示答案的字母数 用于最后提取（排序、位置等） 汉字 结构、偏旁部首、笔画、拼音、声调&#xA;颜色 RGB（三个十进制或六位十六进制） 特定事物的颜色 彩虹&#xA;色环电阻&#xA;颜色 编号 Black 0 Brown 1 Red 2 Orange 3 Yellow 4 Green 5 Blue 6 Violet 7 Grey 8 White 9 Gold -1 Silver -2 其他符合题目主题的事物&#xA;颜色的混合 物理 国际单位制（SI） 地理 经纬度，地名，首都，国旗（颜色/图案），地图上的形状。&#xA;天文 星座（名称、形状、日期），各种天体，特殊日期（满月、月食日食、历史事件等）&#xA;时间 特殊时间（历史、节日、一些有特殊含义的日子），生肖，星座，天干，钟表指针方向。&#xA;音乐 音阶，音程，调性，著名乐曲（的标题、作者、编号、调性等）</description>
+      <description>基本思路 仔细读题，题目中可能有暗示。不要错过任何内容，因为优秀的出题者往往追求更“优雅”的题目，题目中不会出现毫无意义的元素，甚至会出现一个元素通过不同角度理解而使用多次的情况。 识别题目中的常见谜题元素。 尝试理解题目的意图。 利用各种手段攻克谜题。常常不用解出所有部分，一部分中间结果可能足够猜出最终答案。 提取，从中间结果得到最终答案，包括提取字母、重新排序、一些基础的转换等。 思路扩展 以下内容可以作为发散思维的提示，但注意不要被它们反倒限制住了思维。&#xA;数字 除了编码，可以联想到：&#xA;二进制&#xA;可以向很多编码转换，比如摩斯电码、盲文。&#xA;可以当字符画看。&#xA;5位二进制足够表示26个字母。 三进制&#xA;3位三进制足够表示26个字母。 十六进制&#xA;hash函数的输出可能是16进制。&#xA;某些单词可以看成16进制。&#xA;RBG颜色可以表示为6位16进制。 用括号包围的往往提示答案的字母数 用于最后提取（排序、位置等） 汉字 结构、偏旁部首、笔画、拼音、声调&#xA;各种编码：unicode、GBK、五笔、电报码、区位码、四角码&#xA;颜色 RGB（三个十进制或六位十六进制） 特定事物的颜色 彩虹&#xA;色环电阻&#xA;颜色 编号 Black 0 Brown 1 Red 2 Orange 3 Yellow 4 Green 5 Blue 6 Violet 7 Grey 8 White 9 Gold -1 Silver -2 其他符合题目主题的事物&#xA;颜色的混合 物理 国际单位制（SI） 地理 经纬度，地名，首都，国旗（颜色/图案），地图上的形状。&#xA;天文 星座（名称、形状、日期），各种天体，特殊日期（满月、月食日食、历史事件等）&#xA;时间 特殊时间（历史、节日、一些有特殊含义的日子），生肖，星座，天干，钟表指针方向。&#xA;音乐 音阶，音程，调性，著名乐曲（的标题、作者、编号、调性等）</description>
     </item>
     <item>
       <title>解谜知识-物理</title>
