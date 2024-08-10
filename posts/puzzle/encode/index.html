@@ -81,7 +81,68 @@
 <p>unicode<br>
 <a href="https://www.unicode.org/versions/latest/" target="_blank" rel="noopener">最新版本</a><br>
 <a href="https://unicode.org/charts/" target="_blank" rel="noopener">码表</a><br>
-<a href="https://symbl.cc/cn/unicode-table/" target="_blank" rel="noopener">码表</a></p>
+<a href="https://www.ifreesite.com/unicode/character.htm" target="_blank" rel="noopener">码表</a></p>
+<div>
+  <input id="unicode_input" />
+  <br/>
+  <button onclick="onclick0()">转为unicode↓</button>
+  <button onclick="onclick1()">转为unicode(16进制)↓</button>
+  <button onclick="onclick2()">转为字符↑</button>
+  <br/>
+  <input id="unicode_output"/>
+<script>
+  const $unicode_input = document.getElementById('unicode_input');
+  const $unicode_output = document.getElementById('unicode_output');
+  function string2unicode(str) {
+    if (!str) return '';
+    let ret = '';
+    for (let i=0; i<str.length; i++) {  
+      let code = str.charCodeAt(i);
+      ret += '&#' + code + ';';
+    }
+    return ret;
+  }
+  function string2unicode16(str) {
+    if (!str) return '';
+    let ret = '';
+    let ustr = '';
+    for (let i=0; i<str.length; i++) {  
+      let code = str.charCodeAt(i);
+      let code16 = code.toString(16);
+      if (code < 0xf) {
+        ustr = "\\u000"+code16;
+      } else if (code < 0xff){
+        ustr = "\\u00"+code16;
+      } else if (code < 0xfff){
+        ustr = "\\u0"+code16;
+      } else {
+        ustr = "\\u"+code16;
+      }  
+      ret += ustr;
+    }
+    return ret;
+  }
+  function unicode2string(str_u) {
+    if (!str_u) return '';
+    return unescape(str_u.replace(/\\u/g, '%u'));
+  }
+  function restoreHTMLEntities(str) {
+    if (!str) return '';
+    let parser = new DOMParser();
+    let doc = parser.parseFromString(str, 'text/html');
+    return doc.documentElement.textContent;
+  }
+  function onclick0() {
+    $unicode_output.value = string2unicode($unicode_input.value);
+  }
+  function onclick1() {
+    $unicode_output.value = string2unicode16($unicode_input.value);
+  }
+  function onclick2() {
+    $unicode_input.value = unicode2string(restoreHTMLEntities($unicode_output.value));
+  }
+</script>
+</div>
 </li>
 <li>
 <p>GBK<br>
