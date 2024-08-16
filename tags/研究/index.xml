@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>研究 on 简陋的网站</title>
-    <link>http://localhost:1313/tags/%E7%A0%94%E7%A9%B6/</link>
+    <link>https://blog.xuewen21.cc/tags/%E7%A0%94%E7%A9%B6/</link>
     <description>Recent content in 研究 on 简陋的网站</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 May 2023 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xuewen21.cc/tags/%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分形</title>
-      <link>http://localhost:1313/posts/research/fractal/</link>
+      <link>https://blog.xuewen21.cc/posts/research/fractal/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/research/fractal/</guid>
+      <guid>https://blog.xuewen21.cc/posts/research/fractal/</guid>
       <description>分形是一种特殊的几何图形，具有无限复杂的结构，这些结构在不同的尺度下重复出现，显示出自相似性。这意味着，无论你放大还是缩小分形的一部分，都可以看到与整体相似的结构。&#xA;构造一个分形结构 科赫曲线 给定一个线段。 将线段分成三等份。 以中间的线段为底，向外画一个等边三角形。 将中间的线段移去 分别对当前所有线段执行2~5。 将这些步骤无限地进行下去就得到了科赫曲线。科赫曲线处处连续，处处不可导，周长无限而面积有限。&#xA;皮亚诺（Peano）曲线 给定一个正方形。 将正方形分成9个相同的正方形。 以“N”形的折线连接9个小正方形的中点。 对当前所有小正方形执行2~4 皮亚诺曲线可以填满整个正方形。而在以往的认知中，线是一维，不可能填满二维的面。这使得人们重新思考维度。分形几何中，维度不一定是整数，而是分数。&#xA;希尔伯特（Hilbert）曲线 给定一个正方形。 将正方形分成4个相同的正方形。 以“N”形的折线连接4个小正方形的中点。 对当前所有小正方形执行2~4 同样希尔伯特曲线也能填满一个正方形。&#xA;自然界中的分形 蕨类植物：每片叶子和整体的结构都是相似的。&#xA;花椰菜：每个分支和整体结构相似。&#xA;云彩、山岭、海岸线、树木的形状等等。&#xA;其实，分形结构在自然界普遍存在。这种复杂结构曾经难以研究，而分形几何学是很好的手段。&#xA;迷宫 分形迷宫是一种包含自身副本的迷宫。&#xA;这种迷宫中会包含一些房间，房间内部的构造和整个迷宫一致。&#xA;大开眼界：世上最无敌的迷宫当数“分形迷宫” | Matrix67: The Aha Moments。&#xA;语言描述难以理解的话，可以看看这个视频 【辣鸡游戏#3】分形迷宫-有无数个”起点“和”终点“也很难通关！。&#xA;几个分形迷宫：&#xA;1和2没有实际作用，从start到finish即可。&#xA;Matrix67制作的可在线游玩的分形迷宫： I Need To Go Deeper，比较简单。</description>
     </item>
     <item>
       <title>天文</title>
-      <link>http://localhost:1313/posts/research/astronomy/</link>
+      <link>https://blog.xuewen21.cc/posts/research/astronomy/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/research/astronomy/</guid>
+      <guid>https://blog.xuewen21.cc/posts/research/astronomy/</guid>
       <description>天文符号 太阳系 天体 英文 符号 图片 太阳 Sun ☉ 月亮 Moon ☾ 水星 Mercury ☿ 金星 Venus ♀ 地球 Earth ♁ 火星 Mars ♂ 木星 Jupiter ♃ 土星 Saturn ♄ 天王星 Uranus ♅⛢ 海王星 Neptune ♆⯉ 黄道十二星座 星座 拉丁名称 符号 白羊座 Aries ♈︎ ♈ 金牛座 Taurus ♉︎ ♉ 双子座 Gemini ♊︎ ♊ 巨蟹座 Cancer ♋︎ ♋ 狮子座 Leo ♌︎ ♌ 处女座 Virgo ♍︎ ♍ 天秤座 Libra ♎︎ ♎ 天蝎座 Scorpio ♏︎ ♏ 射手座 Sagittarius ♐︎ ♐ 摩羯座 Capricorn ♑︎ ♑ 水瓶座 Aquarius ♒︎ ♒ 双鱼座 Pisces ♓︎ ♓ 小行星或微型行星 天体 英文 符号 图片 谷神星 ⚳ 智神星 ⚴ 婚神星 ⚵ 灶神星 ⚶ 义神星 ⚖ 韶神星 🍷︎ 虹神星 花神星 ⚘ 颖神星 健神星 ⚕ 海妖星 凯神星 芙女星 司宁星 司法星 灵神星 海女星 司曲星 命神星 冥后星 战神星 海后星 沉神星 忠神星 冥王星 Pluto ♇ 星座 转：天文星座知识汇总</description>
     </item>
     <item>
       <title>自指</title>
-      <link>http://localhost:1313/posts/research/self-reference/</link>
+      <link>https://blog.xuewen21.cc/posts/research/self-reference/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/research/self-reference/</guid>
+      <guid>https://blog.xuewen21.cc/posts/research/self-reference/</guid>
       <description>自指，自我指涉。指一个语句、思想或表达方式直接或间接地指向自身的性质。你可以在数学、逻辑、语言学、编程、艺术等领域见到它的身影。&#xA;自指的运用是非常普遍的，这里只提几个有趣的运用。&#xA;故事 从前有座山，山里有座庙，庙里一个老和尚在给小和尚讲故事，内容是“从前有座山，山里有座庙，庙里一个老和尚在给小和尚讲故事，内容是“从前有座山……&#xA;废话文学 提醒：这是一个提醒。&#xA;悖论 说谎者悖论：我现在说的这句话是谎话。&#xA;理发师悖论：小城里的理发师放出豪言：他要为城里人刮胡子，而且一定只要为城里所有“不为自己刮胡子的人”刮胡子。理发师该为自己刮胡子吗？&#xA;罗素悖论：如果存在一个集合A={x|x∉A}，那么A∈A是否成立？&#xA;罗素提出的这个悖论动摇的数学的根基之一——集合论，导致第三次数学危机。这使得弗雷格只能在他刚要出版的《算术的基本法则》第2卷末尾写道：&amp;ldquo;一个科学家所遇到的最不合心意的事莫过于在他的工作结束时，其基础崩溃了。罗素先生的一封信正把我置于这个境地&amp;rdquo;。后来的策梅洛-弗兰克尔公理系统中，通过分离公理禁止了罗素悖论中这种无限自指的集合的存在。&#xA;元图像 马格利特，《两个迷》&#xD;埃舍尔，《双手素描》&#xD;元游戏 元游戏没有准确的定义，这里特指“知道自己是游戏的游戏”。&#xA;刑侦推理题 这道题曾经在网上流行。&#xA;以下全部是单选题。&#xA;1.这道题的答案是（）&#xD;A.AB.BC.CD.D&#xD;2.第五题的答案是（）&#xD;A.CB.DC.AD.B&#xD;3.以下选项中哪一题的答案与其他三项不同（）&#xD;A.第3题B.第6题C.第2题D.第4题&#xD;4.以下选项中哪两题的答案相同（）&#xD;A.第1,5题B.第2,7题C.第1,9题D.第6,10题&#xD;5.以下选项中哪一题的答案与本题相同（）&#xD;A.第8题B.第4题C.第9题D.第7题&#xD;6.以下选项中，哪两题的答案与第8题相同（）&#xD;A.第2,4题B.第1,6题C.第3,10题D.第5,9题&#xD;7.此十题中，被选中次数最少的选项字母是（）&#xD;A.CB.BC.AD.D&#xD;8.以下选项中哪一题的答案与第1题的答案在字母中不相邻（）&#xD;A.第7题B.第5题C.第2题D.第10题&#xD;9.已知“第1题与第6题的答案相同”与“第X题与第5题的答案相同”的真实性相反，那么X为（）&#xD;A.第6题B.第10题C.第2题D.第9题&#xD;10.在此10道题中，ABCD四个字母出现次数最多与最少者的差为（）&#xD;A.3B.2C.4D.1&#xD;解答&#xD;这道题目前没有找到足够优秀且优雅的解法，这里只提供一种笔者找到的较为简介的解法。&#xA;首先尝试找到容易入手的地方。&#xA;9题的题干提出两种可能性，可以分别讨论：&#xA;假设1、6题答案相同，X、5题答案不同&#xA;2、5题答案显然不同。9题答案必是C。因为是单选，所以9题其他的选项都错误，即6、9、10题和5题答案相同，都是C。由6题选C知3、8、10题答案相同，都是C。之后持续进行类似的推理，可得到矛盾。 所以1、6题答案不同，X、5题答案相同。 接下来讨论5题： 5题不选D：假设5题选D，即5、7题答案相同，都是D。根据7题知D是被选中最少的字母，所以A、B、C的数量都至少是3个，再加上已经被选中两次的D，四个字母选中次数总和超过10，矛盾。 5题不选B：假设5题选B，即5、4题答案相同，都是B。根据4题知2、7题答案一样。和上一条用类似方法能推出矛盾。 5题不选C：5、9题有共同的选项“第9题”，假设5、9题答案相同，那么5题只能选C，9题只能选D，这和“5、9题答案相同”矛盾。所以5、9题答案不同，5题不选C，9题不选D。 5题选A。进而2题选C，8题选A 接下来可以讨论6题： 6题不选A：若选A，则2、4、8题答案相同，和“2题选C，8题选A”矛盾 6题不选B：前已推出“1、6题答案不同”。 6题不选D：前已推出“5、9题答案不同”。 6题选C。 接下来可以讨论9题。之后都是简单推理，略。 答案：BCACACDABA。&#xA;Tupper自指公式 由杰夫·塔珀发现。&#xA;${1\over 2} &amp;lt; \left\lfloor \mathrm{mod}\left(\left\lfloor {y \over 17} \right\rfloor 2^{-17 \lfloor x \rfloor - \mathrm{mod}(\lfloor y\rfloor, 17)},2\right)\right\rfloor$</description>
     </item>
     <item>
       <title>标准数独技巧</title>
-      <link>http://localhost:1313/posts/puzzle/sudoku-skill/</link>
+      <link>https://blog.xuewen21.cc/posts/puzzle/sudoku-skill/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/puzzle/sudoku-skill/</guid>
+      <guid>https://blog.xuewen21.cc/posts/puzzle/sudoku-skill/</guid>
       <description>这里不会讲到所有的技巧（我也不会那么多），只讲解本人实战中用到的比较多的技巧，可应付一般难度数独。&#xA;（和小向的教程统一命名）&#xA;注：以下用 r 表示行，用 c 表示列，用 b 表示宫。&#xA;基本技巧 基本技巧十分简单，即便不教大部分人也会。虽然下面的例子用图都使用的全标策略（标注全部候选数），但这些技巧在直观策略（不标候选数）下也很容易使用。&#xA;唯一余数 | Naked Single 利用排除法，某一格可能且仅可能填某一个数字。&#xA;根据橙色格子进行排除，r9c8处只能填6。&#xA;排除法 | Hidden Single 某个数字在某一个区（行/列/宫）里仅有一处可以填。&#xA;对于b6，r4c2和r6c5中的2导致r4c89和r6c789不能填2，所以b6内只有r5c8可以填2。&#xA;同理，r3中只有c8能填1。&#xA;但是这个例子是在之前用高级技巧删除了r3c2中的候选数1后才出现的。&#xA;区块 | Locked Candidates 宫区块&#xA;当某宫中某候选数只存在于某行（列）时，可删除在其他宫中此行（列）的候选数。&#xA;对于b4，8只出现在r6，这两格中必有一个是8，r6其余格不可能再出现8，则r6c6排除8的可能。&#xA;行列区块&#xA;当某行（列）中某候选数只存在于某宫中，可删除此宫中其他行（列）的该候选数。&#xA;对于c1，8只出现在b3，这两格中必有一个是8，b3中其它位置排除8的可能。&#xA;级联区块&#xA;（待补充）&#xA;基础鱼（链列） | Base Fish 在某n个行（列）内，某个数字x只能出现在固定的某n个列（行）内，则该n个列（行）内其他格子不会再出现数字x。&#xA;n=2，矩形对角线法 | X-Wing&#xA;对于8，在r59中只出现在c15，所以c15其他行中可以排除8的可能。 n=3，剑鱼 | Swordfish&#xA;对于6，在r259中只出现在c178，所以c178其他行中可以排除6的可能。&#xA;对于这个例子，看到并不是r259c178九个格子中都有6的候选数，这种情况叫做残缺（Incompleted）。 n=4，水母 | Jellyfish&#xA;对于2，在r1358中只出现在c2568，所以c2568其他行中可以排除6的可能。 n=5，海星 | Starfish 或 Squirmbag n=6，鲸鱼 | Whale n=7，海怪 | Leviathan 数组 | Subset （Pair/Triple/Quadruple） 显式 | Naked：在一个区中，如果有n个格都包含且只包含相同的n个候选数，则这n个候选数不能再出现在该区其他的格中。</description>
     </item>
   </channel>

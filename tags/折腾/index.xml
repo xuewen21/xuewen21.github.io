@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>折腾 on 简陋的网站</title>
-    <link>http://localhost:1313/tags/%E6%8A%98%E8%85%BE/</link>
+    <link>https://blog.xuewen21.cc/tags/%E6%8A%98%E8%85%BE/</link>
     <description>Recent content in 折腾 on 简陋的网站</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Nov 2023 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xuewen21.cc/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>等宽字体</title>
-      <link>http://localhost:1313/posts/exploring/monospace/</link>
+      <link>https://blog.xuewen21.cc/posts/exploring/monospace/</link>
       <pubDate>Sat, 25 Nov 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/exploring/monospace/</guid>
+      <guid>https://blog.xuewen21.cc/posts/exploring/monospace/</guid>
       <description>简介 编程时，有一款等宽字体可以让代码看起来更舒适。&#xA;英文等宽字体有不少，但是能和中文对齐的不多。&#xA;windows自带的宋体和黑体都是严格的中英文宽度2:1的字体，但没有对“0”、“O”等易混淆字形做区分，不适合编程。&#xA;这个网站罗列了一些等宽字体：https://www.programmingfonts.org/&#xA;一些等宽字体 也有组织或个人尝试制作适合编程的中文等宽字体：&#xA;Sarasa Gothic / 更纱黑体 文泉驿等宽正黑 XHei系列 Milky Han Mono / 星汉等宽 LXGW WenKai / 霞鹜文楷 Hybrid-fonts 其中有些字体的英文是细长的或中文间隔大，看起来依旧不舒服。&#xA;像素风字体 这里提到的所谓像素风格的字体，是指矢量化的点阵字体。&#xA;这种字体在特定的字号下，能和显示器的像素网格对齐，避免抗锯齿处理导致的模糊（这对于分辨率不高的屏幕尤其明显）。&#xA;这里整理了一些支持中文的等宽像素风字体：&#xA;unifont 凤凰点阵体 方舟像素字体 多字体搭配使用 有些编辑器支持配置多个字体，这时可以将一个等宽英文字体和一个中文字体（即使是非等宽的中文字体，汉字的宽度大多一致）搭配使用。&#xA;有些英文字体本身就是0.5个字号的宽度，只要和合适的中文字体混合使用，也可以达到等宽效果：&#xA;Ubuntu Mono Inconsolata monofur agave 等等 像素风的有&#xA;Greybeard Fixedsys 等等 手动修改字体 去搜索等宽字体的话，能找到大量宽度为0.6个字号的英文字体：&#xA;Courier New Courier Prime Code PT Mono JetBrains Mono Source Code Pro 等等 如果有宽度为1.2个字号的中文字体，就能相互配合达到等宽效果。&#xA;我们可以利用 fontCreator（付费）、fontForge 之类的软件调整中文字体的宽度。&#xA;这里用某个中文字体举例，使用 fontCreator。将其导入 fontCreator，发现这个字体中中文的宽度是2048，那么只需要将它的单格宽度设置为2048/1.2就可以了。只可惜这个式子无法得到整数。&#xA;于是，我们先在“工具”→“字形转换器”中将字体宽度调整为可以被1.2整除的2045。&#xA;再在“字体”→“属性”中设置每格宽度为1705。&#xA;导出后得到尺寸为1.2个字号的字体。&#xA;融合字体 进一步，我们可以使用上述软件将两个字体融合。</description>
     </item>
     <item>
       <title>meme</title>
-      <link>http://localhost:1313/posts/exploring/meme/</link>
+      <link>https://blog.xuewen21.cc/posts/exploring/meme/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/exploring/meme/</guid>
-      <description>&#xD;字符 🌿 ¿&#xA;颜文字 ( ´ゝ`)&#xA;( ﾟ∀。)&#xA;o_o &amp;hellip;.&#xA;¯_(ツ)/¯&#xA;表情 </description>
+      <guid>https://blog.xuewen21.cc/posts/exploring/meme/</guid>
+      <description>&#xD;字符 🌿 ¿&#xA;颜文字 ( ´_ゝ`)&#xA;( ﾟ∀。)&#xA;o_o &amp;hellip;.&#xA;¯_(ツ)_/¯&#xA;表情 </description>
     </item>
   </channel>
 </rss>
