@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>地理 | 简陋的网站</title>
+<title>解谜知识-地理 | 简陋的网站</title>
 
   <link rel="stylesheet" href="/css/root.css">
   <link rel="stylesheet" href="/css/main.css">
-
 
     <script src="/js/main.js"></script>
 
@@ -40,13 +39,17 @@
 
 <a href="https://blog.xuewen21.cc/posts/">发布</a>  >
 
-<a href="https://blog.xuewen21.cc/posts/puzzle/geography/">地理</a> 
+<a href="https://blog.xuewen21.cc/posts/puzzle/geography/">解谜知识-地理</a> 
 </div> 
 
-  </header>
-  <main>
     
-  <h1>地理</h1>
+    <link href="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.css" rel="stylesheet" />
+    
+  </header>
+  <article>
+    <main>
+      
+  <h1>解谜知识-地理</h1>
 
   
   
@@ -1227,7 +1230,7 @@
 </table>
 </div>
 <h2 id="机场">机场</h2>
-<p>(维基)[https://en.wikipedia.org/wiki/Lists_of_airports#By_code]</p>
+<p><a href="https://en.wikipedia.org/wiki/Lists_of_airports#By_code" target="_blank" rel="noopener">维基</a></p>
 <h2 id="地图">地图</h2>
 <details>
   <summary>点击加载</summary>
@@ -1245,10 +1248,36 @@
   </div>
 
 
-  </main>
+    </main>
+    
+    <aside id="aside"></aside>
+    
+  </article>
   <footer>
     <p>Copyright 2024. All rights reserved.</p>
 
   </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.js"></script>
+
+  <script>
+    (function(){
+      const defaults = Outline.DEFAULTS
+      let outline
+
+      defaults.homepage = '../index.html'
+      defaults.stickyHeight = 86
+      defaults.placement = 'rtl'
+      defaults.closeOnClickModal = false
+      defaults.showNavModalFirst = true
+      defaults.position = 'sticky'
+      defaults.parentElement = '#aside'
+      defaults.articleElement = '#content'
+      outline = new Outline(defaults)
+      outline.reload()
+    })()
+  </script>
+  
 </body>
 </html>

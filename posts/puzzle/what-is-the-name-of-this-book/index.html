@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/css/root.css">
   <link rel="stylesheet" href="/css/main.css">
 
-
     <script src="/js/main.js"></script>
 
 
@@ -43,9 +42,13 @@
 <a href="https://blog.xuewen21.cc/posts/puzzle/what-is-the-name-of-this-book/">《这本书叫什么？》谜题选</a> 
 </div> 
 
-  </header>
-  <main>
     
+    <link href="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.css" rel="stylesheet" />
+    
+  </header>
+  <article>
+    <main>
+      
   <h1>《这本书叫什么？》谜题选</h1>
 
   
@@ -108,7 +111,7 @@
 <p>A、B两个岛民，A说：“或者我是小人或者B是君子。”A、B是何种人？</p>
   <details>
   <summary>答案</summary>
-  按照或运算的性质，两个命题至少有一个为真，整个命题为真，否则为假。  
+  按照或运算的性质，若两个命题至少有一个为真，则整个命题为真，否则为假。  
   若A为小人，则前半句为真，于是整句为真，矛盾。所以A为君子，前半句为假且整句为真，于是后半句应为真，B为君子。
   </details>
 </li>
@@ -216,10 +219,36 @@ MathJax.Hub.Config({
   </div>
 
 
-  </main>
+    </main>
+    
+    <aside id="aside"></aside>
+    
+  </article>
   <footer>
     <p>Copyright 2024. All rights reserved.</p>
 
   </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.js"></script>
+
+  <script>
+    (function(){
+      const defaults = Outline.DEFAULTS
+      let outline
+
+      defaults.homepage = '../index.html'
+      defaults.stickyHeight = 86
+      defaults.placement = 'rtl'
+      defaults.closeOnClickModal = false
+      defaults.showNavModalFirst = true
+      defaults.position = 'sticky'
+      defaults.parentElement = '#aside'
+      defaults.articleElement = '#content'
+      outline = new Outline(defaults)
+      outline.reload()
+    })()
+  </script>
+  
 </body>
 </html>

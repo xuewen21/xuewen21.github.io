@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/css/root.css">
   <link rel="stylesheet" href="/css/main.css">
 
-
     <script src="/js/main.js"></script>
 
 
@@ -43,9 +42,13 @@
 <a href="https://blog.xuewen21.cc/posts/creative/anamorphosis/">歪像（Anamorphosis）</a> 
 </div> 
 
-  </header>
-  <main>
     
+    <link href="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.css" rel="stylesheet" />
+    
+  </header>
+  <article>
+    <main>
+      
   <h1>歪像（Anamorphosis）</h1>
 
   
@@ -93,10 +96,36 @@
   </div>
 
 
-  </main>
+    </main>
+    
+    <aside id="aside"></aside>
+    
+  </article>
   <footer>
     <p>Copyright 2024. All rights reserved.</p>
 
   </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.js"></script>
+
+  <script>
+    (function(){
+      const defaults = Outline.DEFAULTS
+      let outline
+
+      defaults.homepage = '../index.html'
+      defaults.stickyHeight = 86
+      defaults.placement = 'rtl'
+      defaults.closeOnClickModal = false
+      defaults.showNavModalFirst = true
+      defaults.position = 'sticky'
+      defaults.parentElement = '#aside'
+      defaults.articleElement = '#content'
+      outline = new Outline(defaults)
+      outline.reload()
+    })()
+  </script>
+  
 </body>
 </html>

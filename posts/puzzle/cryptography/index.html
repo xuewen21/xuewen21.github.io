@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/css/root.css">
   <link rel="stylesheet" href="/css/main.css">
 
-
     <script src="/js/main.js"></script>
 
 
@@ -43,9 +42,13 @@
 <a href="https://blog.xuewen21.cc/posts/puzzle/cryptography/">古典密码</a> 
 </div> 
 
-  </header>
-  <main>
     
+    <link href="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.css" rel="stylesheet" />
+    
+  </header>
+  <article>
+    <main>
+      
   <h1>古典密码</h1>
 
   
@@ -112,31 +115,21 @@
 }
 </style>
 <!-- https://devjoe.appspot.com/huntindex/index/codes -->
-<h3 id="单表替换密码--编码">单表替换密码 / 编码</h3>
+<h2 id="单表替换密码--编码">单表替换密码 / 编码</h2>
 <p>按照替换表，将明文中每个字母替换成另一个字母形成密文。替换表可以自定义，也可以使用一些现成的。<br>
 有时候编码和单表很相似，所以一部分编码也会出现在这里。</p>
-<ul>
-<li>
-<p>Caesar 凯撒密码</p>
+<h4 id="caesar-凯撒密码">Caesar 凯撒密码</h4>
 <p>将每个字母在字母表上向左或向右按照一定的位数（密钥）进行移动。</p>
-</li>
-<li>
-<p>ROT13</p>
+<h4 id="rot13">ROT13</h4>
 <p>密钥为13的凯撒密码。</p>
-</li>
-<li>
-<p>Atbash</p>
+<h4 id="atbash">Atbash</h4>
 <p>所有 A 都替换为 Z，所有 B 都替换为 Y，依此类推。</p>
-</li>
-<li>
-<p>Affine Cipher 仿射密码</p>
+<h4 id="affine-cipher-仿射密码">Affine Cipher 仿射密码</h4>
 <p>字母转编号，A=0、B=1……<br>
 加密：E(x) = (ax + b) mod 26<br>
 解谜：D(x) = (x - b)/a mod 26<br>
 a、b为密钥，a和26互质</p>
-</li>
-<li>
-<p>摩尔斯电码</p>
+<h4 id="摩尔斯电码">摩尔斯电码</h4>
 <pre tabindex="0"><code>A .-    B -...  C -.-.  D -..   E .   
 F ..-.  G --.   H ....  I ..    J .--- 
 K -.-   L .-..  M --    N -.    O ---  
@@ -146,156 +139,261 @@ Z --..
 
 1 .----  2 ..---  3 ...--  4 ....-  5 .....
 6 -....  7 --...  8 ---..  9 ----.  0 -----
-</code></pre></li>
-<li>
-<p>旗语 （semaphore）</p>
-  <div class="detail" style="display: flex; flex-flow: row wrap; max-width: 50em;">
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Alpha.html"></object>
-          <div class="semaphore-text">A / 1</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Bravo.html"></object>
-          <div class="semaphore-text">B / 2</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Charlie.html"></object>
-          <div class="semaphore-text">C / 3<br/>确认 / 正确</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Delta.html"></object>
-          <div class="semaphore-text">D / 4</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Echo.html"></object>
-          <div class="semaphore-text">E / 5<br/>错误(连打8次)</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Foxtrot.html"></object>
-          <div class="semaphore-text">F / 6</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Golf.html"></object>
-          <div class="semaphore-text">G / 7</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Hotel.html"></object>
-          <div class="semaphore-text">H / 8</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_India.html"></object>
-          <div class="semaphore-text">I / 9</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Juliet.html"></object>
-          <div class="semaphore-text">J<br/>字母记号</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Kilo.html"></object>
-          <div class="semaphore-text">K / 0</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Lima.html"></object>
-          <div class="semaphore-text">L</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Mike.html"></object>
-          <div class="semaphore-text">M</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_November.html"></object>
-          <div class="semaphore-text">N</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Oscar.html"></object>
-          <div class="semaphore-text">O</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Papa.html"></object>
-          <div class="semaphore-text">P</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Quebec.html"></object>
-          <div class="semaphore-text">Q</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Romeo.html"></object>
-          <div class="semaphore-text">R</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Sierra.html"></object>
-          <div class="semaphore-text">S</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Tango.html"></object>
-          <div class="semaphore-text">T</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Uniform.html"></object>
-          <div class="semaphore-text">U</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Victor.html"></object>
-          <div class="semaphore-text">V</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Whiskey.html"></object>
-          <div class="semaphore-text">W</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_X-ray.html"></object>
-          <div class="semaphore-text">X</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Yankee.html"></object>
-          <div class="semaphore-text">Y</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Zulu.html"></object>
-          <div class="semaphore-text">Z</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Ready.html"></object>
-          <div class="semaphore-text">待机 / 空格</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Numeric.html"></object>
-          <div class="semaphore-text">数字记号(#)</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Error.html"></object>
-          <div class="semaphore-text">错误 / 注意</div>
-      </div>
-      <div class="semaphore-item">
-          <object data="/cryptography/Semaphore_Cancel.html"></object>
-          <div class="semaphore-text">取消 / 废除 /<br/>忽略以前的信号</div>
-      </div>
-  </div>
-</li>
-<li>
-<p>盲文</p>
-  <table class="braille">
-  <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
-  <tr><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td></tr>
-  <tr><td>⠁</td><td>⠃</td><td>⠉</td><td>⠙</td><td>⠑</td><td>⠋</td><td>⠛</td><td>⠓</td><td>⠊</td><td>⠚</td><td>⠅</td><td>⠇</td><td>⠍</td><td>⠝</td><td>⠕</td><td>⠏</td><td>⠟</td><td>⠗</td><td>⠎</td><td>⠞</td><td>⠥</td><td>⠧</td><td>⠺</td><td>⠭</td><td>⠽</td><td>⠵</td></tr>
-  </table>
-</li>
-<li>
-<p>猪圈密码 （pigpen 猪笔）<br>
-<img loading="lazy" class="reversible" src="pigpen.png" style="max-width:15em;"/></p>
-</li>
-<li>
-<p>夏多密码<br>
-<img loading="lazy" class="reversible" src="shadow.png" style="max-width:15em;"/><br>
-作者麦克斯韦·格兰特（Maxwell Grant）的中篇小说《Shadow Magazine》中，Shadow（“影子”）是该系列的英雄。小说第十期《死亡之链（Chain of Death）》中出现的密码。</p>
-</li>
-<li>
-<p>死亡之链<br>
-<img loading="lazy" class="reversible" src="chainofdeath.png" style="max-width:15em;"/> <br>
-出处同上。</p>
-</li>
-<li>
-<p>北约音标字母</p>
+</code></pre><h4 id="国际电报字母表第2号">国际电报字母表第2号</h4>
+<p>International telegraphy alphabet No. 2（Baudot-Murray code）</p>
+<table border="1" style="text-align:center;">
+<thead>
+<tr><th colspan="2">Pattern of impulses<br>1=mark 0=space</th><th rowspan="2" width="100pt" class="headerSort" tabindex="0" role="columnheader button" title="升序排列">字母集</th><th rowspan="2" width="100pt" class="headerSort" tabindex="0" role="columnheader button" title="升序排列">数字标点符号集</th></tr>
+<tr><th width="100pt" class="headerSort" tabindex="0" role="columnheader button" title="升序排列">大端序</th><th width="100pt" class="headerSort" tabindex="0" role="columnheader button" title="升序排列">小端序</th></tr>
+</thead>
+<tbody>
+<tr><td>00000</td><td>00000</td><td>Null</td><td>Null</td></tr>
+<tr><td>00100</td><td>00100</td><td>Space</td><td>Space</td></tr>
+<tr><td>10111</td><td>11101</td><td>Q</td><td>1</td></tr>
+<tr><td>10011</td><td>11001</td><td>W</td><td>2</td></tr>
+<tr><td>00001</td><td>10000</td><td>E</td><td>3</td></tr>
+<tr><td>01010</td><td>01010</td><td>R</td><td>4</td></tr>
+<tr><td>10000</td><td>00001</td><td>T</td><td>5</td></tr>
+<tr><td>10101</td><td>10101</td><td>Y</td><td>6</td></tr>
+<tr><td>00111</td><td>11100</td><td>U</td><td>7</td></tr>
+<tr><td>00110</td><td>01100</td><td>I</td><td>8</td></tr>
+<tr><td>11000</td><td>00011</td><td>O</td><td>9</td></tr>
+<tr><td>10110</td><td>01101</td><td>P</td><td>0</td></tr>
+<tr><td>00011</td><td>11000</td><td>A</td><td>–</td></tr>
+<tr><td>00101</td><td>10100</td><td>S</td><td>Bell</td></tr>
+<tr><td>01001</td><td>10010</td><td>D</td><td>$</td></tr>
+<tr>
+<td>01101</td>
+<td>10110</td>
+<td>F</td>
+<td>!
+</td></tr>
+<tr>
+<td>11010</td>
+<td>01011</td>
+<td>G</td>
+<td>&amp;
+</td></tr>
+<tr>
+<td>10100</td>
+<td>00101</td>
+<td>H</td>
+<td>#
+</td></tr>
+<tr>
+<td>01011</td>
+<td>11010</td>
+<td>J</td>
+<td>'
+</td></tr>
+<tr>
+<td>01111</td>
+<td>11110</td>
+<td>K</td>
+<td>（
+</td></tr>
+<tr>
+<td>10010</td>
+<td>01001</td>
+<td>L</td>
+<td>）
+</td></tr>
+<tr>
+<td>10001</td>
+<td>10001</td>
+<td>Z</td>
+<td>"
+</td></tr>
+<tr>
+<td>11101</td>
+<td>10111</td>
+<td>X</td>
+<td>/
+</td></tr>
+<tr>
+<td>01110</td>
+<td>01110</td>
+<td>C</td>
+<td>:
+</td></tr>
+<tr>
+<td>11110</td>
+<td>01111</td>
+<td>V</td>
+<td>;
+</td></tr>
+<tr>
+<td>11001</td>
+<td>10011</td>
+<td>B</td>
+<td>?
+</td></tr>
+<tr>
+<td>01100</td>
+<td>00110</td>
+<td>N</td>
+<td>,
+</td></tr>
+<tr>
+<td>11100</td>
+<td>00111</td>
+<td>M</td>
+<td>.
+</td></tr>
+<tr>
+<td>01000</td>
+<td>00010</td>
+<td>Carriage return</td>
+<td>Carriage return
+</td></tr>
+<tr>
+<td>00010</td>
+<td>01000</td>
+<td>Line feed</td>
+<td>Line feed
+</td></tr>
+<tr><td>11011</td><td>11011</td><td>Shift to figures</td><td></td></tr>
+<tr><td>11111</td><td>11111</td><td></td><td>Shift to letters</td></tr>
+</tbody></table>  
+<p>往往以穿孔纸带的形式出现。</p>
+<h4 id="旗语-semaphore">旗语 （semaphore）</h4>
+<div class="detail" style="display: flex; flex-flow: row wrap; max-width: 50em;">
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Alpha.html"></object>
+        <div class="semaphore-text">A / 1</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Bravo.html"></object>
+        <div class="semaphore-text">B / 2</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Charlie.html"></object>
+        <div class="semaphore-text">C / 3<br/>确认 / 正确</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Delta.html"></object>
+        <div class="semaphore-text">D / 4</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Echo.html"></object>
+        <div class="semaphore-text">E / 5<br/>错误(连打8次)</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Foxtrot.html"></object>
+        <div class="semaphore-text">F / 6</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Golf.html"></object>
+        <div class="semaphore-text">G / 7</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Hotel.html"></object>
+        <div class="semaphore-text">H / 8</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_India.html"></object>
+        <div class="semaphore-text">I / 9</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Juliet.html"></object>
+        <div class="semaphore-text">J<br/>字母记号</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Kilo.html"></object>
+        <div class="semaphore-text">K / 0</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Lima.html"></object>
+        <div class="semaphore-text">L</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Mike.html"></object>
+        <div class="semaphore-text">M</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_November.html"></object>
+        <div class="semaphore-text">N</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Oscar.html"></object>
+        <div class="semaphore-text">O</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Papa.html"></object>
+        <div class="semaphore-text">P</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Quebec.html"></object>
+        <div class="semaphore-text">Q</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Romeo.html"></object>
+        <div class="semaphore-text">R</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Sierra.html"></object>
+        <div class="semaphore-text">S</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Tango.html"></object>
+        <div class="semaphore-text">T</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Uniform.html"></object>
+        <div class="semaphore-text">U</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Victor.html"></object>
+        <div class="semaphore-text">V</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Whiskey.html"></object>
+        <div class="semaphore-text">W</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_X-ray.html"></object>
+        <div class="semaphore-text">X</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Yankee.html"></object>
+        <div class="semaphore-text">Y</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Zulu.html"></object>
+        <div class="semaphore-text">Z</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Ready.html"></object>
+        <div class="semaphore-text">待机 / 空格</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Numeric.html"></object>
+        <div class="semaphore-text">数字记号(#)</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Error.html"></object>
+        <div class="semaphore-text">错误 / 注意</div>
+    </div>
+    <div class="semaphore-item">
+        <object data="/cryptography/Semaphore_Cancel.html"></object>
+        <div class="semaphore-text">取消 / 废除 /<br/>忽略以前的信号</div>
+    </div>
+</div>
+<h4 id="盲文">盲文</h4>
+<table class="braille">
+<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
+<tr><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td></tr>
+<tr><td>⠁</td><td>⠃</td><td>⠉</td><td>⠙</td><td>⠑</td><td>⠋</td><td>⠛</td><td>⠓</td><td>⠊</td><td>⠚</td><td>⠅</td><td>⠇</td><td>⠍</td><td>⠝</td><td>⠕</td><td>⠏</td><td>⠟</td><td>⠗</td><td>⠎</td><td>⠞</td><td>⠥</td><td>⠧</td><td>⠺</td><td>⠭</td><td>⠽</td><td>⠵</td></tr>
+</table>
+<h4 id="猪圈密码-pigpen-猪笔">猪圈密码 （pigpen 猪笔）</h4>
+<img loading="lazy" class="reversible" src="pigpen.png" style="max-width:15em;"/>
+<h4 id="夏多密码">夏多密码</h4>
+<img loading="lazy" class="reversible" src="shadow.png" style="max-width:15em;"/>  
+作者麦克斯韦·格兰特（Maxwell Grant）的中篇小说《Shadow Magazine》中，Shadow（“影子”）是该系列的英雄。小说第十期《死亡之链（Chain of Death）》中出现的密码。
+<h4 id="死亡之链">死亡之链</h4>
+<img loading="lazy" class="reversible" src="chainofdeath.png" style="max-width:15em;"/>    
+出处同上。
+<h4 id="北约音标字母">北约音标字母</h4>
 <table>
 <thead>
 <tr>
@@ -410,36 +508,24 @@ Z --..
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>棋盘密码<br>
-波利比乌斯密码（Polybius Square），又称为波利比乌斯棋盘方阵密码。<br>
+<h4 id="棋盘密码">棋盘密码</h4>
+<p>波利比乌斯密码（Polybius Square），又称为波利比乌斯棋盘方阵密码。<br>
 根据下表：</p>
-  <table class="polybius"><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>1</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td></tr><tr><td>2</td><td>F</td><td>G</td><td>H</td><td>I/J</td><td>K</td></tr><tr><td>3</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td></tr><tr><td>4</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td></tr><tr><td>5</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr></table>
+<table class="polybius"><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>1</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td></tr><tr><td>2</td><td>F</td><td>G</td><td>H</td><td>I/J</td><td>K</td></tr><tr><td>3</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td></tr><tr><td>4</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td></tr><tr><td>5</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr></table>
 <p>加密过程是将字母转为坐标，反之为解密。</p>
-<ul>
-<li>普莱费尔密码（playfair）：<br>
-选取一个英文字作密钥。除去重复出现的字母。将密钥的字母逐个逐个加入5×5的矩阵内，剩下的空间将未加入的英文字母依a-z的顺序加入。（将Q去除，或将I和J视作同一字。）<br>
+<h5 id="普莱费尔密码playfair">普莱费尔密码（playfair）：</h5>
+<p>选取一个英文字作密钥。除去重复出现的字母。将密钥的字母逐个逐个加入5×5的矩阵内，剩下的空间将未加入的英文字母依a-z的顺序加入。（将Q去除，或将I和J视作同一字。）<br>
 将要加密的讯息分成两个一组。若组内的字母相同，将X（或Q）插入两字母之间，重新分组（例如 HELLO 将分成 HE LX LO）。若剩下一个字，也加入X字。<br>
 在每组中，找出两个字母在矩阵中的地方。<br>
 若两个字母不在同一直行或同一横列，在矩阵中找出另外两个字母，使这四个字母成为一个长方形的四个角。<br>
 若两个字母在同一横列，取这两个字母右方的字母（若字母在最右方则取最左方的字母）。<br>
-若两个字母在同一直行，取这两个字母下方的字母（若字母在最下方则取最上方的字母）。</li>
-</ul>
-</li>
-</ul>
-<h3 id="移位密码">移位密码</h3>
+若两个字母在同一直行，取这两个字母下方的字母（若字母在最下方则取最上方的字母）。</p>
+<h2 id="移位密码">移位密码</h2>
 <p>将明文中字母重新排序形成密文。</p>
-<ul>
-<li>
-<p>Rail-fence Cipher 栅栏密码</p>
+<h4 id="rail-fence-cipher-栅栏密码">Rail-fence Cipher 栅栏密码</h4>
 <p>将明文分成N个一组，再将每组的第1、2、3&hellip;个字连起来，形成密文。</p>
-</li>
-</ul>
-<h3 id="其他">其他</h3>
-<ul>
-<li>
-<p>Baconian Cipher 培根密码</p>
+<h2 id="其他">其他</h2>
+<h4 id="baconian-cipher-培根密码">Baconian Cipher 培根密码</h4>
 <pre tabindex="0"><code>A = aaaaa  I/J = abaaa    R = baaaa
 B = aaaab    K = abaab    S = baaab
 C = aaaba    L = ababa    T = baaba
@@ -448,17 +534,11 @@ E = aabaa    N = abbaa    W = babaa
 F = aabab    O = abbab    X = babab
 G = aabba    P = abbba    Y = babba
 H = aabbb    Q = abbbb    Z = babbb
-</code></pre></li>
-<li>
-<p>密码子</p>
+</code></pre><h4 id="密码子">密码子</h4>
 <table class="codon" style="text-align: center; border-collapse: collapse;"><caption>标准遗传密码</caption><tbody><tr><th rowspan="2">碱基1</th><th colspan="8">碱基2</th><th rowspan="2">碱基3</th></tr><tr><th colspan="2">T</th><th colspan="2">C</th><th colspan="2">A</th><th colspan="2">G</th></tr><tr><th rowspan="4">T</th><td>TTT</td><td rowspan="2" style="background-color:#ffe75f40">（Phe/F）<br><p>苯丙氨酸</p></td><td>TCT</td><td rowspan="4" style="background-color:#b3dec040">（Ser/S）<br><p>丝氨酸</p></td><td>TAT</td><td rowspan="2" style="background-color:#b3dec040">（Tyr/Y）<br><p>酪氨酸</p></td><td>TGT</td><td rowspan="2" style="background-color:#b3dec040">（Cys/C）<br><p>半胱氨酸</p></td><th>T</th></tr><tr><td>TTC</td><td>TCC</td><td>TAC</td><td>TGC</td><th>C</th></tr><tr><td>TTA</td><td rowspan="6" style="background-color:#ffe75f40">（Leu/L）<br><p>亮氨酸</p></td><td>TCA</td><td>TAA<sup class="reference" id="ref_stopcodon1none">[B]</sup></td><td style="background-color:#B0B0B040">终止（赭石）</td><td>TGA<sup class="reference" id="ref_stopcodon2none">[B]</sup></td><td style="background-color:#B0B0B040">终止（蛋白石）</td><th>A</th></tr><tr><td>TTG</td><td>TCG</td><td>TAG<sup class="reference" id="ref_stopcodon3none">[B]</sup></td><td style="background-color:#B0B0B040">终止（琥珀）</td><td>TGG</td><td style="background-color:#ffe75f40">（Trp/W）色氨酸</td><th>G</th></tr><tr><th rowspan="4">C</th><td>CTT</td><td>CCT</td><td rowspan="4" style="background-color:#ffe75f40">（Pro/P）<br><p>脯氨酸</p></td><td>CAT</td><td rowspan="2" style="background-color:#bbbfe040">（His/H）<br><p>组氨酸</p></td><td>CGT</td><td rowspan="4" style="background-color:#bbbfe040">（Arg/R）<br><p>精氨酸</p></td><th>T</th></tr><tr><td>CTC</td><td>CCC</td><td>CAC</td><td>CGC</td><th>C</th></tr><tr><td>CTA</td><td>CCA</td><td>CAA</td><td rowspan="2" style="background-color:#b3dec040">（Gln/Q）<br><p>谷氨酰胺</p></td><td>CGA</td><th>A</th></tr><tr><td>CTG</td><td>CCG</td><td>CAG</td><td>CGG</td><th>G</th></tr><tr><th rowspan="4">A</th><td>ATT</td><td rowspan="3" style="background-color:#ffe75f40">（Ile/I）<br><p>异亮氨酸</p></td><td>ACT</td><td rowspan="4" style="background-color:#b3dec040">（Thr/T）<br><p>苏氨酸</p></td><td>AAT</td><td rowspan="2" style="background-color:#b3dec040">（Asn/N）<br><p>天冬酰胺</p></td><td>AGT</td><td rowspan="2" style="background-color:#b3dec040">（Ser/S）<br><p>丝氨酸</p></td><th>T</th></tr><tr><td>ATC</td><td>ACC</td><td>AAC</td><td>AGC</td><th>C</th></tr><tr><td>ATA</td><td>ACA</td><td>AAA</td><td rowspan="2" style="background-color:#bbbfe040">（Lys/K）<br><p>赖氨酸</p></td><td>AGA</td><td rowspan="2" style="background-color:#bbbfe040">（Arg/R）<br><p>精氨酸</p></td><th>A</th></tr><tr><td>ATG<sup class="reference" id="ref_methionineA">[A]</sup></td><td style="background-color:#ffe75f40">（Met/M）<br><p>甲硫氨酸</p></td><td>ACG</td><td>AAG</td><td>AGG</td><th>G</th></tr><tr><th rowspan="4">G</th><td>GTT</td><td rowspan="4" style="background-color:#ffe75f40">（Val/V）<br><p>缬氨酸</p></td><td>GCT</td><td rowspan="4" style="background-color:#ffe75f40">（Ala/A）<br><p>丙氨酸</p></td><td>GAT</td><td rowspan="2" style="background-color:#f8b7d340">（Asp/D）<br><p>天冬氨酸</p></td><td>GGT</td><td rowspan="4" style="background-color:#ffe75f40">（Gly/G）<br><p>甘氨酸</p></td><th>T</th></tr><tr><td>GTC</td><td>GCC</td><td>GAC</td><td>GGC</td><th>C</th></tr><tr><td>GTA</td><td>GCA</td><td>GAA</td><td rowspan="2" style="background-color:#f8b7d340">（Glu/E）<br><p>谷氨酸</p></td><td>GGA</td><th>A</th></tr><tr><td>GTG</td><td>GCG</td><td>GAG</td><td>GGG</td><th>G</th></tr></tbody></table>
 <div style="text-align: right;">-- wiki</div>
-</li>
-<li>
-<p>25-pair color code<br>
-<img loading="lazy" src="25-pair.png" alt="25-pair color code"></p>
-</li>
-</ul>
+<h4 id="25-pair-color-code">25-pair color code</h4>
+<p><img loading="lazy" src="25-pair.png" alt="25-pair color code"></p>
 
   </div>
   
@@ -470,10 +550,36 @@ H = aabbb    Q = abbbb    Z = babbb
   </div>
 
 
-  </main>
+    </main>
+    
+    <aside id="aside"></aside>
+    
+  </article>
   <footer>
     <p>Copyright 2024. All rights reserved.</p>
 
   </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.js"></script>
+
+  <script>
+    (function(){
+      const defaults = Outline.DEFAULTS
+      let outline
+
+      defaults.homepage = '../index.html'
+      defaults.stickyHeight = 86
+      defaults.placement = 'rtl'
+      defaults.closeOnClickModal = false
+      defaults.showNavModalFirst = true
+      defaults.position = 'sticky'
+      defaults.parentElement = '#aside'
+      defaults.articleElement = '#content'
+      outline = new Outline(defaults)
+      outline.reload()
+    })()
+  </script>
+  
 </body>
 </html>

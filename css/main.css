@@ -40,22 +40,31 @@ header {
     color: var(--second-color);
     text-decoration: none;
 }
-nav ul {
+header nav ul {
     display: flex;
 }
-nav li {
+header nav li {
     list-style: none;
     padding: 1em 2em 0.3em 0;
 }
-nav a {
+header nav a {
     color: var(--second-color);
 }
-nav a.active {
+header nav a.active {
     color: var(--main-color);
 }
-
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 main {
+    width: calc(100% - 10em);
     padding: 0.5em 0 2em;
+    margin-right: 1em;
+}
+aside {
+    width: 9em;
 }
 .list-tags {
     display: inline;

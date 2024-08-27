@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/css/root.css">
   <link rel="stylesheet" href="/css/main.css">
 
-
     <script src="/js/main.js"></script>
 
 
@@ -43,9 +42,13 @@
 <a href="https://blog.xuewen21.cc/posts/puzzle/sets/">集合</a> 
 </div> 
 
-  </header>
-  <main>
     
+    <link href="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.css" rel="stylesheet" />
+    
+  </header>
+  <article>
+    <main>
+      
   <h1>集合</h1>
 
   
@@ -56,12 +59,12 @@
     <p>了解常见的集合有时能帮助我们快速理解题目。<br>
 养成计数的习惯，比如看到一组26个的事物，就能想到这对应26个英文字母。</p>
 <p>参考：<a href="https://phenomist.wordpress.com/storage/sets/" target="_blank" rel="noopener">https://phenomist.wordpress.com/storage/sets/</a></p>
-<h3 id="2个一组">2个一组</h3>
+<h3 id="二个一组">二个一组</h3>
 <ul>
 <li>爻：阴(Yin)、阳(Yang)</li>
 <li>氧化还原(Redox)：氧化(reduction)、还原(oxidation)</li>
 </ul>
-<h3 id="3个一组">3个一组</h3>
+<h3 id="三个一组">三个一组</h3>
 <ul>
 <li>三国：魏、蜀、吴</li>
 <li>唐僧三个徒弟：孙悟空、猪八戒/悟能、沙和尚/悟净</li>
@@ -84,7 +87,7 @@
 <li>奖牌：金(gold)、银(silver)、铜(bronze)</li>
 <li>物质状态：固态(solid)、液态(liquid)、气态(gas)</li>
 </ul>
-<h3 id="4个一组">4个一组</h3>
+<h3 id="四个一组">四个一组</h3>
 <ul>
 <li>四季：春(spring)、夏(summer)、秋(autumn/fall)、冬(winter)<br>
 且都是6个字母</li>
@@ -105,29 +108,29 @@
 <li>末日四骑士/天启四骑士(Four Horsemen of the Apocalypse)：白马骑士-瘟疫(Pestilence)、红马骑士-战争(War)、黑马骑士-饥荒(Famine)、灰/绿马骑士-死亡(Death)</li>
 </ul>
 <p>完善中</p>
-<h3 id="5个一组">5个一组</h3>
+<h3 id="五个一组">五个一组</h3>
 <p>别忘了考虑二进制和培根密码。</p>
 <ul>
 <li>五行：金木水火土</li>
 </ul>
-<h3 id="7个一组">7个一组</h3>
+<h3 id="七个一组">七个一组</h3>
 <ul>
 <li>星期：Monday、Tuesday、Wednesday、Thursday、Friday、Saturday、Sunday<br>
 要能通过首字母辨认</li>
 </ul>
-<h3 id="8个一组">8个一组</h3>
+<h3 id="八个一组">八个一组</h3>
 <ul>
 <li>太阳系八大行星：水星(Mercury ☿)、金星(Venus ♀)、地球(Earth ⊕)、火星(Mars ♂)、木星(Jupiter ♃)、土星(Saturn ♄)、天王星(Uranus ♅)、海王星(Neptune ♆或⛢)</li>
 </ul>
-<h3 id="9个一组">9个一组</h3>
+<h3 id="九个一组">九个一组</h3>
 <ul>
 <li>太阳系：太阳(sum ⊙)、水星(Mercury ☿)、金星(Venus ♀)、地球(Earth ⊕)、火星(Mars ♂)、木星(Jupiter ♃)、土星(Saturn ♄)、天王星(Uranus ♅)、海王星(Neptune ♆或⛢)</li>
 </ul>
-<h3 id="10个一组">10个一组</h3>
+<h3 id="十个一组">十个一组</h3>
 <ul>
 <li>天干：甲、乙、丙、丁、戊、己、庚、辛、壬、癸</li>
 </ul>
-<h3 id="12个一组">12个一组</h3>
+<h3 id="十二个一组">十二个一组</h3>
 <ul>
 <li>月份：Monday、Tuesday、Wednesday、Thursday、Friday、Saturday、Sunday<br>
 要能通过首字母辨认</li>
@@ -256,10 +259,36 @@
   </div>
 
 
-  </main>
+    </main>
+    
+    <aside id="aside"></aside>
+    
+  </article>
   <footer>
     <p>Copyright 2024. All rights reserved.</p>
 
   </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/yaohaixiao/outline.js/outline.min.js"></script>
+
+  <script>
+    (function(){
+      const defaults = Outline.DEFAULTS
+      let outline
+
+      defaults.homepage = '../index.html'
+      defaults.stickyHeight = 86
+      defaults.placement = 'rtl'
+      defaults.closeOnClickModal = false
+      defaults.showNavModalFirst = true
+      defaults.position = 'sticky'
+      defaults.parentElement = '#aside'
+      defaults.articleElement = '#content'
+      outline = new Outline(defaults)
+      outline.reload()
+    })()
+  </script>
+  
 </body>
 </html>
