@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>图片标记</title>
+	<style>
+		body {margin: 0; padding: 0; height: 100vh;}
+		.__markerjs2_toolbar {min-width: 900px;}
+	</style>
+</head>
+<body>
+	<div style="height: 40px;">将图片拖动或粘贴到页面中</div>
+	<div id="img-box"><img id="img" style="min-width: 500px;" onclick="startEdit();"></div>
+<script src="https://unpkg.com/markerjs2/markerjs2.js"></script>
+<script>
+	let markerArea = null;
+	let $img = document.getElementById('img');
+	let name = '';
+	let copyOffset = 20;
+	function getImg(file) {
+		if (!file) return;
+		name = file.name;
+		let reader = new FileReader();
+		reader.onload = function(){
+			$img.src = this.result;
+		};
+		reader.readAsDataURL(file);
+	}
+	function startEdit() {
+		markerArea = new markerjs2.MarkerArea($img);
+		markerArea.availableMarkerTypes = markerArea.ALL_MARKER_TYPES;
+		markerArea.uiStyleSettings.redoButtonVisible = true;
+		markerArea.uiStyleSettings.notesButtonVisible = true;
+		markerArea.uiStyleSettings.zoomButtonVisible = true;
+		markerArea.uiStyleSettings.zoomOutButtonVisible = true;
+		markerArea.uiStyleSettings.clearButtonVisible = true;
+
+		markerArea.addRenderEventListener(dataUrl => {
+			$img.src = dataUrl;
+			// 下载
+			let a = document.createElement("a"); // 生成一个a元素
+			let event = new MouseEvent("click"); // 创建一个单击事件
+			a.download = name.replaceAll('.', '_') + '_' + new Date().getTime(); // 设置图片名称
+			a.href = dataUrl; // 将生成的URL设置为a.href属性
+			a.dispatchEvent(event); // 触发a的单击事件
+		});
+		markerArea.show();
+	}
+	function addMarker(markerState) {
+		let markerType = markerArea._availableMarkerTypes.find(
+			(mType) => mType.typeName === markerState.typeName
+		);
+		let marker = markerArea.addNewMarker(markerType);
+		marker.restoreState(markerState);
+		markerArea.markers.push(marker);
+	}
+
+	document.body.ondragover = function(event) {
+		event.preventDefault();
+	}
+	document.body.ondrop = function(event) {
+		event.preventDefault();
+		getImg(event.dataTransfer.files[0]);
+		startEdit();
+	}
+	document.onpaste = function(event) {
+		if (markerArea) return;
+		if (event.clipboardData.files.length > 0) {
+			getImg(event.clipboardData.files[0]);
+			startEdit();
+		}
+	}
+
+	document.onkeydown=function(event){
+		var e = event || window.event || arguments.callee.caller.arguments[0];
+		if (e && e.ctrlKey && e.key == 'z'){ // 撤销
+			if (markerArea) {
+				markerArea.switchToSelectMode();
+				markerArea.addUndoStep();
+				markerArea.undo();
+			}
+		} else if (e && e.ctrlKey && e.key == 'y') { // 重做
+			if (markerArea) {
+				markerArea.switchToSelectMode();
+				markerArea.redo();
+			}
+		} else if (e && !e.ctrlKey && e.key == 's') { // selectMode
+			if (markerArea) {
+				markerArea.switchToSelectMode();
+			}
+		}
+		// else if (e && !e.ctrlKey && e.key == 'Delete') { // 删除
+		// 	if (markerArea) markerArea.deleteSelectedMarker();
+		// }
+		else if (e && e.ctrlKey && e.key == 'c') { // 复制
+			if (markerArea) {
+				let currentMarker = markerArea.currentMarker;
+				if (currentMarker && currentMarker.state == 'select') {
+					let state = currentMarker.getState();
+					if (state.top) state.top += copyOffset;
+					if (state.left) state.left += copyOffset;
+					if (state.x1) state.x1 += copyOffset;
+					if (state.x2) state.x2 += copyOffset;
+					if (state.y1) state.y1 += copyOffset;
+					if (state.y2) state.y2 += copyOffset;
+					// console.log(state);
+					addMarker(state);
+				}
+			}
+		}
+		// else if (e && !e.ctrlKey && e.key == 'ArrowUp') { // 调整位置
+		// 	console.log(e)
+		// 	// markerArea.currentMarker._state = 'move';
+		// 	// markerArea.currentMarker.manipulate({x:10,y:10});
+		// 	// markerArea.currentMarker._state = 'select';
+		// 	let m = markerArea.currentMarker;
+		// 	if (m.y1) m.y1 -= 1;
+		// 	if (m.y2) m.y2 -= 1;
+		// 	if (m.y) m.y -= 1;
+		// 	if (m.top) m.top -= 1;
+		// 	if (m.adjustVisual) m.adjustVisual();
+		// 	if (m.adjustControlBox) m.adjustControlBox();
+		//
+		// } else if (e && !e.ctrlKey && e.key == 'ArrowDown') { // 调整位置
+		// 	console.log(e)
+		// } else if (e && !e.ctrlKey && e.key == 'ArrowLeft') { // 调整位置
+		// 	console.log(e)
+		// } else if (e && !e.ctrlKey && e.key == 'ArrowRight') { // 调整位置
+		// 	console.log(e)
+		// }
+		// else {
+		// 	console.log(e)
+		// }
+	};
+</script>
+</body>
+</html>
